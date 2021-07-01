@@ -1,0 +1,48 @@
+// Font options
+$iv-ws-font-cdn: "https://website.iv-cdn.com/fonts";
+$iv-ws-font-style: normal;
+$iv-ws-font-variant: normal;
+$iv-ws-font-weight: 400;
+$iv-ws-font-size: 12pt;
+$iv-ws-font-height: 1.25;
+$iv-ws-font-family-nexa: "Nexa", Arial, Helvetica, sans-serif;
+$iv-ws-font-family-nexa-text: "Nexa Text", Arial, Helvetica, sans-serif;
+$iv-ws-font-family-roboto: "Roboto", Arial, Helvetica, sans-serif;
+$iv-ws-font-family-montserrat: "Montserrat", "DejaVu Sans", Verdana, sans-serif;
+$iv-ws-font-family-golos: "Golos Text", "Roboto", Arial, Helvetica, sans-serif;
+$iv-ws-font-features: "liga" 0, "dlig" 0, "kern" 1, "tnum" 1, "zero" 1;
+
+// Base colors
+$iv-ws-colors-primary: #1a96e5;
+$iv-ws-colors-bg-lightblue: #f5fbff;
+$iv-ws-colors-bg-darkgrey: #22262c;
+$iv-ws-colors-text-primary: #444;
+$iv-ws-colors-text-secondary: #858585;
+$iv-ws-colors-text-light: #fff;
+// Named colors from coolors.co || https://www.htmlcsscolor.com/
+$iv-ws-colors-charcoal: #414854;
+$iv-ws-colors-gainsboro: #dee1e4;
+$iv-ws-colors-blue-jeans: #1ea3f8;
+$iv-ws-colors-silver-metallic: #a2a8b2;
+$iv-ws-colors-light-gray: #c5cad0;
+$iv-ws-colors-bittersweet: #ff6868;
+$iv-ws-colors-ghost-white: #f5f7fa;
+$iv-ws-colors-grandis: #ffcb64;
+$iv-ws-colors-supernova: #ffbf41;
+$iv-ws-colors-alice-blue: #e4f2fc;
+$iv-ws-colors-slate-blue: #9361ff;
+$iv-ws-colors-cadet-blue: #acb3bc;
+$iv-ws-colors-bright-grey: #4d5664;
+$iv-ws-colors-pattens-blue: #d2e5f2;
+$iv-ws-colors-solitude: #e6e8eb;
+$iv-ws-colors-blue-crayola: #1285ce;
+$iv-ws-colors-black-pearl: #001d32;
+$iv-ws-colors-solitude2: #edf1f6;
+$iv-ws-colors-dodger-blue: #0095ff;
+$iv-ws-colors-pattens-blue2: #dce3eb;
+$iv-ws-colors-blue-de-france: #008aec;
+$iv-ws-colors-alizarin: #ff323d;
+
+// tarnsition
+$base-duration: 0.15s;
+$base-timing: ease-in-out;

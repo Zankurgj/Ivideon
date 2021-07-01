@@ -1,0 +1,55 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  font-family: "Golos Text";
+  src: url($iv-ws-font-cdn + "/golos-text/regular/normal/font.woff2")
+      format("woff2"),
+    url($iv-ws-font-cdn + "/golos-text/regular/normal/font.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-variant: normal;
+  font-family: "Golos Text";
+  src: url($iv-ws-font-cdn + "/golos-text/medium/normal/font.woff2")
+      format("woff2"),
+    url($iv-ws-font-cdn + "/golos-text/medium/normal/font.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-variant: normal;
+  font-family: "Golos Text";
+  src: url($iv-ws-font-cdn + "/golos-text/demi-bold/normal/font.woff2")
+      format("woff2"),
+    url($iv-ws-font-cdn + "/golos-text/demi-bold/normal/font.woff")
+      format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-variant: normal;
+  font-family: "Golos Text";
+  src: url($iv-ws-font-cdn + "/golos-text/bold/normal/font.woff2")
+      format("woff2"),
+    url($iv-ws-font-cdn + "/golos-text/bold/normal/font.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-variant: normal;
+  font-family: "Golos Text";
+  src: url($iv-ws-font-cdn + "/golos-text/black/normal/font.woff2")
+      format("woff2"),
+    url($iv-ws-font-cdn + "/golos-text/black/normal/font.woff") format("woff");
+  font-display: swap;
+}

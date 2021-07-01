@@ -20,6 +20,7 @@ const prettify = require("gulp-html-prettify");
 const webpack = require("webpack-stream");
 const rename = require("gulp-rename");
 const gulpData = require("gulp-data");
+var named = require("vinyl-named");
 
 // Local Server
 
@@ -65,7 +66,8 @@ function styles() {
 
 // Scripts
 function scripts() {
-  return src(["app/js/*.js", "!app/js/*.min.js"])
+  return src(["app/js/page1.js", "app/js/page2.js"])
+    .pipe(named())
     .pipe(
       webpack({
         mode: "production",
@@ -88,8 +90,8 @@ function scripts() {
     .on("error", function handleError() {
       this.emit("end");
     })
-    .pipe(rename("app.min.js"))
-    .pipe(dest("app/js"))
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(dest("app/js_min"))
     .pipe(browserSync.stream());
 }
 

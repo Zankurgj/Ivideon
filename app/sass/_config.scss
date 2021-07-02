@@ -67,26 +67,32 @@ body {
 .text-center {
   text-align: center;
 }
-.container-fluid {
+.iv-container-fluid {
   width: 100%;
-  // padding: 0 $contentPadding;
+  padding: 0 16px;
 }
-.container {
-  // padding: 0 $contentPadding;
+.iv-container {
+  padding: 0 16px;
   margin: 0 auto;
+  max-width: 1600px;
+  @media all and (min-width: $desktop-bp) {
+    padding: 0 60px;
+  }
+  @media all and (min-width: $large-bp) {
+    max-width: 1920px;
+    padding: 0 160px;
+  }
 }
 .slick-slide {
   &:focus {
     outline: none;
   }
 }
-.row {
+.iv-row {
   display: flex;
-}
-
-.row--wrap {
   flex-wrap: wrap;
 }
+
 .rub {
   font-family: ruble;
 }

@@ -1,0 +1,52 @@
+<section class="ivideon-faces-price">
+    <div class="iv-container">
+        <h2 class="iv-h2-base videon-faces-price__title">{{ivFacesPriceTitle}}</h2>
+        <div class="iv-row">
+            {% from "app/njk/components/ivideon_price_item.njk" import priseItem %}
+            {% set priseItemsArr = [
+            {
+            name:ivFacesPriceItemName1,
+            title:ivFacesPriceItemTitle1,
+            text:ivFacesPriceItemText1,
+            cost:ivFacesPriceItemCost1
+            },
+            {
+            name:ivFacesPriceItemName2,
+            title:ivFacesPriceItemTitle2,
+            text:ivFacesPriceItemText2,
+            cost:ivFacesPriceItemCost2
+            },
+            {
+            name:ivFacesPriceItemName3,
+            title:ivFacesPriceItemTitle3,
+            text:ivFacesPriceItemText3,
+            cost:ivFacesPriceItemCost3
+            },
+            {
+            name:ivFacesPriceItemName4,
+            title:ivFacesPriceItemTitle4,
+            text:ivFacesPriceItemText4,
+            cost:ivFacesPriceItemCost4
+            },
+            {
+            name:ivFacesPriceItemName5,
+            title:ivFacesPriceItemTitle5,
+            text:ivFacesPriceItemText5,
+            cost:ivFacesPriceItemCost5
+            },
+            {
+            name:ivFacesPriceItemName6,
+            title:ivFacesPriceItemTitle6,
+            text:ivFacesPriceItemText6,
+            cost:ivFacesPriceItemCost6
+            }
+            ]%}
+            {% for item in priseItemsArr %}
+            <div class="ivideon-faces-price__col">
+                {{ priseItem(item.name, item.title, item.text, item.cost, ivFacesPriceItemLink) }}
+            </div>
+            {%endfor%}
+
+        </div>
+    </div>
+</section>

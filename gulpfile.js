@@ -53,20 +53,23 @@ function nunjucks() {
 // Custom Styles
 
 function styles() {
-  return src("app/sass/main." + preprocessor + "")
-    .pipe(sass())
-    .pipe(concat("app.min.css"))
-    .pipe(
-      autoprefixer({ overrideBrowserslist: ["last 10 versions"], grid: true })
-    )
-    .pipe(cleancss({ level: { 1: { specialComments: 0 } } }))
-    .pipe(dest("app/css"))
-    .pipe(browserSync.stream());
+  return (
+    src("app/sass/pages/*.scss")
+      .pipe(sass())
+      // .pipe(concat("app.min.css"))
+      .pipe(
+        autoprefixer({ overrideBrowserslist: ["last 10 versions"], grid: true })
+      )
+      .pipe(cleancss({ level: { 1: { specialComments: 0 } } }))
+      .pipe(rename({ suffix: ".min" }))
+      .pipe(dest("app/css"))
+      .pipe(browserSync.stream())
+  );
 }
 
 // Scripts
 function scripts() {
-  return src(["app/js/page1.js", "app/js/page2.js"])
+  return src(["app/js/ivideon_faces.js", "app/js/page2.js"])
     .pipe(named())
     .pipe(
       webpack({

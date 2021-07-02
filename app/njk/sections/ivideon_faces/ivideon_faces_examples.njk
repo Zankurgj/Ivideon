@@ -1,0 +1,35 @@
+<section class="ivideon-faces-examples">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-faces-examples__title">{{ivFacesExamplesTitle}}</h2>
+        {% from "app/njk/components/ivideon_examples_item.njk" import examplesItem %}
+        {% set examplesItems = [
+        {
+        img: "../../images/dest/img/ivideon-faces/videon-faces-examples1",
+        title: ivFacesExamplesItemTitle1,
+        text: ivFacesExamplesItemText1
+        },
+        {
+        img: "../../images/dest/img/ivideon-faces/videon-faces-examples2",
+        title: ivFacesExamplesItemTitle2,
+        text: ivFacesExamplesItemText2
+        },
+        {
+        img: "../../images/dest/img/ivideon-faces/videon-faces-examples3",
+        title: ivFacesExamplesItemTitle3,
+        text: ivFacesExamplesItemText3
+        },
+        {
+        img: "../../images/dest/img/ivideon-faces/videon-faces-examples4",
+        title: ivFacesExamplesItemTitle4,
+        text: ivFacesExamplesItemText4
+        }
+        ] %}
+        <div class="ivideon-faces-examples__slider js--examples-slider">
+            {% for item in examplesItems %}
+            <div class="ivideon-faces-examples__slide-wrapper">
+                {{ examplesItem(item.img, item.title, item.text) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

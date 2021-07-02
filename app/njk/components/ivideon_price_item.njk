@@ -1,0 +1,13 @@
+{% macro priseItem(name, title, text, cost, link) %}
+<div class="ivideon-price-item">
+    <div class="videon-price-item__top">
+        <p class="videon-price-item__name">{{name}}</p>
+        <p class="videon-price-item__title">{{title}}</p>
+        <p class="videon-price-item__text">{{text}}</p>
+    </div>
+    <div class="videon-price-item__bottom">
+        <p class="videon-price-item__cost">{{cost}}</p>
+        <a href="#" class="videon-price-item__link">{{ link }}</a>
+    </div>
+</div>
+{% endmacro %}

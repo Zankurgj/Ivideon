@@ -1,0 +1,32 @@
+// WRAPPER
+.ivideon-faces-price {
+  padding: 52px 0 50px;
+  background-color: $iv-ws-colors-hawkes-blue;
+  @media all and (min-width: $tablet-bp) {
+    padding: 80px 0 50px;
+  }
+  @media all and (min-width: $large-bp) {
+    padding: 80px 0 60px 0;
+  }
+}
+// TITLE
+.videon-faces-price__title {
+  margin-bottom: 20px;
+  @media all and (min-width: $tablet-bp) {
+    margin-bottom: 48px;
+  }
+}
+// COL
+.ivideon-faces-price__col {
+  flex-basis: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  @media all and (min-width: 1200px) {
+    flex-basis: calc((100% - 20px * 2) / 3);
+    max-width: calc((100% - 20px * 2) / 3);
+    margin-right: 20px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}

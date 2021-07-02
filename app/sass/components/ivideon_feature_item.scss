@@ -1,0 +1,45 @@
+// WRAPPER
+.ivideon-feature__item {
+  height: 100%;
+  padding: 24px;
+  background: $iv-ws-colors-text-light;
+  border: 1px solid $iv-ws-colors-solitude;
+  border-radius: 20px;
+  @media all and (min-width: $tablet-bp) {
+    padding: 40px 32px 32px 32px;
+  }
+  @media all and (min-width: $large-bp) {
+    padding: 40px 32px 48px 32px;
+  }
+}
+// ICON
+.ivideon-feature__item-img {
+  margin-bottom: 24px;
+  img {
+    display: block;
+    width: 64px;
+    height: 64px;
+  }
+}
+// TITLE
+.ivideon-feature__item-title {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: $iv-ws-colors-midnight;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+// TEXT
+.ivideon-feature__item-text {
+  font-size: 13px;
+  line-height: 20px;
+  color: $iv-ws-colors-midnight;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

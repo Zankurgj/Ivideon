@@ -1,0 +1,45 @@
+<section class="ivideon-faces-key-features">
+    <div class="iv-container">
+        <h2 class="iv-h2-base videon-faces-key-features__title">{{ivFacesKeyFeaturesTitle}}</h2>
+        <div class="iv-row">
+            {% from "app/njk/components/ivideon_key_features_item.njk" import keyFeatureItem %}
+            {% set keyFeatures = [
+            {
+            icon: "../../images/dest/img/ivideon-faces/key-feature1.svg",
+            title: ivFacesKeyFeaturesItemTitle1,
+            text: ivFacesKeyFeaturesItemText1
+            },
+            {
+            icon: "../../images/dest/img/ivideon-faces/key-feature2.svg",
+            title: ivFacesKeyFeaturesItemTitle2,
+            text: ivFacesKeyFeaturesItemText2
+            },
+            {
+            icon: "../../images/dest/img/ivideon-faces/key-feature3.svg",
+            title: ivFacesKeyFeaturesItemTitle3,
+            text: ivFacesKeyFeaturesItemText3
+            },
+            {
+            icon: "../../images/dest/img/ivideon-faces/key-feature4.svg",
+            title: ivFacesKeyFeaturesItemTitle4,
+            text: ivFacesKeyFeaturesItemText4
+            },
+            {
+            icon: "../../images/dest/img/ivideon-faces/key-feature5.svg",
+            title: ivFacesKeyFeaturesItemTitle5,
+            text: ivFacesKeyFeaturesItemText5
+            },
+            {
+            icon: "../../images/dest/img/ivideon-faces/key-feature6.svg",
+            title: ivFacesKeyFeaturesItemTitle6,
+            text: ivFacesKeyFeaturesItemText6
+            }
+            ] %}
+            {% for item in keyFeatures %}
+            <div class="ivideon-faces-key-features__col">
+                {{ keyFeatureItem(item.icon, item.title, item.text) }}
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</section>

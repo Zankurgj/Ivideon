@@ -11,85 +11,47 @@ input[type="submit"] {
   cursor: pointer;
   white-space: nowrap;
   text-align: center;
+  text-decoration: none;
   padding: 0;
   &:focus {
     outline: none;
   }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
-.btn-main {
-  padding: 16px 10px 18px 10px;
-  background-color: #592c82;
-  font-size: rem(24);
-  font-weight: 300;
-  color: #fff;
-  text-decoration: none;
-  line-height: 1;
+.btn-white-border {
+  @extend .btn;
+  border: 1px solid $iv-ws-colors-text-light;
+  padding: 11px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: $iv-ws-colors-text-light;
   &:hover {
-    color: #fff;
-    background-color: #dc2c7b;
+    color: $iv-ws-colors-text-light;
   }
-  &:disabled {
-    opacity: 0.6;
-    cursor: default;
-    &:hover {
-      color: #fff;
-      background-color: #592c82;
-    }
+  @media all and (min-width: $tablet-bp) {
+    font-size: 17px;
+    line-height: 32px;
+    padding: 11px 24px;
   }
 }
 .btn-white {
-  padding: 16px 10px 18px 10px;
-  font-size: 14px;
-  background-color: #fff;
-  color: #623294;
-  text-decoration: none;
-  line-height: 1;
-  border: 1px solid #b4b4b4;
-  box-sizing: border-box;
+  @extend .btn;
+  border-radius: 20px;
+  padding: 12px 16px;
+  background-color: $iv-ws-colors-text-light;
+  color: $iv-ws-colors-midnight;
+  font-size: 15px;
+  line-height: 24px;
   &:hover {
-    color: #dc2c7b;
+    color: $iv-ws-colors-midnight;
   }
-}
-.btn-link-underline--big {
-  display: table;
-  position: relative;
-  font-size: 24px;
-  color: #272727;
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 110%;
-    max-width: 360px;
-    transform: translateX(-50%);
-    height: 2px;
-    background-color: #592c82;
-  }
-  &:hover {
-    color: #592c82;
-  }
-}
-.btn-vote {
-  height: 50px;
-  width: 32px;
-  background-repeat: no-repeat;
-}
-.btn-vote--positive {
-  background-position: center top 6px;
-  background-image: url("../images/dest/icons/like-comment.png");
-}
-.btn-vote--negative {
-  background-position: center bottom 6px;
-  background-image: url("../images/dest/icons/dislike-comment.png");
-}
-.btn--gray-underlaine {
-  color: #888888;
-  font-size: 16px;
-  text-decoration: underline;
-  &:hover {
-    opacity: 0.8;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 17px;
+    line-height: 32px;
+    padding: 12px 24px;
   }
 }

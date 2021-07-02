@@ -1,0 +1,81 @@
+// WRAPPER
+.ivideon-price-item {
+  display: flex;
+  flex-direction: column;
+  background-color: $iv-ws-colors-text-light;
+  border-radius: 16px;
+  height: 100%;
+}
+.videon-price-item__top {
+  flex-grow: 1;
+  padding: 24px 24px 20px 24px;
+  border-bottom: 1px solid $iv-ws-colors-solitude4;
+  @media all and (min-width: $large-bp) {
+    padding: 24px 24px 52px 24px;
+  }
+}
+.videon-price-item__bottom {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+// TEXT
+.videon-price-item__name {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: $iv-ws-colors-ship-cove;
+  text-transform: uppercase;
+}
+.videon-price-item__title {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: $iv-ws-colors-midnight;
+}
+.videon-price-item__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $iv-ws-colors-midnight;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 17px;
+  }
+}
+.videon-price-item__cost {
+  font-size: 18px;
+  line-height: 32px;
+  color: $iv-ws-colors-midnight;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 20px;
+  }
+}
+.videon-price-item__link {
+  position: relative;
+  font-size: 18px;
+  line-height: 32px;
+  color: $iv-ws-colors-dodger-blue2;
+  padding-right: 28px;
+  transition: opacity $base-duration $base-timing;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 20px;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m9.5 7 5 5-5 5' stroke='%23008cef' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'/%3E%3C/svg%3E");
+  }
+}

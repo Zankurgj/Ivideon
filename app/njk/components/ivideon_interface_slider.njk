@@ -1,0 +1,15 @@
+{% macro interfaceSlider(img) %}
+<div class="iv-container iv-container--ivideon-interface-slider">
+    <div class="ivideon-interface-slider js--Interface-slider">
+        {% for item in img %}
+        <div class="ivideon-interface-slide">
+            <picture>
+                <source srcset="{{item}}-d.png" media="(min-width: 1024px)">
+                <source srcset="{{item}}-t.png" media="(min-width: 768px)">
+                <img src="{{item}}-m.png" alt="интерфейс">
+            </picture>
+        </div>
+        {%endfor%}
+    </div>
+</div>
+{% endmacro %}

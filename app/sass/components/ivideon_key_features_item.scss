@@ -1,0 +1,36 @@
+.ivideon-key-feature__item {
+  display: flex;
+}
+.ivideon-key-feature__item-img {
+  flex: 0 0 auto;
+  margin-right: 24px;
+  img {
+    display: block;
+    width: 56px;
+    height: 56px;
+    @media all and (min-width: $tablet-bp) {
+      width: 72px;
+      height: 72px;
+    }
+  }
+}
+.ivideon-key-feature__item-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: $iv-ws-colors-midnight;
+  margin-bottom: 8px;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.ivideon-key-feature__item-text {
+  font-size: 13px;
+  line-height: 20px;
+  color: $iv-ws-colors-rhino;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

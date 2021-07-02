@@ -1,0 +1,36 @@
+<section class="ivideon-faces-feture">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-faces-feture__title">{{ivFacesfetureTitle}}</h2>
+        <div class="iv-row">
+            {% from "app/njk/components/ivideon_feature_item.njk" import featureItem %}
+
+            {% set featureItems = [
+            {
+            icon: "../../images/dest/img/ivideon-faces/videon-faces-feature1.svg",
+            title: ivFacesfetureItemTitle1,
+            text: ivFacesfetureItemText1
+            },
+            {
+            icon: "../../images/dest/img/ivideon-faces/videon-faces-feature2.svg",
+            title: ivFacesfetureItemTitle2,
+            text: ivFacesfetureItemText2
+            },
+            {
+            icon: "../../images/dest/img/ivideon-faces/videon-faces-feature3.svg",
+            title: ivFacesfetureItemTitle3,
+            text: ivFacesfetureItemText3
+            },
+            {
+            icon: "../../images/dest/img/ivideon-faces/videon-faces-feature4.svg",
+            title: ivFacesfetureItemTitle4,
+            text: ivFacesfetureItemText4
+            }
+            ] %}
+            {% for item in featureItems %}
+            <div class="ivideon-faces-feture__col">
+                {{ featureItem(item.icon, item.title, item.text) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

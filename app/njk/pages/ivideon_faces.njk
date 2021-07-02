@@ -1,8 +1,18 @@
+<!-- Переменная из json, проставляет тайтл страницы -->
 {% set pageTitle = ivFacesPageTitle %}
+<!-- Имя страницы, для проставления названия js и css файлов -->
+{% set pageName = 'ivideon_faces' %}
 
 {% extends "app/njk/layout/index.njk" %}
 {% block content %}
-<main></main>
-<section></section>
+
+{% include "app/njk/sections/ivideon_faces/ivideon_faces_top.njk" %}
+{% include "app/njk/sections/ivideon_faces/ivideon_faces_feature.njk" %}
+{% include "app/njk/sections/ivideon_faces/ivideon_faces_examples.njk" %}
+{% include "app/njk/sections/common/ivideon_promo.njk" %}
+{% include "app/njk/sections/ivideon_faces/ivideon_partners.njk" %}
+{% include "app/njk/sections/ivideon_faces/ivideon_key_features.njk" %}
+{% include "app/njk/sections/ivideon_faces/ivideon_faces_interface.njk" %}
+{% include "app/njk/sections/ivideon_faces/ivideon_faces_price.njk" %}
 
 {% endblock %}

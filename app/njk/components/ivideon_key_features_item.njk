@@ -1,0 +1,15 @@
+{% macro keyFeatureItem(icon, title, text) %}
+<div class="ivideon-key-feature__item">
+    <div class="ivideon-key-feature__item-img">
+        <img src="{{icon}}" alt="{{title}}">
+    </div>
+    <div class="ivideon-key-feature_text-wrapper">
+        <p class="ivideon-key-feature__item-title">
+            {{title}}
+        </p>
+        <p class="ivideon-key-feature__item-text">
+            {{text}}
+        </p>
+    </div>
+</div>
+{% endmacro %}

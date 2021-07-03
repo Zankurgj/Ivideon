@@ -1,0 +1,164 @@
+<!-- Переменная из json, проставляет тайтл страницы -->
+{% set pageTitle = ivCountingPageTitle %}
+<!-- Имя страницы, для проставления названия js и css файлов -->
+{% set pageName = 'ivideon_counting' %}
+
+{% extends "app/njk/layout/index.njk" %}
+{% block content %}
+<!-- HEAD -->
+{% include "app/njk/sections/ivideon_counting/ivideon_counting_top.njk" %}
+<!-- FEATURE -->
+{% set featureItems = {
+title: ivCountingFeatureTitle,
+data: [
+{
+icon: "../../images/dest/img/ivideon-counting/videon-counting-feature1.svg",
+title: ivCountingFeatureItemTitle1,
+text: ivCountingFeatureItemText1
+},
+{
+icon: "../../images/dest/img/ivideon-counting/videon-counting-feature2.svg",
+title: ivCountingFeatureItemTitle2,
+text: ivCountingFeatureItemText2
+},
+{
+icon: "../../images/dest/img/ivideon-counting/videon-counting-feature3.svg",
+title: ivCountingFeatureItemTitle3,
+text: ivCountingFeatureItemText3
+},
+{
+icon: "../../images/dest/img/ivideon-counting/videon-counting-feature4.svg",
+title: ivCountingFeatureItemTitle4,
+text: ivCountingFeatureItemText4
+}
+]
+} %}
+{% from "app/njk/components/ivideon_feature.njk" import featureSection %}
+{{ featureSection( featureItems.data, featureItems.title) }}
+<!-- EXAMPLES-->
+{% set examplesData = {
+title: ivCountingExamplesTitle,
+data: [
+{
+img: "../../images/dest/img/ivideon-counting/videon-counting-examples1.png",
+title: ivCountingExamplesItemTitle1,
+text: ivCountingExamplesItemText1
+},
+{
+img: "../../images/dest/img/ivideon-counting/videon-counting-examples2.png",
+title: ivCountingExamplesItemTitle2,
+text: ivCountingExamplesItemText2
+},
+{
+img: "../../images/dest/img/ivideon-counting/videon-counting-examples3.png",
+title: ivCountingExamplesItemTitle3,
+text: ivCountingExamplesItemText3
+},
+{
+img: "../../images/dest/img/ivideon-counting/videon-counting-examples4.png",
+title: ivCountingExamplesItemTitle4,
+text: ivCountingExamplesItemText4
+}
+]
+} %}
+{% from "app/njk/components/ivideon_examples.njk" import examplesSection %}
+{{ examplesSection( examplesData.data, examplesData.title) }}
+<!-- PROMO -->
+{% include "app/njk/sections/common/ivideon_promo.njk" %}
+<!-- PARTNERS -->
+{% set partnersData = {
+title: ivCountingPartnersTitle,
+subtitle: ivCountingPartnersSubtitle,
+data: [
+"../../images/dest/img/ivideon-counting/counting_partners1.png",
+"../../images/dest/img/ivideon-counting/counting_partners2.png",
+"../../images/dest/img/ivideon-counting/counting_partners3.png"
+]
+}%}
+{% from "app/njk/components/ivideon_partners.njk" import partnersSection %}
+{{ partnersSection( partnersData.data, partnersData.title, partnersData.subtitle ) }}
+<!-- KEY FEATURES -->
+{%set keyFeaturesData= {
+title: ivCountingKeyFeaturesTitle,
+data: [
+{
+icon: "../../images/dest/img/ivideon-counting/key-feature1.svg",
+title: ivCountingKeyFeaturesItemTitle1,
+text: ivCountingKeyFeaturesItemText1
+},
+{
+icon: "../../images/dest/img/ivideon-counting/key-feature2.svg",
+title: ivCountingKeyFeaturesItemTitle2,
+text: ivCountingKeyFeaturesItemText2
+},
+{
+icon: "../../images/dest/img/ivideon-counting/key-feature3.svg",
+title: ivCountingKeyFeaturesItemTitle3,
+text: ivCountingKeyFeaturesItemText3
+},
+{
+icon: "../../images/dest/img/ivideon-counting/key-feature4.svg",
+title: ivCountingKeyFeaturesItemTitle4,
+text: ivCountingKeyFeaturesItemText4
+},
+{
+icon: "../../images/dest/img/ivideon-counting/key-feature5.svg",
+title: ivCountingKeyFeaturesItemTitle5,
+text: ivCountingKeyFeaturesItemText5
+},
+{
+icon: "../../images/dest/img/ivideon-counting/key-feature6.svg",
+title: ivCountingKeyFeaturesItemTitle6,
+text: ivCountingKeyFeaturesItemText6
+}]
+}
+%}
+{% from "app/njk/components/ivideon_key_features.njk" import keyFeaturesSection %}
+{{ keyFeaturesSection( keyFeaturesData.data, keyFeaturesData.title ) }}
+<!-- COST -->
+{% include "app/njk/sections/ivideon_counting/ivideon_counting_cost.njk" %}
+<!-- PRICE -->
+{%set pricesData= {
+title: ivCountingKeyFeaturesTitle,
+link: ivFacesPriceItemLink,
+data: [
+{
+name:ivFacesPriceItemName1,
+title:ivFacesPriceItemTitle1,
+text:ivFacesPriceItemText1,
+cost:ivFacesPriceItemCost1
+},
+{
+name:ivFacesPriceItemName2,
+title:ivFacesPriceItemTitle2,
+text:ivFacesPriceItemText2,
+cost:ivFacesPriceItemCost2
+},
+{
+name:ivFacesPriceItemName3,
+title:ivFacesPriceItemTitle3,
+text:ivFacesPriceItemText3,
+cost:ivFacesPriceItemCost3
+},
+{
+name:ivFacesPriceItemName4,
+title:ivFacesPriceItemTitle4,
+text:ivFacesPriceItemText4,
+cost:ivFacesPriceItemCost4
+},
+{
+name:ivFacesPriceItemName5,
+title:ivFacesPriceItemTitle5,
+text:ivFacesPriceItemText5,
+cost:ivFacesPriceItemCost5
+},
+{
+name:ivFacesPriceItemName6,
+title:ivFacesPriceItemTitle6,
+text:ivFacesPriceItemText6,
+cost:ivFacesPriceItemCost6
+}]
+}%}
+{% from "app/njk/components/ivideon_price.njk" import pricesSection %}
+{{ pricesSection( pricesData.data, pricesData.title, pricesData.link ) }}
+{% endblock %}

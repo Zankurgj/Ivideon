@@ -55,3 +55,37 @@ input[type="submit"] {
     padding: 12px 24px;
   }
 }
+.btn-blue {
+  @extend .btn;
+  border-radius: 20px;
+  padding: 12px 16px;
+  background-color: $iv-ws-colors-dodger-blue2;
+  color: $iv-ws-colors-text-light;
+  font-size: 15px;
+  line-height: 24px;
+  &:hover {
+    color: $iv-ws-colors-text-light;
+  }
+  @media all and (min-width: $tablet-bp) {
+    font-size: 17px;
+    line-height: 32px;
+    padding: 12px 24px;
+  }
+}
+.btn-blue-border {
+  @extend .btn;
+  border: 1px solid $iv-ws-colors-dodger-blue2;
+  padding: 11px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: $iv-ws-colors-dodger-blue2;
+  &:hover {
+    color: $iv-ws-colors-dodger-blue2;
+  }
+  @media all and (min-width: $tablet-bp) {
+    font-size: 17px;
+    line-height: 32px;
+    padding: 11px 24px;
+  }
+}

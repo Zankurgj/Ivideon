@@ -1,0 +1,16 @@
+{% macro pricesSection(dataArr, title, link) %}
+<section class="ivideon-price">
+    <div class="iv-container">
+        <h2 class="iv-h2-base videon-price__title">{{title}}</h2>
+        <div class="iv-row">
+            {% from "app/njk/components/ivideon_price_item.njk" import priseItem %}
+            {% for item in dataArr %}
+            <div class="ivideon-price__col">
+                {{ priseItem(item.name, item.title, item.text, item.cost, link) }}
+            </div>
+            {%endfor%}
+
+        </div>
+    </div>
+</section>
+{% endmacro %}

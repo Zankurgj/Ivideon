@@ -1,0 +1,17 @@
+{% macro partnersSection(dataArr, title, subtitle) %}
+<section class="ivideon-partners">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-partners__title">{{title}}</h2>
+        <p class="ivideon-partners__subtitle">{{subtitle}}</p>
+        <div class="iv-row">
+            {% for item in dataArr %}
+            <div class="ivideon-partners__col">
+                <div class="ivideon-partners__item">
+                    <img src="{{item}}" alt="парнтнер">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endmacro %}

@@ -1,10 +1,7 @@
 {% macro examplesItem(img, title, text) %}
 <div class="ivideon-examples__item">
     <div class="ivideon-examples__img">
-        <picture>
-            <source srcset="{{img}}-t.jpg" media="(min-width: 768px)">
-            <img src="{{img}}-m.jpg" alt="{{title}}">
-        </picture>
+        <img src="{{img}}" alt="{{title}}">
     </div>
     <p class="ivideon-examples__item-title">
         {{title}}

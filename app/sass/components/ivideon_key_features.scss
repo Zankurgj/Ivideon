@@ -1,0 +1,39 @@
+@import "./ivideon_key_features_item";
+// WRAPPER
+.ivideon-key-features {
+  padding: 64px 0 44px;
+  @media all and (min-width: $tablet-bp) {
+    padding: 80px 0 64px;
+  }
+  @media all and (min-width: $large-bp) {
+    padding: 80px 0 40px;
+  }
+}
+// TITLE
+.videon-key-features__title {
+  margin-bottom: 40px;
+  @media all and (min-width: $large-bp) {
+    margin-bottom: 48px;
+  }
+}
+// COL
+.ivideon-key-features__col {
+  flex-basis: 100%;
+  max-width: 100%;
+  margin-bottom: 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media all and (min-width: $large-bp) {
+    flex-basis: calc((100% - 44px * 2) / 3);
+    max-width: calc((100% - 44px * 2) / 3);
+    margin-right: 44px;
+    margin-bottom: 40px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+}

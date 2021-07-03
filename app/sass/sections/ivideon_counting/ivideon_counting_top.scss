@@ -1,0 +1,111 @@
+// WRAPPER
+.ivideon-counting-top {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 0px 40px 40px;
+  background-image: linear-gradient(82deg, #0063bf 0%, #008cef 100%);
+  min-height: 600px;
+  overflow: hidden;
+  margin-bottom: 64px;
+  @media all and (min-width: $tablet-bp) {
+    min-height: 560px;
+    margin-bottom: 80px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    min-height: 720px;
+  }
+}
+.iv-container--ivideon-counting-top {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ivideon-counting-top__wrapper {
+  flex-grow: 1;
+  position: relative;
+  padding: 96px 0 0 0;
+  @media all and (min-width: $tablet-bp) {
+    padding: 160px 0 0 0;
+  }
+  @media all and (min-width: $desktop-bp) {
+    padding: 264px 0 0 0;
+  }
+}
+// TITLE
+.ivideon-counting-top__title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: $iv-ws-colors-text-light;
+  @media all and (min-width: $tablet-bp) {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+// TEXT
+.ivideon-counting-top__text-wrapper {
+  position: relative;
+  z-index: 4;
+}
+.ivideon-counting-top__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: $iv-ws-colors-text-light;
+  margin-bottom: 24px;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    max-width: 360px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    max-width: 550px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+// BTNS
+.ivideon-counting-top__btn {
+  &:first-child {
+    margin-right: 16px;
+  }
+}
+// IMG
+.ivideon-counting-top__img-block {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  @media all and (min-width: $tablet-bp) {
+    transform: none;
+    left: auto;
+    bottom: 0;
+    right: 0;
+  }
+  @media all and (min-width: 1600px) {
+    right: 240px;
+  }
+}
+.ivideon-counting-top__img-main {
+  width: 300px;
+  @media all and (min-width: $tablet-bp) {
+    width: 400px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    width: 420px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 543px;
+  }
+  @media all and (min-width: 1750px) {
+    width: 673px;
+  }
+}

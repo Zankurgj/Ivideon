@@ -24,7 +24,7 @@ input[type="submit"] {
 .btn-white-border {
   @extend .btn;
   border: 1px solid $iv-ws-colors-text-light;
-  padding: 11px 16px;
+  padding: 10px 16px 12px 16px;
   border-radius: 20px;
   font-size: 15px;
   line-height: 24px;
@@ -35,13 +35,13 @@ input[type="submit"] {
   @media all and (min-width: $tablet-bp) {
     font-size: 17px;
     line-height: 32px;
-    padding: 11px 24px;
+    padding: 10px 24px 12px 24px;
   }
 }
 .btn-white {
   @extend .btn;
   border-radius: 20px;
-  padding: 12px 16px;
+  padding: 11px 16px 13px 16px;
   background-color: $iv-ws-colors-text-light;
   color: $iv-ws-colors-midnight;
   font-size: 15px;
@@ -52,13 +52,13 @@ input[type="submit"] {
   @media all and (min-width: $tablet-bp) {
     font-size: 17px;
     line-height: 32px;
-    padding: 12px 24px;
+    padding: 11px 24px 13px 24px;
   }
 }
 .btn-blue {
   @extend .btn;
   border-radius: 20px;
-  padding: 12px 16px;
+  padding: 11px 16px 13px 16px;
   background-color: $iv-ws-colors-dodger-blue2;
   color: $iv-ws-colors-text-light;
   font-size: 15px;
@@ -69,13 +69,13 @@ input[type="submit"] {
   @media all and (min-width: $tablet-bp) {
     font-size: 17px;
     line-height: 32px;
-    padding: 12px 24px;
+    padding: 11px 24px 13px 24px;
   }
 }
 .btn-blue-border {
   @extend .btn;
   border: 1px solid $iv-ws-colors-dodger-blue2;
-  padding: 11px 16px;
+  padding: 10px 16px 12px 16px;
   border-radius: 20px;
   font-size: 15px;
   line-height: 24px;
@@ -86,6 +86,52 @@ input[type="submit"] {
   @media all and (min-width: $tablet-bp) {
     font-size: 17px;
     line-height: 32px;
-    padding: 11px 24px;
+    padding: 10px 24px 12px 24px;
+  }
+}
+
+.btn-colored {
+  @extend .btn;
+  position: relative;
+  border: 1px solid $iv-ws-colors-dodger-blue2;
+  padding: 10px 16px 12px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: $iv-ws-colors-dodger-blue2;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 24px;
+    padding: 2px;
+    background: radial-gradient(
+      83.27% 13193.27% at 15.04% 50%,
+      #44a2f7 0%,
+      #0ec8f1 49.21%,
+      #7edf02 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity $base-duration $base-timing;
+  }
+  &:hover {
+    background-color: $iv-ws-colors-dodger-blue2;
+    color: $iv-ws-colors-text-light;
+    &::after {
+      opacity: 1;
+    }
+  }
+  @media all and (min-width: $tablet-bp) {
+    font-size: 17px;
+    line-height: 32px;
+    padding: 10px 24px 12px 24px;
   }
 }

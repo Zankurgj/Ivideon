@@ -1,0 +1,12 @@
+.ivideon-feture3-detector__wrapper {
+  padding: 52px 0 52px 0;
+  background-color: $iv-ws-colors-solitude5;
+  border-radius: 60px;
+  @media all and (min-width: $tablet-bp) {
+    padding: 80px 0 80px 0;
+  }
+}
+.ivideon-feture3-detector__btn {
+  display: table;
+  margin: 0 auto;
+}

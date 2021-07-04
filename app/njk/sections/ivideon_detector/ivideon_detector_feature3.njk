@@ -1,0 +1,30 @@
+<div class="ivideon-feture3-detector__wrapper">
+    {% set featureItems = {
+    title: ivDetectorFeature3Title,
+    data: [
+    {
+    title: '',
+    icon: "../../images/dest/img/ivideon-detector/videon-detector3-feature1.svg",
+    text: ivDetectorFeature3ItemText1
+    },
+    {
+    title: '',
+    icon: "../../images/dest/img/ivideon-detector/videon-detector3-feature2.svg",
+    text: ivDetectorFeature3ItemText2
+    },
+    {
+    title: '',
+    icon: "../../images/dest/img/ivideon-detector/videon-detector3-feature3.svg",
+    text: ivDetectorFeature3ItemText3
+    },
+    {
+    title: '',
+    icon: "../../images/dest/img/ivideon-detector/videon-detector3-feature4.svg",
+    text: ivDetectorFeature3ItemText4
+    }
+    ]
+    } %}
+    {% from "app/njk/components/ivideon_feature.njk" import featureSection %}
+    {{ featureSection( featureItems.data, featureItems.title, featureItems.subtitle) }}
+    <a href="#" class="btn-blue ivideon-feture3-detector__btn">{{ivDetectorFeatureBtn}}</a>
+</div>

@@ -1,0 +1,31 @@
+<section class="ivideon-detector-steps">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-detector-steps__title">{{ivDetectorStepsTitle}}</h2>
+        <div class="iv-row ivideon-detector-steps__iv-row">
+            {% set stepsItems = [
+            {
+            title: ivDetectorStepsItemTitle1 ,
+            text: ivDetectorStepsItemText1
+            },
+            {
+            title: ivDetectorStepsItemTitle2 ,
+            text: ivDetectorStepsItemText2
+            },
+            {
+            title: ivDetectorStepsItemTitle3 ,
+            text: ivDetectorStepsItemText3
+            }
+            ]%}
+            {% for item in stepsItems %}
+            <div class="ivideon-detector-steps__col">
+                <div class="ivideon-detector-steps__item">
+                    <span class="ivideon-detector-steps__item-number">{{loop.index}}</span>
+                    <p class="ivideon-detector-steps__item-title">{{item.title}}</p>
+                    <p class="ivideon-detector-steps__item-text">{{item.text}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <a href="#" class="btn-blue ivideon-detector-steps__btn-blue">{{ivDetectorStepsBtn}}</a>
+    </div>
+</section>

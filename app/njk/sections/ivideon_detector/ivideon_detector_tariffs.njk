@@ -1,0 +1,51 @@
+<section class="ivideon-detector-tariffs">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-detector-tariffs__title">{{ivDetectorTariffsTitle}}</h2>
+    </div>
+    <div class="ivideon-detector-tariffs__slider-wrapper">
+        <div class="ivideon-detector-tariffs__wrapper ivideon-detector-tariffs__slider js--tariff-slider">
+            {% from "app/njk/components/ivideon_tariff_item.njk" import tariffItem %}
+            {% set tariffsData = [
+            {
+            type: 'basic',
+            title: ivDetectorTariff1Title,
+            cost: ivDetectorTariff1Cost,
+            items: [
+            [ivDetectorTariff1Item1],
+            [ivDetectorTariff1Item2],
+            [ivDetectorTariff1Item3]
+            ],
+            btn: ivDetectorTariff1Btn
+            },
+            {
+            type: 'standart',
+            title: ivDetectorTariff2Title,
+            cost: ivDetectorTariff2Cost,
+            items: [
+            [ivDetectorTariff2Item1],
+            [ivDetectorTariff2Item2],
+            [ivDetectorTariff2Item3]
+            ],
+            btn: ivDetectorTariff2Btn
+            },
+            {
+            type: 'premium',
+            title: ivDetectorTariff3Title,
+            btn: ivDetectorTariff3Btn,
+            stub: true,
+            stubTitle: ivDetectorTariff3StubTitle,
+            stubText: ivDetectorTariff3StubText
+            }
+            ]%}
+            {% for tariff in tariffsData %}
+            <div class="ivideon-detector-tariffs__col">
+                {{ tariffItem(tariff.type, tariff.title, tariff.cost, tariff.items, tariff.btn, tariff.stub,
+                tariff.stubTitle, tariff.stubText) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="iv-container">
+        <p class="ivideon-detector-tariffs__subtitle">{{ivDetectorTariffsSubtitle}}</p>
+    </div>
+</section>

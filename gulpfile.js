@@ -69,7 +69,12 @@ function styles() {
 
 // Scripts
 function scripts() {
-  return src(["app/js/ivideon_faces.js", "app/js/ivideon_counting.js"])
+  return src([
+    "app/js/ivideon_faces.js",
+    "app/js/ivideon_counting.js",
+    "app/js/ivideon_detector.js",
+    "app/js/ivideon_control.js",
+  ])
     .pipe(named())
     .pipe(
       webpack({

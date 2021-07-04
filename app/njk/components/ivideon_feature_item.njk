@@ -3,9 +3,11 @@
     <div class="ivideon-feature__item-img">
         <img src="{{icon}}" alt="{{title}}">
     </div>
+    {% if title %}
     <p class="ivideon-feature__item-title">
         {{title}}
     </p>
+    {% endif %}
     <p class="ivideon-feature__item-text">
         {{text}}
     </p>

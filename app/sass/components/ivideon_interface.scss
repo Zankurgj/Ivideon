@@ -1,0 +1,23 @@
+@import "./ivideon_interface_slider";
+
+// WRAPPER
+.ivideon-interface {
+  padding: 64px 0 104px;
+  background-color: $iv-ws-colors-midnight;
+  @media all and (min-width: $tablet-bp) {
+    padding: 80px 0 112px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    padding: 80px 0 128px;
+  }
+}
+// TITLE
+.videon-interface__title {
+  margin-bottom: 24px;
+  @media all and (min-width: $tablet-bp) {
+    margin-bottom: 40px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    margin-bottom: 48px;
+  }
+}

@@ -1,0 +1,8 @@
+.ivideon-feture2-detector__wrapper {
+  padding: 52px 0 2px 0;
+  background-color: $iv-ws-colors-solitude5;
+  border-radius: 60px;
+  @media all and (min-width: $tablet-bp) {
+    padding: 80px 0 12px 0;
+  }
+}

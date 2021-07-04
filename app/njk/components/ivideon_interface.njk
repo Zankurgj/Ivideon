@@ -1,0 +1,9 @@
+{% macro interfaceSection(data, title) %}
+<section class="ivideon-interface">
+    <div class="iv-container">
+        <h2 class="iv-h2-base iv-h2-base--white videon-interface__title">{{title}}</h2>
+    </div>
+    {% from "app/njk/components/ivideon_interface_slider.njk" import interfaceSlider %}
+    {{ interfaceSlider(data) }}
+</section>
+{% endmacro %}

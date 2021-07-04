@@ -1,0 +1,29 @@
+{% macro tariffItem(type, title, cost, items, btn, stub=false, stubTitle="", stubText="") %}
+<div
+    class="ivideon-tariffs__item {% if type=='basic' %} ivideon-tariffs__item--basic {% elseif type=='standart' %}ivideon-tariffs__item--standart{% elseif type=='premium' %}ivideon-tariffs__item--premium{% endif %}">
+    <p class="ivideon-tariffs__item-title">{{title}}</p>
+    <div class="ivideon-tariffs__item-inner">
+        {% if stub %}
+        <p class="ivideon-tariffs__item-stub-title">{{stubTitle}}</p>
+        <p class="ivideon-tariffs__item-stub-text">{{stubText}}</p>
+        <a href="#" class="btn-colored ivideon-tariffs__item-btn-stub">
+            {{btn}}
+        </a>
+        {% else %}
+        <p class="ivideon-tariffs__item-cost-wrapper">
+            <span class="ivideon-tariffs__item-cost">{{cost}} </span>
+            <span class="ivideon-tariffs__item-сurrency">₽</span>
+        </p>
+        <p class="ivideon-tariffs__item-subtitle">в месяц</p>
+        <div class="ivideon-tariffs__item-list">
+            {% for item in items %}
+            <p class="ivideon-tariffs__item-list-item">{{item}}</p>
+            {% endfor %}
+        </div>
+        <a href="#" class="btn-colored">
+            {{btn}}
+        </a>
+        {% endif %}
+    </div>
+</div>
+{% endmacro %}

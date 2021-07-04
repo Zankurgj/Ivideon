@@ -1,0 +1,12 @@
+<!-- Переменная из json, проставляет тайтл страницы -->
+{% set pageTitle = ivSmartPageTitle %}
+<!-- Имя страницы, для проставления названия js и css файлов -->
+{% set pageName = 'ivideon_smart' %}
+
+{% extends "app/njk/layout/index.njk" %}
+{% block content %}
+<!-- HEAD -->
+{% include "app/njk/sections/ivideon_smart/ivideon_smart_top.njk" %}
+<!-- CALCULATION -->
+{% include "app/njk/sections/ivideon_smart/ivideon_smart_calculation.njk" %}
+{% endblock %}

@@ -1,0 +1,98 @@
+<!-- Переменная из json, проставляет тайтл страницы -->
+{% set pageTitle = ivScudPageTitle %}
+<!-- Имя страницы, для проставления названия js и css файлов -->
+{% set pageName = 'ivideon_scud' %}
+
+{% extends "app/njk/layout/index.njk" %}
+{% block content %}
+<!-- HEAD -->
+{% include "app/njk/sections/ivideon_scud/ivideon_scud_top.njk" %}
+<!-- CALCULATION -->
+{% include "app/njk/sections/ivideon_scud/ivideon_scud_calculation.njk" %}
+<!-- ABOUT -->
+{% set aboutItems = {
+title: ivScudAboutTitle,
+data: [
+{
+img: "../../images/dest/img/ivideon-scud/scud-about1.png",
+title: ivScudAboutItemTitle1,
+text: ivScudAboutItemText1
+},
+{
+img: "../../images/dest/img/ivideon-scud/scud-about2.png",
+title: ivScudAboutItemTitle2,
+text: ivScudAboutItemText2
+},
+{
+img: "../../images/dest/img/ivideon-scud/scud-about3.png",
+title: ivScudAboutItemTitle3,
+text: ivScudAboutItemText3
+},
+{
+img: "../../images/dest/img/ivideon-scud/scud-about4.png",
+title: ivScudAboutItemTitle4,
+text: ivScudAboutItemText4
+},
+{
+img: "../../images/dest/img/ivideon-scud/scud-about5.png",
+title: ivScudAboutItemTitle5,
+text: ivScudAboutItemText5
+},
+{
+img: "../../images/dest/img/ivideon-scud/scud-about6.png",
+title: ivScudAboutItemTitle6,
+text: ivScudAboutItemText6
+}
+]
+} %}
+{% from "app/njk/components/ivideon_about.njk" import aboutSection %}
+{{ aboutSection( aboutItems.data, aboutItems.title) }}
+<!-- PROMO -->
+{% include "app/njk/sections/common/ivideon_promo3.njk" %}
+<!-- TARIFFS -->
+{% include "app/njk/sections/ivideon_scud/ivideon_scud_tariffs.njk" %}
+<!-- PRICE -->
+{%set pricesData= {
+title: ivCountingKeyFeaturesTitle,
+link: ivFacesPriceItemLink,
+data: [
+{
+name:ivFacesPriceItemName1,
+title:ivFacesPriceItemTitle1,
+text:ivFacesPriceItemText1,
+cost:ivFacesPriceItemCost1
+},
+{
+name:ivFacesPriceItemName2,
+title:ivFacesPriceItemTitle2,
+text:ivFacesPriceItemText2,
+cost:ivFacesPriceItemCost2
+},
+{
+name:ivFacesPriceItemName3,
+title:ivFacesPriceItemTitle3,
+text:ivFacesPriceItemText3,
+cost:ivFacesPriceItemCost3
+},
+{
+name:ivFacesPriceItemName4,
+title:ivFacesPriceItemTitle4,
+text:ivFacesPriceItemText4,
+cost:ivFacesPriceItemCost4
+},
+{
+name:ivFacesPriceItemName5,
+title:ivFacesPriceItemTitle5,
+text:ivFacesPriceItemText5,
+cost:ivFacesPriceItemCost5
+},
+{
+name:ivFacesPriceItemName6,
+title:ivFacesPriceItemTitle6,
+text:ivFacesPriceItemText6,
+cost:ivFacesPriceItemCost6
+}]
+}%}
+{% from "app/njk/components/ivideon_price.njk" import pricesSection %}
+{{ pricesSection( pricesData.data, pricesData.title, pricesData.link ) }}
+{% endblock %}

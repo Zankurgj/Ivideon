@@ -1,0 +1,21 @@
+{% macro aboutSection(dataArr, title) %}
+<section class="ivideon-about">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-about__title">{{title}}</h2>
+        <div class="iv-row">
+            {% for item in dataArr %}
+            <div class="ivideon-about__col">
+                <div class="ivideon-about__item">
+                    <img src="{{item.img}}" alt="{{item.title}}" class="ivideon-about__item-img">
+                    <div class="ivideon-about__item-inner">
+                        <p class="ivideon-about__item-title">{{item.title}}</p>
+                        <p class="ivideon-about__item-text">{{item.text}}</p>
+                    </div>
+                    <span class="ivideon-about__item-number">{{loop.index}}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endmacro %}

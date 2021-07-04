@@ -74,6 +74,8 @@ function scripts() {
     "app/js/ivideon_counting.js",
     "app/js/ivideon_detector.js",
     "app/js/ivideon_control.js",
+    "app/js/ivideon_scud.js",
+    "app/js/ivideon_smart.js",
   ])
     .pipe(named())
     .pipe(

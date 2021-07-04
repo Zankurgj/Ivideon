@@ -74,6 +74,7 @@
 .ivideon-control-calculation__img {
   display: block;
   max-width: 520px;
+  width: 100%;
   @media all and (min-width: $desktop-bp) {
     max-width: 100%;
   }

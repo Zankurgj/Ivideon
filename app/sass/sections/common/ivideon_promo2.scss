@@ -1,0 +1,65 @@
+// WRAPPER
+.ivideon-promo-block {
+  background: $iv-ws-colors-aliceblue;
+}
+.ivideon-promo2-inner {
+  padding: 40px 24px 40px 24px;
+  height: 384px;
+  background-color: $iv-ws-colors-dodger-blue2;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-image: url("../images/dest/img/common/promo2.png");
+  background-size: 242px auto;
+  @media all and (min-width: $tablet-bp) {
+    padding: 56px 40px 56px 40px;
+    height: auto;
+    background-position: right center;
+    background-size: 315px auto;
+  }
+  @media all and (min-width: $desktop-bp) {
+    background-size: 405px auto;
+    background-position: right 20px center;
+  }
+  @media all and (min-width: $large-bp) {
+    padding: 48px 80px 48px 80px;
+    height: auto;
+    background-position: right 56px center;
+    background-size: auto auto;
+  }
+}
+// TITLE
+.ivideon-promo2__title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: $iv-ws-colors-text-light;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 40px;
+    line-height: 40px;
+    max-width: 400px;
+  }
+  @media all and (min-width: 1200px) {
+    max-width: 500px;
+  }
+  @media all and (min-width: $large-bp) {
+  }
+}
+// TEXT
+.ivideon-promo2__text {
+  font-size: 15px;
+  line-height: 24px;
+  color: $iv-ws-colors-aliceblue;
+  margin-bottom: 16px;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 17px;
+    line-height: 24px;
+    max-width: 400px;
+  }
+  @media all and (min-width: 1200px) {
+    max-width: 500px;
+  }
+  @media all and (min-width: $large-bp) {
+  }
+}

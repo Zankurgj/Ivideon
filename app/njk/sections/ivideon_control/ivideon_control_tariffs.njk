@@ -1,0 +1,62 @@
+<section class="ivideon-detector-tariffs">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-detector-tariffs__title">{{ivControlTariffsTitle}}</h2>
+    </div>
+    <div class="ivideon-detector-tariffs__slider-wrapper">
+        <div class="ivideon-detector-tariffs__wrapper ivideon-detector-tariffs__slider js--tariff-slider">
+            {% from "app/njk/components/ivideon_tariff_item.njk" import tariffItem %}
+            {% set tariffsData = [
+            {
+            type: 'basic',
+            title: ivControlTariff1Title,
+            cost: ivControlTariff1Cost,
+            items: [
+            [ivControlTariff1Item1],
+            [ivControlTariff1Item2],
+            [ivControlTariff1Item3],
+            [ivControlTariff1Item4],
+            [ivControlTariff1Item5]
+            ],
+            btn: ivDetectorTariff1Btn
+            },
+            {
+            type: 'standart',
+            title: ivControlTariff2Title,
+            cost: ivControlTariff2Cost,
+            items: [
+            [ivControlTariff2Item1],
+            [ivControlTariff2Item2],
+            [ivControlTariff2Item3],
+            [ivControlTariff2Item4],
+            [ivControlTariff2Item5],
+            [ivControlTariff2Item6]
+            ],
+            btn: ivDetectorTariff2Btn
+            },
+            {
+            type: 'premium',
+            title: ivControlTariff3Title,
+            cost: ivControlTariff3Cost,
+            items: [
+            [ivControlTariff3Item1],
+            [ivControlTariff3Item2],
+            [ivControlTariff3Item3],
+            [ivControlTariff3Item4],
+            [ivControlTariff3Item5],
+            [ivControlTariff3Item6]
+            ],
+            btn: ivDetectorTariff3Btn
+            }
+            ]%}
+            {% for tariff in tariffsData %}
+            <div class="ivideon-detector-tariffs__col">
+                {{ tariffItem(tariff.type, tariff.title, tariff.cost, tariff.items, tariff.btn, tariff.stub,
+                tariff.stubTitle, tariff.stubText) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="iv-container">
+        <p class="ivideon-detector-tariffs__subtitle">{{ivControlTariffsSubtitle}}</p>
+    </div>
+</section>

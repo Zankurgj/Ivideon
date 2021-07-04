@@ -1,0 +1,54 @@
+<section class="ivideon-control-examples">
+    <div class="iv-container">
+        <h2 class="iv-h2-base iv-h2-base--white videon-control-examples__title">{{ivControlFeatureTitle}}</h2>
+    </div>
+    <div class="iv-container ivideon-control-examples_slider-iv-container">
+        <div class="ivideon-control-examples_slider js--examples-slider">
+            {% set examplesSlider = [
+            {
+            img:'../../images/dest/img/ivideon-control/control-examples1.png',
+            alertMsgText: ivControlExamplesAlertText1,
+            successMsgtext:ivControlExamplesSuccessText1
+            },
+            {
+            img:'../../images/dest/img/ivideon-control/control-examples2.png',
+            alertMsgText: ivControlExamplesAlertText2,
+            successMsgtext:ivControlExamplesSuccessText2
+            },
+            {
+            img:'../../images/dest/img/ivideon-control/control-examples3.png',
+            alertMsgText: ivControlExamplesAlertText3,
+            successMsgtext:ivControlExamplesSuccessText3
+            },
+            {
+            img:'../../images/dest/img/ivideon-control/control-examples4.png',
+            alertMsgText: ivControlExamplesAlertText4,
+            successMsgtext:ivControlExamplesSuccessText4
+            }
+            ] %}
+            {% for item in examplesSlider %}
+            <div class="ivideon-control-examples__slide-wrapper">
+                <div class="ivideon-control-examples__slide">
+                    <div class="ivideon-control-examples__slide-img">
+                        <img src="{{item.img}}" alt="работа за кассой">
+                    </div>
+                    <div class="ivideon-control-examples__slide-inner">
+                        <div class="ivideon-control-examples__slide-text-block">
+                            <p
+                                class="ivideon-control-examples__slide-title ivideon-control-examples__slide-title--alert">
+                                {{ivControlExamplesAlertTitle}}</p>
+                            <p class="ivideon-control-examples__slide-text">{{item.alertMsgText}}</p>
+                        </div>
+                        <div class="ivideon-control-examples__slide-text-block">
+                            <p
+                                class="ivideon-control-examples__slide-title ivideon-control-examples__slide-title--success">
+                                {{ivControlExamplesSuccessTitle}}</p>
+                            <p class="ivideon-control-examples__slide-text">{{item.successMsgtext}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

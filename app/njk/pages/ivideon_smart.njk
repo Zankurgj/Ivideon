@@ -9,4 +9,36 @@
 {% include "app/njk/sections/ivideon_smart/ivideon_smart_top.njk" %}
 <!-- CALCULATION -->
 {% include "app/njk/sections/ivideon_smart/ivideon_smart_calculation.njk" %}
+<!-- FEATURE -->
+{% set featureItems = {
+title: ivControlFeatureTitle,
+data: [
+{
+icon: "../../images/dest/img/ivideon-smart/smart-feature1.svg",
+title: ivSmartFeatureItemTitle1,
+text: ivSmartFeatureItemText1,
+link: ivSmartFeatureItemLink1
+},
+{
+icon: "../../images/dest/img/ivideon-smart/smart-feature2.svg",
+title: ivSmartFeatureItemTitle2,
+text: ivSmartFeatureItemText2,
+link: ivSmartFeatureItemLink2
+},
+{
+icon: "../../images/dest/img/ivideon-smart/smart-feature3.svg",
+title: ivSmartFeatureItemTitle3,
+text: ivSmartFeatureItemText3,
+link: ivSmartFeatureItemLink3
+},
+{
+icon: "../../images/dest/img/ivideon-smart/smart-feature4.svg",
+title: ivSmartFeatureItemTitle4,
+text: ivSmartFeatureItemText4,
+link: ivSmartFeatureItemLink4
+}
+]
+} %}
+{% from "app/njk/components/ivideon_feature.njk" import featureSection %}
+{{ featureSection( featureItems.data) }}
 {% endblock %}

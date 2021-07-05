@@ -1,7 +1,9 @@
 {% macro featureSection(dataArr, title, subtitle = '') %}
 <section class="ivideon-feture">
     <div class="iv-container">
+        {% if title %}
         <h2 class="iv-h2-base ivideon-feture__title">{{title}}</h2>
+        {% endif %}
         {% if subtitle %}
         <p class="ivideon-feture__subtitle">{{subtitle}}</p>
         {% endif %}
@@ -9,7 +11,7 @@
             {% from "app/njk/components/ivideon_feature_item.njk" import featureItem %}
             {% for item in dataArr %}
             <div class="ivideon-feture__col">
-                {{ featureItem(item.icon, item.title, item.text) }}
+                {{ featureItem(item.icon, item.title, item.text, item.link) }}
             </div>
             {% endfor %}
         </div>

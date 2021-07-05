@@ -1,4 +1,4 @@
-{% macro featureItem(icon, title, text) %}
+{% macro featureItem(icon, title, text, link) %}
 <div class="ivideon-feature__item">
     <div class="ivideon-feature__item-img">
         <img src="{{icon}}" alt="{{title}}">
@@ -11,5 +11,10 @@
     <p class="ivideon-feature__item-text">
         {{text}}
     </p>
+    {% if link %}
+    <a href="#" class="ivideon-feature__item-link">
+        {{link}}
+    </a>
+    {% endif %}
 </div>
 {% endmacro %}

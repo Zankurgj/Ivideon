@@ -381,5 +381,18 @@
 
   "ivSMartCalculationTitle": "Видеонаблюдение «под ключ»",
   "ivSMartCalculationText": "Подберем камеры или спроектируем систему видеонаблюдения и выполним монтаж по всей России",
-  "ivSMartCalculationBtn": "Рассчитать стоимость"
+  "ivSMartCalculationBtn": "Рассчитать стоимость",
+
+  "ivSmartFeatureItemTitle1": "Доступ откуда угодно",
+  "ivSmartFeatureItemTitle2": "Контроль всех камер",
+  "ivSmartFeatureItemTitle3": "Хранение видео в облаке",
+  "ivSmartFeatureItemTitle4": "Настраиваемые уведомления",
+  "ivSmartFeatureItemText1": "Просмотр видео с камер со звуком через интернет с любого телефона или компьютера",
+  "ivSmartFeatureItemText2": "Подключение к сервису любых камер с единым доступом и удобной группировкой",
+  "ivSmartFeatureItemText3": "Запись и хранение видео на облачных серверах Ivideon без необходимости покупки регистраторов",
+  "ivSmartFeatureItemText4": "Отправка Push или Email уведомлений, например, если возникло движение или отключилась камера",
+  "ivSmartFeatureItemLink1": "Заказать демонстрацию",
+  "ivSmartFeatureItemLink2": "Заказать демонстрацию",
+  "ivSmartFeatureItemLink3": "Заказать демонстрацию",
+  "ivSmartFeatureItemLink4": "Заказать демонстрацию"
 }

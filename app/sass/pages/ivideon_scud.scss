@@ -7,3 +7,11 @@
 @import "../sections/ivideon_scud/ivideon_scud_tariffs";
 @import "../components/ivideon_tariff_item";
 @import "../components/ivideon_price.scss";
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+@import "node_modules/@fancyapps/fancybox/dist/jquery.fancybox";

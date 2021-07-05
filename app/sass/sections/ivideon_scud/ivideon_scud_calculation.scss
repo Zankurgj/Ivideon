@@ -1,10 +1,13 @@
 // WRAPPER
 .ivideon-scud-calculation {
-  padding: 0 0 60px 0;
+  padding: 0 0 20px 0;
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
   background-image: url("../images/dest/img/ivideon-scud/scud-calculation-bg.svg");
+  @media all and (min-width: $tablet-bp) {
+    padding: 0 0 60px 0;
+  }
   @media all and (min-width: $desktop-bp) {
     padding: 0 0 80px 0;
   }

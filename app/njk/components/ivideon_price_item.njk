@@ -1,5 +1,5 @@
-{% macro priseItem(name, title, text, cost, link) %}
-<div class="ivideon-price-item">
+{% macro priseItem(name, title, text, cost, link, light=false ) %}
+<div class="ivideon-price-item {% if light %}ivideon-price-item--gray{% endif %}">
     <div class="videon-price-item__top">
         <p class="videon-price-item__name">{{name}}</p>
         <p class="videon-price-item__title">{{title}}</p>

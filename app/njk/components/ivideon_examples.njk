@@ -1,12 +1,12 @@
-{% macro examplesSection(dataArr, title) %}
-<section class="ivideon-examples">
+{% macro examplesSection(dataArr, title, light=false) %}
+<section class="ivideon-examples {% if light %}ivideon-examples--light{% endif %}">
     <div class="iv-container">
         <h2 class="iv-h2-base ivideon-examples__title">{{title}}</h2>
         {% from "app/njk/components/ivideon_examples_item.njk" import examplesItem %}
         <div class="ivideon-examples__slider js--examples-slider">
             {% for item in dataArr %}
             <div class="ivideon-examples__slide-wrapper">
-                {{ examplesItem(item.img, item.title, item.text) }}
+                {{ examplesItem(item.img, item.title, item.text, item.link) }}
             </div>
             {% endfor %}
         </div>

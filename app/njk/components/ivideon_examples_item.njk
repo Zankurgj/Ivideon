@@ -1,4 +1,4 @@
-{% macro examplesItem(img, title, text) %}
+{% macro examplesItem(img, title, text, link) %}
 <div class="ivideon-examples__item">
     <div class="ivideon-examples__img">
         <img src="{{img}}" alt="{{title}}">
@@ -9,5 +9,10 @@
     <p class="ivideon-examples__item-text">
         {{text}}
     </p>
+    {% if link %}
+    <a href="#" class="ivideon-examples__item-link">
+        {{link}}
+    </a>
+    {% endif %}
 </div>
 {% endmacro %}

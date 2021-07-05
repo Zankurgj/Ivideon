@@ -2,6 +2,8 @@ import $ from "jquery";
 window.jQuery = $;
 window.$ = $;
 import "slick-carousel";
-import {} from "./slider";
+import { initExamplesSlider } from "./slider";
 
-document.addEventListener("DOMContentLoaded", function () {});
+document.addEventListener("DOMContentLoaded", function () {
+  initExamplesSlider();
+});

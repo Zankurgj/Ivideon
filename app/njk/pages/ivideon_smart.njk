@@ -41,4 +41,84 @@ link: ivSmartFeatureItemLink4
 } %}
 {% from "app/njk/components/ivideon_feature.njk" import featureSection %}
 {{ featureSection( featureItems.data) }}
+<!-- PROMO -->
+{% include "app/njk/sections/common/ivideon_promo3.njk" %}
+<!-- PRICE -->
+{%set pricesData= {
+title: ivCountingKeyFeaturesTitle,
+light: true,
+link: ivFacesPriceItemLink,
+data: [
+{
+name:ivFacesPriceItemName1,
+title:ivFacesPriceItemTitle1,
+text:ivFacesPriceItemText1,
+cost:ivFacesPriceItemCost1
+},
+{
+name:ivFacesPriceItemName2,
+title:ivFacesPriceItemTitle2,
+text:ivFacesPriceItemText2,
+cost:ivFacesPriceItemCost2
+},
+{
+name:ivFacesPriceItemName3,
+title:ivFacesPriceItemTitle3,
+text:ivFacesPriceItemText3,
+cost:ivFacesPriceItemCost3
+},
+{
+name:ivFacesPriceItemName4,
+title:ivFacesPriceItemTitle4,
+text:ivFacesPriceItemText4,
+cost:ivFacesPriceItemCost4
+},
+{
+name:ivFacesPriceItemName5,
+title:ivFacesPriceItemTitle5,
+text:ivFacesPriceItemText5,
+cost:ivFacesPriceItemCost5
+},
+{
+name:ivFacesPriceItemName6,
+title:ivFacesPriceItemTitle6,
+text:ivFacesPriceItemText6,
+cost:ivFacesPriceItemCost6
+}]
+}%}
+{% from "app/njk/components/ivideon_price.njk" import pricesSection %}
+{{ pricesSection( pricesData.data, pricesData.title, pricesData.link, pricesData.light ) }}
+<!-- EXAMPLES-->
+{% set examplesData = {
+title: ivSmartExamplesTitle,
+light: true,
+data: [
+{
+img: "../../images/dest/img/ivideon-smart/smart-example1.png",
+title: ivSmartExamplesItemTitle1,
+text: ivSmartExamplesItemText1,
+link: ivSmartExamplesItemLink1
+},
+{
+img: "../../images/dest/img/ivideon-smart/smart-example2.png",
+title: ivSmartExamplesItemTitle2,
+text: ivSmartExamplesItemText2,
+link: ivSmartExamplesItemLink2
+},
+{
+img: "../../images/dest/img/ivideon-smart/smart-example3.png",
+title: ivSmartExamplesItemTitle3,
+text: ivSmartExamplesItemText3,
+link: ivSmartExamplesItemLink3
+},
+{
+img: "../../images/dest/img/ivideon-smart/smart-example4.png",
+title: ivSmartExamplesItemTitle4,
+text: ivSmartExamplesItemText4,
+link: ivSmartExamplesItemLink4
+}
+]
+} %}
+{% from "app/njk/components/ivideon_examples.njk" import examplesSection %}
+{{ examplesSection( examplesData.data, examplesData.title, examplesData.light) }}
 {% endblock %}

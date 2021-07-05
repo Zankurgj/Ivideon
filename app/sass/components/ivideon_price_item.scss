@@ -6,6 +6,9 @@
   border-radius: 16px;
   height: 100%;
 }
+.ivideon-price-item--gray {
+  background-color: $iv-ws-colors-solitude5;
+}
 .videon-price-item__top {
   flex-grow: 1;
   padding: 24px 24px 20px 24px;
@@ -64,6 +67,8 @@
     font-size: 20px;
   }
   &:hover {
+    color: $iv-ws-colors-dodger-blue2;
+    text-decoration: none;
     opacity: 0.8;
   }
   &::after {
@@ -72,6 +77,7 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    margin-top: 2px;
     width: 24px;
     height: 24px;
     background-repeat: no-repeat;

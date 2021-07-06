@@ -69,7 +69,7 @@
   background-position: top 1px right;
   background-image: url("data:image/svg+xml,%3Csvg fill='none' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m9.5 7 5 5-5 5' stroke='%23008cef' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'/%3E%3C/svg%3E");
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
   color: $iv-ws-colors-dodger-blue2;
   text-decoration: none;
   transition: opacity $base-duration $base-timing;
@@ -80,6 +80,6 @@
   }
   @media all and (min-width: $tablet-bp) {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 18px;
   }
 }

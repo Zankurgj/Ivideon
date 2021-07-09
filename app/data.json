@@ -479,5 +479,51 @@
   "ivSmartServicesItemList4": "Закажите Ivideon Bridge",
   "ivSmartServicesItemList5": "Подключите Ivideon Bridge",
   "ivSmartServicesItemList6": "Подключите камеры",
-  "ivSmartServicesItemList7": "Выберите тариф"
+  "ivSmartServicesItemList7": "Выберите тариф",
+
+  "ivBridgePageTitle": "Bridge",
+  "ivBridgeTopTitle": "Ivideon Bridge",
+  "ivBridgeTopText": "Легкое подключение <br> любых камер <br> к сервису Ivideon",
+  "ivBridgeTopBtnBlue": "Купить",
+
+  "ivBridgeFeatureItemTitle1": "Единая система видеонаблюдения",
+  "ivBridgeFeatureItemTitle2": "Доступ откуда угодно",
+  "ivBridgeFeatureItemTitle3": "Хранение видео в облаке",
+  "ivBridgeFeatureItemTitle4": "Настраиваемые уведомления",
+  "ivBridgeFeatureItemTitle5": "Контроль всех камер",
+  "ivBridgeFeatureItemTitle6": "Подключение видеоаналитики",
+  "ivBridgeFeatureItemText1": "Bridge подключает до 16 камер и регистраторов к облаку Ivideon",
+  "ivBridgeFeatureItemText2": "Просмотр видео с камер со звуком через интернет с любого телефона или компьютера",
+  "ivBridgeFeatureItemText3": "Запись видео с ваших камер и зашифрованное хранение на облачных серверах Ivideon",
+  "ivBridgeFeatureItemText4": "Отправка push или e-mail уведомлений, например, если возникло движение или отключилась камера",
+  "ivBridgeFeatureItemText5": "Удобное управление любым количеством камер в едином личном кабинете",
+  "ivBridgeFeatureItemText6": "Распознавание лиц, подсчет посетителей, анализ действий кассира, распознавание номеров и СКУД",
+
+  "ivBridgeAboutTitle": "Подключение?",
+  "ivBridgeAboutItemTitle1": "Покупка Ivideon Bridge",
+  "ivBridgeAboutItemTitle2": "Регистрация в сервисе",
+  "ivBridgeAboutItemTitle3": "Подключение камеры",
+  "ivBridgeAboutItemText1": "Сделайте заказ на Ivideon Bridge в интернет-магазине и оплатите его. Доставка осуществляется по России, Беларуси и Казахстану",
+  "ivBridgeAboutItemText2": "Зарегистрируйтесь в сервисе Ivideon или авторизуйтесь. После регистрации вы получите доступ к личному кабинету",
+  "ivBridgeAboutItemText3": "Следуйте пошаговой инструкции: подключите ваши камеры и Ivideon Bridge в личном кабинете сервиса",
+
+  "ivBridgePriceITitle": "Видеоаналитика Ivideon",
+
+  "ivBridgeExamplesTitle": "Наши кейсы",
+  "ivBridgeExamplesItemTitle1": "Опыт Henkel",
+  "ivBridgeExamplesItemTitle2": "Кейс проекта «Свалка»",
+  "ivBridgeExamplesItemTitle3": "Барбершоп «Боцман»",
+  "ivBridgeExamplesItemTitle4": "Арендодателям",
+  "ivBridgeExamplesItemText1": "Немецкий химический концерн объединил все свои локальные системы видеонаблюдения в одно удобное и выгодное облачное решение",
+  "ivBridgeExamplesItemText2": "Сервис по вывозу ненужных вещей поборол воровство «на всех этапах бизнеса» удаленным онлайн контролем",
+  "ivBridgeExamplesItemText3": "Как в первый же месяц снизилось время ожидания мастеров клиентами и повысилось качество обслуживания",
+  "ivBridgeExamplesItemText4": "Снижение времени ожидания в очереди, планирование расписания работы персонала и записи клиентов",
+  "ivBridgeExamplesItemLink1": "Подробнее",
+  "ivBridgeExamplesItemLink2": "Подробнее",
+  "ivBridgeExamplesItemLink3": "Подробнее",
+  "ivBridgeExamplesItemLink4": "Подробнее",
+
+  "ivBridgePromoTitle": "Ivideon Bridge",
+  "ivBridgePromoText": "одключите ваши камеры и используйте современные сервисы Ivideon",
+  "ivBridgePromoBtn": "Купить"
 }

@@ -74,12 +74,14 @@ body {
 .iv-container {
   padding: 0 16px;
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1920px;
   @media all and (min-width: $desktop-bp) {
     padding: 0 60px;
   }
   @media all and (min-width: $large-bp) {
-    max-width: 1920px;
+    padding: 0 80px;
+  }
+  @media all and (min-width: 1920px) {
     padding: 0 160px;
   }
 }

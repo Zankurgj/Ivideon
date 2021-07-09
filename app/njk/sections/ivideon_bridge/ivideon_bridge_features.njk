@@ -1,0 +1,43 @@
+<section class="ivideon_bridge-features">
+    <div class="iv-container">
+        <div class="iv-row iv-row--ivideon_bridge-features">
+            {% from "app/njk/components/ivideon_feature_item_noborder.njk" import featureItemNoBorder %}
+            {% set featureItems = [
+            {
+            icon: "../../images/dest/img/ivideon_bridge/bridge_feature1.svg",
+            title: ivBridgeFeatureItemTitle1,
+            text: ivBridgeFeatureItemText1
+            },
+            {
+            icon: "../../images/dest/img/ivideon_bridge/bridge_feature2.svg",
+            title: ivBridgeFeatureItemTitle2,
+            text: ivBridgeFeatureItemText2
+            },
+            {
+            icon: "../../images/dest/img/ivideon_bridge/bridge_feature3.svg",
+            title: ivBridgeFeatureItemTitle3,
+            text: ivBridgeFeatureItemText3
+            },
+            {
+            icon: "../../images/dest/img/ivideon_bridge/bridge_feature4.svg",
+            title: ivBridgeFeatureItemTitle4,
+            text: ivBridgeFeatureItemText4
+            },
+            {
+            icon: "../../images/dest/img/ivideon_bridge/bridge_feature5.svg",
+            title: ivBridgeFeatureItemTitle5,
+            text: ivBridgeFeatureItemText5
+            },
+            {
+            icon: "../../images/dest/img/ivideon_bridge/bridge_feature6.svg",
+            title: ivBridgeFeatureItemTitle6,
+            text: ivBridgeFeatureItemText6
+            }]%}
+            {% for item in featureItems %}
+            <div class="ivideon-feture__col">
+                {{ featureItemNoBorder(item.icon, item.title, item.text) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

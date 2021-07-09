@@ -1,0 +1,52 @@
+// WRAPPER
+.ivideon-promo-block {
+  //   background: $iv-ws-colors-aliceblue;
+  padding: 0 0 64px 0;
+  @media all and (min-width: $tablet-bp) {
+    padding: 0 0 80px 0;
+  }
+}
+.ivideon-promo-inner {
+  padding: 40px 24px 0px 24px;
+  height: 384px;
+  background-color: $iv-ws-colors-dodger-blue2;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-image: url("../images/dest/img/common/videon-promo-m.png");
+  @media all and (min-width: $tablet-bp) {
+    padding: 56px 40px 0px 40px;
+    height: 280px;
+    background-image: url("../images/dest/img/common/videon-promo-t.png");
+    background-position: right center;
+  }
+  @media all and (min-width: $large-bp) {
+    padding: 56px 80px 0px 80px;
+    height: 280px;
+    background-image: url("../images/dest/img/common/videon-promo-d.png");
+    background-position: right 56px center;
+  }
+}
+// TITLE
+.ivideon-promo__title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: $iv-ws-colors-text-light;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+// TEXT
+.ivideon-promo__text {
+  font-size: 15px;
+  line-height: 24px;
+  color: $iv-ws-colors-aliceblue;
+  margin-bottom: 16px;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}

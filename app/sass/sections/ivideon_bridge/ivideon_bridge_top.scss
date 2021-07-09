@@ -1,0 +1,94 @@
+// WRAPPER
+.ivideon-bridge-top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 0px 40px 40px;
+  background-repeat: no-repeat;
+  background-position: right -10px bottom 10px;
+  background-size: 260px;
+  background-image: url("../images/dest/img/ivideon_bridge/bridge_top_bg-m.png");
+  background-color: $iv-ws-colors-midnight;
+  min-height: 500px;
+  overflow: hidden;
+  margin-bottom: 64px;
+  @media all and (min-width: $tablet-bp) {
+    min-height: 560px;
+    margin-bottom: 80px;
+    background-size: 400px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    min-height: 720px;
+  }
+  @media all and (min-width: 1200px) {
+    background-position: right -200px bottom;
+    background-size: 700px;
+    background-image: url("../images/dest/img/ivideon_bridge/bridge_top_bg-d.png");
+  }
+  @media all and (min-width: $large-bp) {
+    background-position: right -240px bottom;
+    background-size: auto;
+  }
+  @media all and (min-width: 1600px) {
+    background-position: right bottom;
+    background-size: auto;
+  }
+}
+.iv-container--ivideon-bridge-top {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ivideon-bridge-top__wrapper {
+  flex-grow: 1;
+  position: relative;
+  padding: 96px 0 0 0;
+  @media all and (min-width: $tablet-bp) {
+    padding: 160px 0 0 0;
+  }
+  @media all and (min-width: $desktop-bp) {
+    padding: 196px 0 0 0;
+  }
+}
+// TITLE
+.ivideon-bridge-top__title {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: $iv-ws-colors-link-water;
+  @media all and (min-width: $tablet-bp) {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+// TEXT
+.ivideon-bridge-top__text-wrapper {
+  position: relative;
+  z-index: 4;
+}
+.ivideon-bridge-top__text {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: $iv-ws-colors-text-light;
+  @media all and (min-width: $tablet-bp) {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+// BTNS
+.ivideon-bridge-top__btn {
+  &:first-child {
+    margin-right: 16px;
+  }
+}

@@ -1,0 +1,113 @@
+<!-- Переменная из json, проставляет тайтл страницы -->
+{% set pageTitle = ivBridgePageTitle %}
+<!-- Имя страницы, для проставления названия js и css файлов -->
+{% set pageName = 'ivideon_bridge' %}
+{% extends "app/njk/layout/index.njk" %}
+{% block content %}
+<!-- HEAD -->
+{% include "app/njk/sections/ivideon_bridge/ivideon_bridge_top.njk" %}
+<!-- FEATURES-->
+{% include "app/njk/sections/ivideon_bridge/ivideon_bridge_features.njk" %}
+<!-- ABOUT -->
+{% set aboutItems = {
+title: ivScudAboutTitle,
+data: [
+{
+img: "../../images/dest/img/ivideon_bridge/bridge-about1.png",
+title: ivBridgeAboutItemTitle1,
+text: ivBridgeAboutItemText1
+},
+{
+img: "../../images/dest/img/ivideon_bridge/bridge-about2.png",
+title: ivBridgeAboutItemTitle2,
+text: ivBridgeAboutItemText2
+},
+{
+img: "../../images/dest/img/ivideon_bridge/bridge-about3.png",
+title: ivBridgeAboutItemTitle3,
+text: ivBridgeAboutItemText3
+}
+]
+} %}
+{% from "app/njk/components/ivideon_about.njk" import aboutSection %}
+{{ aboutSection( aboutItems.data, aboutItems.title) }}
+<!-- PROMO -->
+{% include "app/njk/sections/ivideon_bridge/ivideon_bridge_promo.njk" %}
+<!-- PRICE -->
+{%set pricesData= {
+title: ivBridgePriceITitle,
+link: ivFacesPriceItemLink,
+data: [
+{
+name:ivFacesPriceItemName1,
+title:ivFacesPriceItemTitle1,
+text:ivFacesPriceItemText1,
+cost:ivFacesPriceItemCost1
+},
+{
+name:ivFacesPriceItemName2,
+title:ivFacesPriceItemTitle2,
+text:ivFacesPriceItemText2,
+cost:ivFacesPriceItemCost2
+},
+{
+name:ivFacesPriceItemName3,
+title:ivFacesPriceItemTitle3,
+text:ivFacesPriceItemText3,
+cost:ivFacesPriceItemCost3
+},
+{
+name:ivFacesPriceItemName4,
+title:ivFacesPriceItemTitle4,
+text:ivFacesPriceItemText4,
+cost:ivFacesPriceItemCost4
+},
+{
+name:ivFacesPriceItemName5,
+title:ivFacesPriceItemTitle5,
+text:ivFacesPriceItemText5,
+cost:ivFacesPriceItemCost5
+},
+{
+name:ivFacesPriceItemName6,
+title:ivFacesPriceItemTitle6,
+text:ivFacesPriceItemText6,
+cost:ivFacesPriceItemCost6
+}]
+}%}
+{% from "app/njk/components/ivideon_price.njk" import pricesSection %}
+{{ pricesSection( pricesData.data, pricesData.title, pricesData.link ) }}
+<!-- EXAMPLES-->
+{% set examplesData = {
+title: ivBridgeExamplesTitle,
+light: true,
+data: [
+{
+img: "../../images/dest/img/ivideon-smart/smart-example1.png",
+title: ivBridgeExamplesItemTitle1,
+text: ivBridgeExamplesItemText1,
+link: ivBridgeExamplesItemLink1
+},
+{
+img: "../../images/dest/img/ivideon-smart/smart-example2.png",
+title: ivBridgeExamplesItemTitle2,
+text: ivBridgeExamplesItemText2,
+link: ivBridgeExamplesItemLink2
+},
+{
+img: "../../images/dest/img/ivideon-smart/smart-example3.png",
+title: ivBridgeExamplesItemTitle3,
+text: ivBridgeExamplesItemText3,
+link: ivBridgeExamplesItemLink3
+},
+{
+img: "../../images/dest/img/ivideon-smart/smart-example4.png",
+title: ivBridgeExamplesItemTitle4,
+text: ivBridgeExamplesItemText4,
+link: ivBridgeExamplesItemLink4
+}
+]
+} %}
+{% from "app/njk/components/ivideon_examples.njk" import examplesSection %}
+{{ examplesSection( examplesData.data, examplesData.title, examplesData.light) }}
+{% endblock %}

@@ -1,0 +1,36 @@
+<!-- Переменная из json, проставляет тайтл страницы -->
+{% set pageTitle = ivBridgePageTitle %}
+<!-- Имя страницы, для проставления названия js и css файлов -->
+{% set pageName = 'ivideon_analytics' %}
+{% extends "app/njk/layout/index.njk" %}
+{% block content %}
+<!-- HEAD -->
+{% include "app/njk/sections/ivideon_analytics/ivideon_analytics_top.njk" %}
+<!-- FEATURES-->
+{% include "app/njk/sections/ivideon_analytics/ivideon_analytics_features.njk" %}
+<!-- ABOUT -->
+{% set aboutItems = {
+title: ivAnalyticsAboutTitle,
+data: [
+{
+img: "../../images/dest/img/ivideon_analytics/analytics-about1.png",
+title: ivAnalyticsAboutItemTitle1,
+text: ivAnalyticsAboutItemText1
+},
+{
+img: "../../images/dest/img/ivideon_analytics/analytics-about2.png",
+title: ivAnalyticsAboutItemTitle2,
+text: ivAnalyticsAboutItemText2
+},
+{
+img: "../../images/dest/img/ivideon_analytics/analytics-about3.png",
+title: ivAnalyticsAboutItemTitle3,
+text: ivAnalyticsAboutItemText3
+}
+]
+} %}
+{% from "app/njk/components/ivideon_about.njk" import aboutSection %}
+{{ aboutSection( aboutItems.data, aboutItems.title) }}
+<!-- TARIFFS -->
+{% include "app/njk/sections/ivideon_analytics/ivideon_analytics_tariffs.njk" %}
+{% endblock %}

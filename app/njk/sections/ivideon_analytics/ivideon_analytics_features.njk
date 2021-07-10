@@ -1,0 +1,73 @@
+<section class="ivideon-analytics-feature">
+    <div class="iv-container">
+        <div class="iv-row ivideon-analytics-feature__wrapper">
+            <div class="ivideon-analytics-feature__col1">
+                <h2 class="ivideon-analytics-feature__title">{{ivAnalyticsFeatureTitle}}</h2>
+                <p class="ivideon-analytics-feature__text">{{ivAnalyticsFeatureText}}</p>
+                <a href="#" class="btn-blue ivideon-analytics-feature__btn">{{ivAnalyticsFeatureBtn}}</a>
+            </div>
+            <div class="ivideon-analytics-feature__col2">
+                <div class="iv-row ivideon-analytics-feature__item-wrapper">
+                    {% set featureItems = [
+                    {
+                    icon:'../../images/dest/img/ivideon_analytics/analytics-feature1.png',
+                    title: ivAnalyticsFeatureItemTitle1,
+                    text: ivAnalyticsFeatureItemText1,
+                    type: 'purple',
+                    typeText: 'light'
+                    },
+                    {
+                    icon:'../../images/dest/img/ivideon_analytics/analytics-feature2.png',
+                    title: ivAnalyticsFeatureItemTitle2,
+                    text: ivAnalyticsFeatureItemText2,
+                    type: 'orange',
+                    typeText: 'dark'
+                    },
+                    {
+                    icon:'../../images/dest/img/ivideon_analytics/analytics-feature3.png',
+                    title: ivAnalyticsFeatureItemTitle3,
+                    text: ivAnalyticsFeatureItemText3,
+                    type: 'red',
+                    typeText: 'light'
+                    },
+                    {
+                    icon:'../../images/dest/img/ivideon_analytics/analytics-feature4.png',
+                    title: ivAnalyticsFeatureItemTitle4,
+                    text: ivAnalyticsFeatureItemText4,
+                    type: 'green',
+                    typeText: 'dark'
+                    },
+                    {
+                    icon:'../../images/dest/img/ivideon_analytics/analytics-feature5.png',
+                    title: ivAnalyticsFeatureItemTitle5,
+                    text: ivAnalyticsFeatureItemText5,
+                    type: 'purple',
+                    typeText: 'light'
+                    },
+                    {
+                    icon:'../../images/dest/img/ivideon_analytics/analytics-feature6.png',
+                    title: ivAnalyticsFeatureItemTitle6,
+                    text: ivAnalyticsFeatureItemText6,
+                    type: 'purple-light',
+                    typeText: 'dark'
+                    }
+                    ] %}
+                    {% for item in featureItems %}
+                    <div class="ivideon-analytics-feature__item-col">
+                        <div class="ivideon-analytics-feature__item ivideon-analytics-feature__item--{{item.type}}">
+                            <div class="ivideon-analytics-feature__item-img">
+                                <img src="{{item.icon}}" alt="{{item.title}}">
+                            </div>
+                            <div
+                                class="ivideon-analytics-feature__item-text-wrapper ivideon-analytics-feature__item-text-wrapper--{{item.typeText}}">
+                                <p class="ivideon-analytics-feature__item-title">{{item.title}}</p>
+                                <p class="ivideon-analytics-feature__item-text">{{item.text}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

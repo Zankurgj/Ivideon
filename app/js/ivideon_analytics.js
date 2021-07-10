@@ -1,8 +1,9 @@
 import $ from "jquery";
 window.jQuery = $;
 window.$ = $;
-import { initExamplesSlider } from "./slider";
+import "slick-carousel";
+import { initExamplesSlider, initTariffSlider } from "./slider";
 
 document.addEventListener("DOMContentLoaded", function () {
-  initExamplesSlider();
+  initTariffSlider();
 });

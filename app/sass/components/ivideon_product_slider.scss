@@ -1,0 +1,214 @@
+// SLIDER
+.ivideon-office-slider__container {
+  position: relative;
+  padding: 0 0 0 16px;
+  max-width: 1550px;
+  margin: 0 auto;
+  @media all and (min-width: $desktop-bp) {
+    padding: 0 100px;
+  }
+  @media all and (min-width: $large-bp) {
+    padding: 0 170px;
+  }
+}
+//   ARROW
+.ivideon-office-slider__arrow {
+  display: none !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $iv-ws-colors-dodger-blue;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  z-index: 10;
+  @media all and (min-width: $desktop-bp) {
+    display: block !important;
+  }
+}
+.ivideon-office-slider__arrow--prev {
+  left: 20px;
+  background-image: url("../images/dest/icons/arrow_white_left.svg");
+}
+.ivideon-office-slider__arrow--next {
+  right: 20px;
+  background-image: url("../images/dest/icons/arrow_white_right.svg");
+}
+.ivideon-office-slide__inner {
+  padding: 20px 6px;
+  height: 100%;
+}
+
+.ivideon-office-slider {
+  display: flex;
+  flex-wrap: wrap;
+  .slick-track {
+    display: flex !important;
+  }
+  .slick-slide {
+    height: inherit !important;
+    > div {
+      height: 100%;
+    }
+  }
+}
+// ITEM
+.ivideon-office-slide {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  height: 100%;
+  padding: 24px 30px;
+  background-color: $iv-ws-colors-text-light;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.04), 0px 0px 20px rgba(0, 0, 0, 0.03);
+  border-radius: 30px;
+}
+.ivideon-office-slide__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 40px;
+  margin-bottom: 8px;
+}
+// BADGE
+.ivideon-office-slide__badge {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $iv-ws-colors-dodger-blue;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: $iv-ws-colors-text-light;
+}
+// STARS
+.ivideon-office-slide__stars {
+  display: flex;
+  margin-left: auto;
+}
+.ivideon-office-slide__star-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  background-image: url("../images/dest/icons/star_icon.svg");
+  &:last-child {
+    margin-right: 0;
+  }
+}
+// IMG
+.ivideon-office-slide__img {
+  margin-bottom: 8px;
+  margin-top: auto;
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+// TYPE
+.ivideon-office-slide__type {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+  line-height: 21px;
+  color: $iv-ws-colors-midnight;
+  margin-bottom: 2px;
+}
+.ivideon-office-slide__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+// NAME
+.ivideon-office-slide__name {
+  margin-right: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  color: $iv-ws-colors-midnight;
+}
+// BTN
+.ivideon-office-slide__btns {
+  display: flex;
+}
+.ivideon-office-slide__btn {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.ivideon-office-slide__btn--like {
+  background-image: url("../images/dest/icons/like_icon.svg");
+}
+.ivideon-office-slide__btn--compare {
+  background-image: url("../images/dest/icons/compare_icon.svg");
+}
+
+// COST
+.ivideon-office-slide__cost-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.ivideon-office-slide__cost-item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.ivideon-office-slide__cost {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: $iv-ws-colors-midnight;
+}
+.ivideon-office-slide__cost-currency {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 21px;
+  color: $iv-ws-colors-midnight;
+}
+.ivideon-office-slide__cost-old {
+  font-size: 14px;
+  line-height: 21px;
+  color: $iv-ws-colors-midnight;
+  text-decoration: line-through;
+}
+.ivideon-office-slide__cost-old-currency {
+  font-size: 12px;
+  line-height: 21px;
+  color: $iv-ws-colors-midnight;
+}
+
+// BTN BOTTOM
+.ivideon-office-slide__btn-blue {
+  display: table;
+  margin: 0 auto;
+  padding: 6px 18px 8px 18px;
+  font-size: 12px;
+  line-height: 27px;
+}

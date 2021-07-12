@@ -1,0 +1,33 @@
+@import "../../components/ivideon_product_slider";
+
+.ivideon-office-product {
+  padding: 64px 0;
+  @media all and (min-width: $tablet-bp) {
+    padding: 80px 0;
+  }
+  @media all and (min-width: $large-bp) {
+    padding: 80px 120px;
+  }
+}
+.ivideon-office-product__title {
+  margin-bottom: 16px;
+  @media all and (min-width: $large-bp) {
+    margin-bottom: 24px;
+  }
+}
+.ivideon-office-product__subtitle {
+  display: block;
+  max-width: 800px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $iv-ws-colors-midnight;
+  margin: 0 auto 40px auto;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  @media all and (min-width: $large-bp) {
+    margin-bottom: 48px;
+  }
+}

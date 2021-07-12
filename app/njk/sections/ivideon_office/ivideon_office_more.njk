@@ -1,0 +1,52 @@
+<section class="ivideon-office-more">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-office-more__title">{{ivOfficeMoreTitle}}</h2>
+        <p class="ivideon-office-more__subtitle">{{ivOfficeMoreSubTitle}}</p>
+        <div class="iv-row">
+            <div class="ivideon-office-more__col ivideon-office-more__col--item">
+                <div class="ivideon-office-more__item">
+                    <div class="ivideon-office-more__item-img">
+                        <img src="../../images/dest/img/ivideon_office/office-more-item.png"
+                            alt="{{ivOfficeMoreSubTitle}}">
+                    </div>
+                    <div class="ivideon-office-more__item-text-wrapper">
+                        <p class="ivideon-office-more__item-title">{{ivOfficeMoreItemTitle}}</p>
+                        <p class="ivideon-office-more__item-cost">{{ivOfficeMoreItemCost}}</p>
+                        <p class="ivideon-office-more__item-subtitle">{{ivOfficeMoreItemSubTitle}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ivideon-office-more__col ivideon-office-more__col--other">
+                <div class="ivideon-office-more__other">
+                    <ul class="ivideon-office-more__other-list">
+                        {% set moreListItems = [
+                        {
+                        name: ivOfficeMoreListItemName1,
+                        cost: ivOfficeMoreListItemCost1
+                        },
+                        {
+                        name: ivOfficeMoreListItemName2,
+                        cost: ivOfficeMoreListItemCost2
+                        },
+                        {
+                        name: ivOfficeMoreListItemName3,
+                        cost: ivOfficeMoreListItemCost3
+                        },
+                        {
+                        name: ivOfficeMoreListItemName4,
+                        cost: ivOfficeMoreListItemCost4
+                        }
+                        ] %}
+                        {% for item in moreListItems %}
+                        <li>
+                            <p class="ivideon-office-more__other-name">{{item.name}}</p>
+                            <p class="ivideon-office-more__other-cost">{{item.cost}}</p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <p class="ivideon-office-more__other-subtitle">{{ivOfficeMoreListSubtitle}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

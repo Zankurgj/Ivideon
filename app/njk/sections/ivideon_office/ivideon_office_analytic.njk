@@ -1,0 +1,40 @@
+<section class="ivideon-office-analytic">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-office-analytic__title">{{ivOfficeAnalyticTitle}}</h2>
+        <div class="iv-row">
+            {% set officeAnalyticItems = [
+            {
+            title: ivOfficeAnalyticItemTitle1,
+            text: ivOfficeAnalyticItemText1,
+            img:"../../images/dest/img/ivideon_office/office-analytic1.png"
+            },
+            {
+            title: ivOfficeAnalyticItemTitle2,
+            text: ivOfficeAnalyticItemText2,
+            img:"../../images/dest/img/ivideon_office/office-analytic2.png"
+            },
+            {
+            title: ivOfficeAnalyticItemTitle3,
+            text: ivOfficeAnalyticItemText3,
+            img:"../../images/dest/img/ivideon_office/office-analytic3.png"
+            },
+            {
+            title: ivOfficeAnalyticItemTitle4,
+            text: ivOfficeAnalyticItemText4,
+            img:"../../images/dest/img/ivideon_office/office-analytic4.png"
+            }
+            ] %}
+            {% for item in officeAnalyticItems %}
+            <div class="ivideon-office-analytic__col">
+                <div class="ivideon-office-analytic__item">
+                    <div class="ivideon-office-analytic__item-img">
+                        <img src="{{item.img}}" alt="{{item.title}}">
+                    </div>
+                    <p class="ivideon-office-analytic__item-title">{{item.title}}</p>
+                    <p class="ivideon-office-analytic__item-text">{{item.text}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

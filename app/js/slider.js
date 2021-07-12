@@ -75,3 +75,18 @@ export const initTariffSlider = () => {
     });
   });
 };
+
+export const initProductSlider = () => {
+  $(".js--product-slider").slick({
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    variableWidth: true,
+    centerMode: false,
+    infinite: false,
+    arrows: true,
+    dots: false,
+    mobileFirst: true,
+    prevArrow: $(".ivideon-office-slider__arrow--prev"),
+    nextArrow: $(".ivideon-office-slider__arrow--next"),
+  });
+};

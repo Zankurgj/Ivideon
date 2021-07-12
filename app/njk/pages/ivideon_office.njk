@@ -1,0 +1,57 @@
+<!-- Переменная из json, проставляет тайтл страницы -->
+{% set pageTitle = ivOfficePageTitle %}
+<!-- Имя страницы, для проставления названия js и css файлов -->
+{% set pageName = 'ivideon_office' %}
+
+{% extends "app/njk/layout/index.njk" %}
+{% block content %}
+<!-- HEAD -->
+{% include "app/njk/sections/ivideon_office/ivideon_office_top.njk" %}
+<!-- FEATURE -->
+{% set featureItems = [
+{
+icon: "../../images/dest/img/ivideon_office/office-feature1.svg",
+title: ivOfficeFeatureItemTitle1,
+text: ivOfficeFeatureItemText1
+},
+{
+icon: "../../images/dest/img/ivideon_office/office-feature2.svg",
+title: ivOfficeFeatureItemTitle2,
+text: ivOfficeFeatureItemText2
+},
+{
+icon: "../../images/dest/img/ivideon_office/office-feature3.svg",
+title: ivOfficeFeatureItemTitle3,
+text: ivOfficeFeatureItemText3
+},
+{
+icon: "../../images/dest/img/ivideon_office/office-feature4.svg",
+title: ivOfficeFeatureItemTitle4,
+text: ivOfficeFeatureItemText4
+},
+{
+icon: "../../images/dest/img/ivideon_office/office-feature5.svg",
+title: ivOfficeFeatureItemTitle5,
+text: ivOfficeFeatureItemText5
+},
+{
+icon: "../../images/dest/img/ivideon_office/office-feature6.svg",
+title: ivOfficeFeatureItemTitle6,
+text: ivOfficeFeatureItemText6
+}
+] %}
+{% from "app/njk/components/ivideon_feature_gray.njk" import featureSection %}
+{{ featureSection(featureItems) }}
+<!-- PROMO -->
+{% include "app/njk/sections/ivideon_office/ivideon_office_promo.njk" %}
+<!-- ANALYTIC -->
+{% include "app/njk/sections/ivideon_office/ivideon_office_analytic.njk" %}
+<!-- PRODUCT -->
+{% include "app/njk/sections/ivideon_office/ivideon_office_product.njk" %}
+<!-- TARIFFS -->
+{% include "app/njk/sections/ivideon_office/ivideon_office_tariffs.njk" %}
+<!-- MORE -->
+{% include "app/njk/sections/ivideon_office/ivideon_office_more.njk" %}
+<!-- PROMO2 -->
+{% include "app/njk/sections/ivideon_office/ivideon_office_promo2.njk" %}
+{% endblock %}

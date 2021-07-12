@@ -1,0 +1,58 @@
+{% macro productSlider(dataArr) %}
+<div class="ivideon-office-slider__container">
+    <button class="ivideon-office-slider__arrow ivideon-office-slider__arrow--prev">
+        <span class="visually-hidden">предыдущий слайд</span>
+    </button>
+    <button class="ivideon-office-slider__arrow ivideon-office-slider__arrow--next">
+        <span class="visually-hidden">следующий слайд</span>
+    </button>
+    <div class="ivideon-office-slider js--product-slider">
+        {% for item in dataArr %}
+        <div class="ivideon-office-slide__inner">
+            <div class="ivideon-office-slide">
+                <div class="ivideon-office-slide__top">
+                    {% if item.badge %}
+                    <span class="ivideon-office-slide__badge">{{item.badge}}</span>
+                    {% endif %}
+                    <div class="ivideon-office-slide__stars">
+                        {% for i in range(0, item.stars) %}
+                        <span class="ivideon-office-slide__star-icon"></span>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="ivideon-office-slide__img">
+                    <img src="{{item.img}}" alt="{{item.name}}">
+                </div>
+                <div class="ivideon-office-slide__bottom">
+                    <p class="ivideon-office-slide__type">{{item.type}}</p>
+                    <div class="ivideon-office-slide__wrapper">
+                        <p class="ivideon-office-slide__name">{{item.name}}</p>
+                        <div class="ivideon-office-slide__btns">
+                            <button class="ivideon-office-slide__btn ivideon-office-slide__btn--like">
+                                <span class="visually-hidden">нравится</span>
+                            </button>
+                            <button class="ivideon-office-slide__btn ivideon-office-slide__btn--compare">
+                                <span class="visually-hidden">сравнить</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ivideon-office-slide__cost-wrapper">
+                        <span class="ivideon-office-slide__cost-item">
+                            <span class="ivideon-office-slide__cost">{{item.cost}} </span>
+                            <span class="ivideon-office-slide__cost-currency">₽</span>
+                        </span>
+                        {% if item.oldCost %}
+                        <span class="ivideon-office-slide__cost-item">
+                            <span class="ivideon-office-slide__cost-old">{{item.oldCost}} </span>
+                            <span class="ivideon-office-slide__cost-old-currency">₽</span>
+                        </span>
+                        {% endif %}
+                    </div>
+                    <a href="#" class="btn-blue ivideon-office-slide__btn-blue">{{item.button}}</a>
+                </div>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div>
+{% endmacro %}

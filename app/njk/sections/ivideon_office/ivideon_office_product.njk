@@ -1,0 +1,78 @@
+<section class="ivideon-office-product">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-office-product__title">{{ivOfficeAnalyticTitle}}</h2>
+        <p class="ivideon-office-product__subtitle">{{ivOfficeAnalyticSubTitle}}</p>
+    </div>
+    {% set officeProduct = [
+    {
+    type: ivOfficeProductItemType,
+    img: "../../images/dest/img/ivideon_office/office-product.png",
+    name: ivOfficeProductItemName,
+    cost: ivOfficeProductItemCost,
+    oldCost: ivOfficeProductItemOldCost,
+    button: ivOfficeProductItemBtn,
+    stars: 2,
+    badge: ivOfficeProductItemBadge
+    },
+    {
+    type: ivOfficeProductItemType,
+    img: "../../images/dest/img/ivideon_office/office-product.png",
+    name: ivOfficeProductItemName,
+    cost: ivOfficeProductItemCost,
+    button: ivOfficeProductItemBtn,
+    stars: 2,
+    badge: ivOfficeProductItemBadge
+    },
+    {
+    type: ivOfficeProductItemType,
+    img: "../../images/dest/img/ivideon_office/office-product.png",
+    name: ivOfficeProductItemName,
+    cost: ivOfficeProductItemCost,
+    oldCost: ivOfficeProductItemOldCost,
+    button: ivOfficeProductItemBtn,
+    stars: 5
+    },
+    {
+    type: ivOfficeProductItemType,
+    img: "../../images/dest/img/ivideon_office/office-product.png",
+    name: ivOfficeProductItemName,
+    cost: ivOfficeProductItemCost,
+    oldCost: ivOfficeProductItemOldCost,
+    button: ivOfficeProductItemBtn,
+    stars: 3,
+    badge: ivOfficeProductItemBadge
+    },
+    {
+    type: ivOfficeProductItemType,
+    img: "../../images/dest/img/ivideon_office/office-product.png",
+    name: ivOfficeProductItemName,
+    cost: ivOfficeProductItemCost,
+    oldCost: ivOfficeProductItemOldCost,
+    button: ivOfficeProductItemBtn,
+    stars: 5,
+    badge: ivOfficeProductItemBadge
+    },
+    {
+    type: ivOfficeProductItemType,
+    img: "../../images/dest/img/ivideon_office/office-product.png",
+    name: ivOfficeProductItemName,
+    cost: ivOfficeProductItemCost,
+    oldCost: ivOfficeProductItemOldCost,
+    button: ivOfficeProductItemBtn,
+    stars: 4,
+    badge: ivOfficeProductItemBadge
+    },
+    {
+    type: ivOfficeProductItemType,
+    img: "../../images/dest/img/ivideon_office/office-product.png",
+    name: ivOfficeProductItemName,
+    cost: ivOfficeProductItemCost,
+    oldCost: ivOfficeProductItemOldCost,
+    button: ivOfficeProductItemBtn,
+    stars: 5,
+    badge: ivOfficeProductItemBadge
+    }
+    ] %}
+    {% from "app/njk/components/ivideon_product_slider.njk" import productSlider %}
+    {{ productSlider(officeProduct) }}
+</section>

@@ -1,0 +1,14 @@
+{% macro promoSection(title, text, btn, img, type) %}
+<div class="ivideon-promo-component-block">
+    <div class="iv-container">
+        <div class="ivideon-promo-component-inner ivideon-promo-component-inner--{{type}}">
+            <div class="ivideon-promo-component__bg" style="background-image: url('{{img}}');"></div>
+            <div class="ivideon-promo-component__wrapper">
+                <h2 class="ivideon-promo-component__title">{{title}}</h2>
+                <p class="ivideon-promo-component__text">{{text}}</p>
+                <a href="#" class="btn-white ivideon-promo-component__btn">{{btn}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

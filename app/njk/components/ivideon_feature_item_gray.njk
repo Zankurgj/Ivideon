@@ -1,0 +1,13 @@
+{% macro featureItem(icon, title, text) %}
+<div class="ivideon-feature__item-gray">
+    <div class="ivideon-feature__item-img-gray">
+        <img src="{{icon}}" alt="{{title}}">
+    </div>
+    <p class="ivideon-feature__item-title-gray">
+        {{title}}
+    </p>
+    <p class="ivideon-feature__item-text-gray">
+        {{text}}
+    </p>
+</div>
+{% endmacro %}

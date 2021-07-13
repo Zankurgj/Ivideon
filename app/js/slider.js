@@ -90,3 +90,31 @@ export const initProductSlider = () => {
     nextArrow: $(".ivideon-office-slider__arrow--next"),
   });
 };
+
+export const initsSrvicesSlider = () => {
+  $(window).on("load resize orientationchange", function () {
+    $(".js--slider-services").each(function () {
+      var $carousel = $(this);
+      /* Initializes a slick carousel only on mobile screens */
+      // slick on mobile
+      if ($(window).width() >= 1024) {
+        if ($carousel.hasClass("slick-initialized")) {
+          $carousel.slick("unslick");
+        }
+      } else {
+        if (!$carousel.hasClass("slick-initialized")) {
+          $carousel.slick({
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            variableWidth: true,
+            centerMode: false,
+            infinite: false,
+            arrows: false,
+            dots: false,
+            mobileFirst: true,
+          });
+        }
+      }
+    });
+  });
+};

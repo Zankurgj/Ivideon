@@ -1,0 +1,55 @@
+<!-- Переменная из json, проставляет тайтл страницы -->
+{% set pageTitle = ivStorePageTitle %}
+<!-- Имя страницы, для проставления названия js и css файлов -->
+{% set pageName = 'ivideon_store' %}
+
+{% extends "app/njk/layout/index.njk" %}
+{% block content %}
+<!-- HEAD -->
+{% include "app/njk/sections/ivideon_store/ivideon_store_top.njk" %}
+<!-- FEATURE -->
+{% set featureItems = [
+{
+icon: "../../images/dest/img/ivideon_store/store-feature1.svg",
+title: ivStoreFeatureItemTitle1,
+text: ivStoreFeatureItemText1
+},
+{
+icon: "../../images/dest/img/ivideon_store/store-feature2.svg",
+title: ivStoreFeatureItemTitle2,
+text: ivStoreFeatureItemText2
+},
+{
+icon: "../../images/dest/img/ivideon_store/store-feature3.svg",
+title: ivStoreFeatureItemTitle3,
+text: ivStoreFeatureItemText3
+},
+{
+icon: "../../images/dest/img/ivideon_store/store-feature4.svg",
+title: ivStoreFeatureItemTitle4,
+text: ivStoreFeatureItemText4
+},
+{
+icon: "../../images/dest/img/ivideon_store/store-feature5.svg",
+title: ivStoreFeatureItemTitle5,
+text: ivStoreFeatureItemText5
+},
+{
+icon: "../../images/dest/img/ivideon_store/store-feature6.svg",
+title: ivStoreFeatureItemTitle6,
+text: ivStoreFeatureItemText6
+}
+] %}
+{% from "app/njk/components/ivideon_feature_gray.njk" import featureSection %}
+{{ featureSection(featureItems) }}
+<!-- PROMO -->
+{% include "app/njk/sections/ivideon_store/ivideon_store_promo.njk" %}
+<!-- SERVICES -->
+{% include "app/njk/sections/ivideon_store/ivideon_store_services.njk" %}
+<!-- PRODUCT -->
+{% include "app/njk/sections/ivideon_store/ivideon_store_product.njk" %}
+<!-- MORE -->
+{% include "app/njk/sections/ivideon_store/ivideon_store_more.njk" %}
+<!-- PROMO2 -->
+{% include "app/njk/sections/ivideon_store/ivideon_store_promo2.njk" %}
+{% endblock %}

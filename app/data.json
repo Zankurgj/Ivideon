@@ -692,5 +692,190 @@
 
   "ivOfficePromoTitle2": "Расчёт стоимости подключения",
   "ivOfficePromoText2": "Оставьте заявку и получите расчёт стоимости подключения системы Ivideon под ваши потребности",
-  "ivOfficePromoBtn2": "Оставить завку"
+  "ivOfficePromoBtn2": "Оставить завку",
+
+  "ivStorePageTitle": "Видеонаблюдение для офиса",
+
+  "ivStoreTopTitle": "Видеонаблюдение для </br> магазинов",
+  "ivStoreTopText": "Удалённое видеонаблюдение с любого устройства </br> Защищённое хранение видеозаписей в облаке </br> Единый доступ ко всем камерам",
+  "ivStoreTopBtnBlue": "Демонстрация сервиса",
+
+  "ivStoreFeatureItemTitle1": "Подключение любых камер к сервису",
+  "ivStoreFeatureItemTitle2": "Онлайн-просмотр и хранение в облаке",
+  "ivStoreFeatureItemTitle3": "Единый контроль",
+  "ivStoreFeatureItemTitle4": "Уведомления",
+  "ivStoreFeatureItemTitle5": "Разграниченный доступ",
+  "ivStoreFeatureItemTitle6": "Решение «под ключ»",
+  "ivStoreFeatureItemText1": "Легкое подключение любых камер для удалённого просмотра и сохранения видео в облако ivideon",
+  "ivStoreFeatureItemText2": "Просмотр видео со звуком через интернерт с любого телефона, планшета или компьютера",
+  "ivStoreFeatureItemText3": "Удобная группировка по расположению камер и быстрое переключение  между ними",
+  "ivStoreFeatureItemText4": "Настраиваемые уведомления,например,по возникновению движения или появлению  «не сотрудников»",
+  "ivStoreFeatureItemText5": "Для владельница,администратора,службы безопасности",
+  "ivStoreFeatureItemText6": "Оценим ваше помещение, подберем камеры или подготовим комплексное решение и выполним монтаж",
+
+  "ivStorePromoTitle": "Заявка на расчёт стоимости",
+  "ivStorePromoText": "Оставьте заявку и мы рассчитаем стоимость комплекса видеонаблюдения с учетом ваших потребностей и особенностей помещения",
+  "ivStorePromoBtn": "Получить расчёт",
+
+  "ivStoreServices": "Тарифы",
+
+  "ivStoreServicesItemTitle1": "Анализ портрета посетителя",
+  "ivStoreServicesItemDescTitle1": "Новый покупатель",
+  "ivStoreServicesItemDescCam1": "Камера 1",
+
+  "ivStoreServicesItemDescItemTitle1": "Время:",
+  "ivStoreServicesItemDescItemSubTitle1": "19:10:03",
+  "ivStoreServicesItemDescItemTitle2": "Дата:",
+  "ivStoreServicesItemDescItemSubTitle2": "18-04-2020",
+  "ivStoreServicesItemDescItemTitle3": "Пол:",
+  "ivStoreServicesItemDescItemSubTitle3": "Мужской",
+  "ivStoreServicesItemDescItemTitle4": "Возраст:",
+  "ivStoreServicesItemDescItemSubTitle4": "45 лет",
+  "ivStoreServicesItemDescItemTitle5": "Эмоция:",
+  "ivStoreServicesItemDescItemSubTitle5": "Грусть",
+
+  "ivStoreServicesItemColType1": "Ivideon FACES",
+  "ivStoreServicesItemColType2": "Ivideon FACES",
+  "ivStoreServicesItemColType3": "Ivideon FACES",
+
+  "ivStoreServicesItemColTitle1": "Идентификация повторных посетителей",
+  "ivStoreServicesItemColTitle2": "Идентификация новых посетителей",
+  "ivStoreServicesItemColTitle3": "Замена карт лояльности",
+
+  "ivStoreServicesItemColText1": "Отслеживайте динамику возвращения клиентов и контролируйте отток, чтобы вовремя внести изменения в процессы и ассортимент",
+  "ivStoreServicesItemColText2": "Превращайте новых клиентов в постоянных. Предложите подарок за следующее посещение — система сама уведомит вас, когда клиент вернется",
+  "ivStoreServicesItemColText3": "Покупателям будет приятно думать, что вы знаете их «в лицо»: рекомендуйте товары на основании данных о прошлых покупках",
+
+  "ivStoreServicesItemColBtn1": "Заказать демонстрацию",
+  "ivStoreServicesItemColBtn2": "Заказать демонстрацию",
+  "ivStoreServicesItemColBtn3": "Заказать демонстрацию",
+
+  "ivStoreServicesItemTitle2": "Анализ покупательских предпочтений",
+  "ivStoreServicesItemDescTitle2": "Новый покупатель",
+  "ivStoreServicesItemDescCam2": "Камера 4",
+
+  "ivStoreServicesItemDescItemTitle6": "Время:",
+  "ivStoreServicesItemDescItemSubTitle6": "19:10:03",
+  "ivStoreServicesItemDescItemTitle7": "Дата:",
+  "ivStoreServicesItemDescItemSubTitle7": "18-04-2020",
+  "ivStoreServicesItemDescItemTitle8": "Пол:",
+  "ivStoreServicesItemDescItemSubTitle8": "Женский",
+  "ivStoreServicesItemDescItemTitle9": "Возраст:",
+  "ivStoreServicesItemDescItemSubTitle9": "50 лет",
+  "ivStoreServicesItemDescItemTitle10": "Эмоция:",
+  "ivStoreServicesItemDescItemSubTitle10": "Нейтральная",
+
+  "ivStoreServicesItemColType4": "Ivideon FACES",
+  "ivStoreServicesItemColType5": "Ivideon FACES",
+  "ivStoreServicesItemColType6": "Ivideon FACES",
+
+  "ivStoreServicesItemColTitle4": "Анализ посетителей по полу и возрасту",
+  "ivStoreServicesItemColTitle5": "Анализ посетителей по предпочтениям",
+  "ivStoreServicesItemColTitle6": "Анализ удовлетворенности клиентов",
+
+  "ivStoreServicesItemColText4": "Определите портрет ваших посетителей и интерес к категориям товаров для оптимизации товарного ассортимента и выкладки на стендах",
+  "ivStoreServicesItemColText5": "Оценивайте привлекательность витрин для посетителей: сравнивайте реакцию покупателей на старую и новую выкладки",
+  "ivStoreServicesItemColText6": "В режиме реального времени отслеживайте эмоции клиентов в ваших магазинах",
+
+  "ivStoreServicesItemColBtn4": "Заказать демонстрацию",
+  "ivStoreServicesItemColBtn5": "Заказать демонстрацию",
+  "ivStoreServicesItemColBtn6": "Заказать демонстрацию",
+
+  "ivStoreServicesItemTitle3": "Управление клиентским опытом",
+  "ivStoreServicesItemDescTitle3": "Новый покупатель",
+  "ivStoreServicesItemDescCam3": "Камера 5",
+
+  "ivStoreServicesItemDescItemTitle11": "Время:",
+  "ivStoreServicesItemDescItemSubTitle11": "20:28:56",
+  "ivStoreServicesItemDescItemTitle12": "Дата:",
+  "ivStoreServicesItemDescItemSubTitle12": "08-07-2020",
+  "ivStoreServicesItemDescItemTitle13": "Касса:",
+  "ivStoreServicesItemDescItemSubTitle13": "2",
+  "ivStoreServicesItemDescItemTitle14": "Событие:",
+  "ivStoreServicesItemDescItemSubTitle14": "Очистка чека",
+
+  "ivStoreServicesItemColType7": "Ivideon PEOPLE",
+  "ivStoreServicesItemColType8": "Ivideon PEOPLE",
+
+  "ivStoreServicesItemColTitle7": "Детектор очередей",
+  "ivStoreServicesItemColTitle8": "Качественное обслуживание клиентов",
+
+  "ivStoreServicesItemColText7": "Получайте уведомления о появлении очередей в реальном времени или анализируйте статистику и записи",
+  "ivStoreServicesItemColText8": "Возможность контролировать нахождение сотрудников на выделенном им рабочем месте повысит дисциплину и эффективность",
+
+  "ivStoreServicesItemColBtn7": "Заказать демонстрацию",
+  "ivStoreServicesItemColBtn8": "Заказать демонстрацию",
+
+  "ivStoreServicesItemTitle4": "Статистика по посетителям",
+  "ivStoreServicesItemDescTitle4": "Направление движения",
+  "ivStoreServicesItemDescCam4": "Камера 3",
+
+  "ivStoreServicesItemDescItemTitle15": "Время:",
+  "ivStoreServicesItemDescItemSubTitle15": "18:02:36",
+  "ivStoreServicesItemDescItemTitle16": "Дата:",
+  "ivStoreServicesItemDescItemSubTitle16": "23-03-2020",
+  "ivStoreServicesItemDescItemTitle17": "Выход:",
+  "ivStoreServicesItemDescItemSubTitle17": "109 чел",
+
+  "ivStoreServicesItemColType9": "Ivideon FACES",
+  "ivStoreServicesItemColType10": "Ivideon SKUD",
+  "ivStoreServicesItemColType11": "Ivideon COUNTER",
+
+  "ivStoreServicesItemColTitle9": "Предотвращение краж",
+  "ivStoreServicesItemColTitle10": "Бесконтактный доступ в служебное помещение",
+  "ivStoreServicesItemColTitle11": "Статистика посещаемости",
+
+  "ivStoreServicesItemColText9": "Занесите в черный список лица «воришек», обнаруженных камерой, и получайте уведомления при их появлении",
+  "ivStoreServicesItemColText10": "Подключите датчики открывания дверей «по лицу» и контролируйте рабочее время сотрудников",
+  "ivStoreServicesItemColText11": "Контролируйте рост или спад посещаемости торговой точки. Формируйте график работы продавцов с учетом статистики",
+
+  "ivStoreServicesItemColBtn9": "Заказать демонстрацию",
+  "ivStoreServicesItemColBtn10": "Заказать демонстрацию",
+  "ivStoreServicesItemColBtn11": "Заказать демонстрацию",
+
+  "ivStoreServicesItemTitle5": "Анализ происходящего в кассовой зоне",
+  "ivStoreServicesItemDescTitle5": "Тревожное событие",
+  "ivStoreServicesItemDescCam5": "Камера 2",
+
+  "ivStoreServicesItemDescItemTitle18": "Время:",
+  "ivStoreServicesItemDescItemSubTitle18": "20:28:56",
+  "ivStoreServicesItemDescItemTitle19": "Дата:",
+  "ivStoreServicesItemDescItemSubTitle19": "08-07-2020",
+  "ivStoreServicesItemDescItemTitle20": "Касса:",
+  "ivStoreServicesItemDescItemSubTitle20": "2",
+  "ivStoreServicesItemDescItemTitle21": "Событие:",
+  "ivStoreServicesItemDescItemSubTitle21": "Очистка чека",
+
+  "ivStoreServicesItemColType12": "Ivideon КАССА",
+  "ivStoreServicesItemColType13": "Ivideon QUEUES DETECTOR",
+
+  "ivStoreServicesItemColTitle12": "Предупреждение мошенничества на кассе",
+  "ivStoreServicesItemColTitle13": "Детектор очередей",
+
+  "ivStoreServicesItemColText12": "Фиксация, запись видеоподтверждений и уведомления о подозрительных чеках и действиях кассиров",
+  "ivStoreServicesItemColText13": "При образовании очереди на кассе — система уведомит вас. Планируйте рабочий график кассиров с учетом динамики образования очередей",
+
+  "ivStoreServicesItemColBtn12": "Заказать демонстрацию",
+  "ivStoreServicesItemColBtn13": "Заказать демонстрацию",
+
+  "ivStoreProductTitle": "Умные видеокамеры",
+  "ivStoreProductSubTitle": "Беспроводные WiFi-камеры с предустановленным сервисом удаленного видеонаблюдения и хранением видео в облаке",
+  "ivStoreProductItemType": "Поворотная камера",
+  "ivStoreProductItemName": "Ivideon Cute 360",
+  "ivStoreProductItemCost": "5 190",
+  "ivStoreProductItemOldCost": "5 390",
+  "ivStoreProductItemBtn": "Подробнее",
+  "ivStoreProductItemBadge": "Хит",
+
+  "ivStoreMoreTitle": "Вам может потребоваться",
+  "ivStoreMoreItemTitle1": "Nobelic NBLC-2431F-ASD (4Мп) с углом обзора  103°",
+  "ivStoreMoreItemCost1": "Цена: 12 090 ₽",
+  "ivStoreMoreItemSubTitle1": "Чтобы уточнить перечень моделей камер, совместимых с модулем видеоаналитики Ivideon, обратитесь к менеджеру",
+  "ivStoreMoreItemTitle2": "Ivideon Bridge B1610",
+  "ivStoreMoreItemCost2": "Цена: 6 000 ₽",
+  "ivStoreMoreItemSubTitle2": "Для подключения камер других производителей к сервису Ivideon",
+
+  "ivStorePromoTitle2": "Расчёт стоимости подключения",
+  "ivStorePromoText2": "Оставьте заявку и получите расчёт стоимости подключения системы Ivideon под ваши потребности",
+  "ivStorePromoBtn2": "Оставить завку"
 }

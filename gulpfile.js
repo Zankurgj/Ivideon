@@ -79,6 +79,7 @@ function scripts() {
     "app/js/ivideon_bridge.js",
     "app/js/ivideon_analytics.js",
     "app/js/ivideon_office.js",
+    "app/js/ivideon_store.js",
   ])
     .pipe(named())
     .pipe(

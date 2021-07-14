@@ -1,0 +1,18 @@
+{% macro featureSection(dataArr, title) %}
+<section class="ivideon-feture-buble-section">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-feture-buble__title">{{title}}</h2>
+    </div>
+
+    <div class="iv-container iv-container--feture-buble">
+        <div class="iv-row ivideon-feture-buble__slider js--feature-buble-slider">
+            {% from "app/njk/components/ivideon_feature_buble_item.njk" import featureItem %}
+            {% for item in dataArr %}
+            <div class="ivideon-feture-buble__col">
+                {{ featureItem(item.icon, item.title, item.text, item.link) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endmacro %}

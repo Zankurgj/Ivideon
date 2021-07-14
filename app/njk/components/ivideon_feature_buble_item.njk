@@ -1,0 +1,12 @@
+{% macro featureItem(icon, title, text) %}
+<div class="ivideon-feature__item-buble">
+    <div class="ivideon-feature__item-img-buble">
+        <img src="{{icon}}" alt="{{title}}">
+    </div>
+    <div class="ivideon-feature__item-text_wrapper">
+        <p class="ivideon-feature__item-text-buble">
+            {{text}}
+        </p>
+    </div>
+</div>
+{% endmacro %}

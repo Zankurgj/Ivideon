@@ -1,0 +1,51 @@
+{% macro zoneSection(title, data) %}
+<section class="ivideon-zone">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-zone__title">{{title}}</h2>
+        <div class="ivideon-zone__slider-wrapper">
+            <div class="ivideon-zone__slider js--zone-slider">
+                {% for item in data %}
+                <div class="ivideon-zone__slide-wrapper">
+                    <div class="ivideon-zone__slide">
+                        <picture>
+                            <source srcset="{{item.img.desktop}}" media="(min-width: 1024px)">
+                            <source srcset="{{item.img.tablet}}" media="(min-width: 768px)">
+                            <img src="{{item.img.mobile}}" class="ivideon-zone__img" alt="интерфейс">
+                        </picture>
+                        <div class="ivideon-zone__text-block">
+                            {% if item.title %}
+                            <p class="ivideon-zone__slide-title">{{item.title}}</p>
+                            {% endif %}
+                            <p class="ivideon-zone__slide-text">{{item.text}}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="ivideon-zone__slider-nav">
+                <div class="ivideon-zone__slider-paging">
+                    <div class="ivideon-zone__slider-paging-number-wrapper">
+                        <span class="ivideon-zone__slider-paging-number">
+                            <span class="js--zone-current-slide"></span>
+                        </span>
+                        <span class="ivideon-zone__slider-paging-number">
+                            <span class="js--zone-total-slide"></span>
+                        </span>
+                    </div>
+                    <div class="ivideon-zone__slider-paging-line">
+                        <div class="ivideon-zone__slider-paging-progress js--zone-progress-slide"></div>
+                    </div>
+                </div>
+                <div class="ivideon-zone__slider-arrows">
+                    <button class="ivideon-zone__slider-arrow ivideon-zone__slider-arrow--prev">
+                        <span class="visually-hidden">предыдущий слайд</span>
+                    </button>
+                    <button class="ivideon-zone__slider-arrow ivideon-zone__slider-arrow--next">
+                        <span class="visually-hidden">следующий слайд</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endmacro %}

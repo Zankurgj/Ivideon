@@ -1,0 +1,13 @@
+{% macro taskItem(img, title, textArr) %}
+<div class="ivideon-storage-task__item">
+    <div class="ivideon-storage-task__item-img" style="background-image: url('{{img}}');"></div>
+    <div class="ivideon-storage-task__item-text-block">
+        <p class="ivideon-storage-task__item-title">{{title}}</p>
+        {% for text in textArr %}
+        <p class="ivideon-storage-task__item-text">
+            {{text}}
+        </p>
+        {% endfor %}
+    </div>
+</div>
+{% endmacro %}

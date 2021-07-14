@@ -1,0 +1,59 @@
+.ivideon-feature__item-buble {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 420px;
+  @media all and (min-width: $tablet-bp) {
+    flex-direction: column;
+    max-width: 300px;
+    height: 100%;
+  }
+  @media all and (min-width: $desktop-bp) {
+    max-width: 100%;
+    padding: 112px 0 0 128px;
+  }
+}
+
+.ivideon-feature__item-img-buble {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  @media all and (min-width: $tablet-bp) {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  img {
+    display: block;
+    width: 96px;
+    height: 96px;
+    @media all and (min-width: $tablet-bp) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+.ivideon-feature__item-text_wrapper {
+  flex-grow: 1;
+  padding: 16px 16px 20px 16px;
+  background: rgba(233, 246, 255, 0.5);
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 140, 239, 0.3);
+  @media all and (min-width: $tablet-bp) {
+    padding: 24px 24px 56px 24px;
+    border-radius: 32px;
+  }
+}
+.ivideon-feature__item-text-buble {
+  font-size: 13px;
+  line-height: 20px;
+  color: $iv-ws-colors-midnight;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

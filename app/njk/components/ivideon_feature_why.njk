@@ -1,0 +1,15 @@
+{% macro featureWhySection(dataArr, title) %}
+<section class="ivideon-feture-why">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-feture-why__title">{{title}}</h2>
+        <div class="iv-row">
+            {% from "app/njk/components/ivideon_feature_item.njk" import featureItem %}
+            {% for item in dataArr %}
+            <div class="ivideon-feture-why__col">
+                {{ featureItem(item.icon, item.title, item.text, item.link) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endmacro %}

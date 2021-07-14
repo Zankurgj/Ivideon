@@ -1,0 +1,55 @@
+<section class="ivideon-storage-task">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-storage-task__title">{{ivStoragePartnersTitle}}</h2>
+        <div class="iv-row iv-row__ivideon-storage-task">
+            {% set taskData = [
+            {
+            img: "../../images/dest/img/ivideon_storage/storage_task1.png",
+            title: ivStorageTaskItemTitle1,
+            textArr: [
+            ivStorageTaskItem1Text1,
+            ivStorageTaskItem1Text2,
+            ivStorageTaskItem1Text3
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_storage/storage_task2.png",
+            title: ivStorageTaskItemTitle2,
+            textArr: [
+            ivStorageTaskItem2Text1,
+            ivStorageTaskItem2Text2,
+            ivStorageTaskItem2Text3,
+            ivStorageTaskItem2Text4,
+            ivStorageTaskItem2Text5
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_storage/storage_task3.png",
+            title: ivStorageTaskItemTitle3,
+            textArr: [
+            ivStorageTaskItem3Text1,
+            ivStorageTaskItem3Text2,
+            ivStorageTaskItem3Text3
+            ]
+            }
+            ] %}
+            {% for item in taskData %}
+            <div class="ivideon-storage-task__col">
+                {% from "app/njk/components/ivideon_task_item.njk" import taskItem %}
+                {{ taskItem(item.img, item.title, item.textArr) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="ivideon-storage-promo2">
+        {% set promo1= {
+        title: ivStoragePromoTitle,
+        text: ivStoragePromoText,
+        btn: ivStoragePromoBtn,
+        img: "../../images/dest/img/common/promo_bg3.png",
+        type: 'gray'
+        } %}
+        {% from "app/njk/components/ivideon_promo.njk" import promoSection %}
+        {{ promoSection(promo1.title, promo1.text, promo1.btn, promo1.img, promo1.type) }}
+    </div>
+</section>

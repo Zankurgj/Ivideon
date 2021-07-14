@@ -1,0 +1,46 @@
+@import "./ivideon_feature_item_why.scss";
+
+.ivideon-feture-why {
+  padding: 64px 0;
+  @media all and (min-width: $tablet-bp) {
+    padding: 80px 0;
+  }
+  @media all and (min-width: $desktop-bp) {
+    padding: 80px 0 120px 0;
+  }
+}
+// TITLE
+.ivideon-feture-why__title {
+  margin-bottom: 40px;
+  @media all and (min-width: $desktop-bp) {
+    margin-bottom: 48px;
+  }
+}
+// COL
+.ivideon-feture-why__col {
+  max-width: 100%;
+  flex-basis: 100%;
+  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media all and (min-width: $tablet-bp) {
+    max-width: calc((100% - 12px) / 2);
+    flex-basis: calc((100% - 12px) / 2);
+    margin-right: 12px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  @media all and (min-width: $desktop-bp) {
+    max-width: calc((100% - 20px * 2) / 3);
+    flex-basis: calc((100% - 20px * 2) / 3);
+    margin-right: 20px;
+    &:nth-child(2n) {
+      margin-right: 20px;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}

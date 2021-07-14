@@ -1,0 +1,65 @@
+.ivideon-storage-task__item {
+  border-radius: 12px;
+  background-color: $iv-ws-colors-text-light;
+  overflow: hidden;
+  height: 100%;
+}
+.ivideon-storage-task__item-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 102px;
+  @media all and (min-width: $tablet-bp) {
+    height: 160px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    height: 214px;
+  }
+}
+.ivideon-storage-task__item-text-block {
+  padding: 20px 24px 24px 24px;
+  @media all and (min-width: $tablet-bp) {
+    padding: 20px 24px 45px 24px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    padding: 32px 32px 48px 32px;
+  }
+}
+.ivideon-storage-task__item-title {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $iv-ws-colors-midnight;
+  text-align: center;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.ivideon-storage-task__item-text {
+  position: relative;
+  font-size: 13px;
+  line-height: 20px;
+  color: $iv-ws-colors-midnight;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../images/dest/icons/tick.svg");
+  }
+}

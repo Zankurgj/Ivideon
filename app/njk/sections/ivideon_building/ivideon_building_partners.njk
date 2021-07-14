@@ -1,0 +1,27 @@
+<section class="ivideon-building-partners">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-building-partners__title">{{ivBuildingPartnersTitle}}</h2>
+        <div class="iv-row ivideon-building-partners__iv-row">
+            {% set partnersItem = [
+            "../../images/dest/img/ivideon_building/building_partners1.png",
+            "../../images/dest/img/ivideon_building/building_partners2.png",
+            "../../images/dest/img/ivideon_building/building_partners3.png",
+            "../../images/dest/img/ivideon_building/building_partners4.png",
+            "../../images/dest/img/ivideon_building/building_partners5.png",
+            "../../images/dest/img/ivideon_building/building_partners6.png",
+            "../../images/dest/img/ivideon_building/building_partners7.png",
+            "../../images/dest/img/ivideon_building/building_partners8.png",
+            "../../images/dest/img/ivideon_building/building_partners9.png",
+            "../../images/dest/img/ivideon_building/building_partners10.png",
+            "../../images/dest/img/ivideon_building/building_partners11.png"
+            ]%}
+            {% for item in partnersItem %}
+            <div class="ivideon-building-partners__col">
+                <div class="ivideon-building-partners__item">
+                    <img src="{{item}}" alt="партнеры">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

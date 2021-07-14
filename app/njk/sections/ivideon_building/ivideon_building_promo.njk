@@ -1,0 +1,11 @@
+<section class="ivideon-building-promo1">
+    {% set promo1= {
+    title: ivBuildingPromoTitle,
+    text: ivBuildingPromoText,
+    btn: ivBuildingPromoBtn,
+    img: "../../images/dest/img/common/promo_bg1.png",
+    type: 'blue'
+    } %}
+    {% from "app/njk/components/ivideon_promo.njk" import promoSection %}
+    {{ promoSection(promo1.title, promo1.text, promo1.btn, promo1.img, promo1.type) }}
+</section>

@@ -1,0 +1,36 @@
+<div class="iv-building-slider-wrapper">
+    {% set zoneSlider = {
+    title: ivBuildingZoneTitle,
+    data: [
+    {
+    title: ivBuildingZoneSlideTitle1,
+    text: ivBuildingZoneSlideText1,
+    img : {
+    mobile: "../../images/dest/img/ivideon_building/building_slider1-m.png",
+    tablet: "../../images/dest/img/ivideon_building/building_slider1-t.png",
+    desktop: "../../images/dest/img/ivideon_building/building_slider1-d.png"
+    }
+    },
+    {
+    title: ivBuildingZoneSlideTitle2,
+    text: ivBuildingZoneSlideText2,
+    img : {
+    mobile: "../../images/dest/img/ivideon_building/building_slider2-m.png",
+    tablet: "../../images/dest/img/ivideon_building/building_slider2-t.png",
+    desktop: "../../images/dest/img/ivideon_building/building_slider2-d.png"
+    }
+    },
+    {
+    title: ivBuildingZoneSlideTitle3,
+    text: ivBuildingZoneSlideText3,
+    img : {
+    mobile: "../../images/dest/img/ivideon_building/building_slider3-m.png",
+    tablet: "../../images/dest/img/ivideon_building/building_slider3-t.png",
+    desktop: "../../images/dest/img/ivideon_building/building_slider3-d.png"
+    }
+    }
+    ]
+    } %}
+    {% from "app/njk/components/ivideon_storage_zone.njk" import zoneSection %}
+    {{ zoneSection(zoneSlider.title, zoneSlider.data) }}
+</div>

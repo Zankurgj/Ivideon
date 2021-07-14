@@ -1,0 +1,66 @@
+<section class="ivideon-building-task">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-building-task__title">{{ivBuildingTaskTitle}}</h2>
+        <div class="iv-row iv-row__ivideon-building-task">
+            {% set taskData = [
+            {
+            img: "../../images/dest/img/ivideon_building/building_task1.png",
+            title: ivBuildingTaskItemTitle1,
+            textArr: [
+            ivBuildingTaskItem1Text1,
+            ivBuildingTaskItem1Text2,
+            ivBuildingTaskItem1Text3,
+            ivBuildingTaskItem1Text4,
+            ivBuildingTaskItem1Text5,
+            ivBuildingTaskItem1Text6
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_building/building_task2.png",
+            title: ivBuildingTaskItemTitle2,
+            textArr: [
+            ivBuildingTaskItem2Text1,
+            ivBuildingTaskItem2Text2,
+            ivBuildingTaskItem2Text3,
+            ivBuildingTaskItem2Text4,
+            ivBuildingTaskItem2Text5,
+            ivBuildingTaskItem2Text6
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_building/building_task3.png",
+            title: ivBuildingTaskItemTitle3,
+            textArr: [
+            ivBuildingTaskItem3Text1,
+            ivBuildingTaskItem3Text2
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_building/building_task4.png",
+            title: ivBuildingTaskItemTitle3,
+            textArr: [
+            ivBuildingTaskItem4Text1,
+            ivBuildingTaskItem4Text2
+            ]
+            }
+            ] %}
+            {% for item in taskData %}
+            <div class="ivideon-building-task__col">
+                {% from "app/njk/components/ivideon_task_item.njk" import taskItem %}
+                {{ taskItem(item.img, item.title, item.textArr) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="ivideon-storage-promo2">
+        {% set promo1= {
+        title: ivBuildingPromoTitle2,
+        text: ivBuildingPromoText2,
+        btn: ivBuildingPromoBtn2,
+        img: "../../images/dest/img/common/promo_bg6.png",
+        type: 'gray'
+        } %}
+        {% from "app/njk/components/ivideon_promo.njk" import promoSection %}
+        {{ promoSection(promo1.title, promo1.text, promo1.btn, promo1.img, promo1.type) }}
+    </div>
+</section>

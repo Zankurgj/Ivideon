@@ -1,0 +1,19 @@
+<section class="ivideon-salon-partners">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-salon-partners__title">{{ivStoragePartnersTitle}}</h2>
+        <div class="iv-row ivideon-salon-partners__iv-row">
+            {% set partnersItem = [
+            "../../images/dest/img/ivideon_salon/salon_partners1.png",
+            "../../images/dest/img/ivideon_salon/salon_partners2.png",
+            "../../images/dest/img/ivideon_salon/salon_partners3.png"
+            ]%}
+            {% for item in partnersItem %}
+            <div class="ivideon-salon-partners__col">
+                <div class="ivideon-salon-partners__item">
+                    <img src="{{item}}" alt="партнеры">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

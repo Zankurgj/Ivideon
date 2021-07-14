@@ -1,0 +1,46 @@
+.ivideon-salon-partners {
+  padding: 0 0 64px 0;
+  @media all and (min-width: $tablet-bp) {
+    padding: 0 0 80px 0;
+  }
+  @media all and (min-width: $desktop-bp) {
+    padding: 0 0 120px 0;
+  }
+}
+.ivideon-salon-partners__title {
+  margin-bottom: 40px;
+  @media all and (min-width: $desktop-bp) {
+    margin-bottom: 48px;
+  }
+}
+.ivideon-salon-partners__iv-row {
+  justify-content: center;
+}
+.ivideon-salon-partners__col {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  max-width: 100%;
+  margin-bottom: 12px;
+  @media all and (min-width: $tablet-bp) {
+    flex-basis: calc((100% - 12px * 3) / 4);
+    max-width: calc((100% - 12px * 3) / 4);
+    margin-right: 12px;
+    margin-bottom: 0;
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+  @media all and (min-width: $desktop-bp) {
+    flex-basis: calc((100% - 20px * 3) / 4);
+    max-width: calc((100% - 20px * 3) / 4);
+    margin-right: 20px;
+  }
+}
+
+.ivideon-salon-partners__item {
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}

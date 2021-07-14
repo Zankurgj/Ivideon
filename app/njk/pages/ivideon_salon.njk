@@ -1,0 +1,88 @@
+<!-- Переменная из json, проставляет тайтл страницы -->
+{% set pageTitle = ivSalonPageTitle %}
+<!-- Имя страницы, для проставления названия js и css файлов -->
+{% set pageName = 'ivideon_salon' %}
+
+{% extends "app/njk/layout/index.njk" %}
+{% block content %}
+<!-- HEAD -->
+{% include "app/njk/sections/ivideon_salon/ivideon_salon_top.njk" %}
+<!-- FEATURE -->
+{% set featureItems = {
+title: ivSalonFetureBubleTitle,
+data : [
+{
+icon: "../../images/dest/img/common/feature_buble1.png",
+text: ivFetureBubleText1
+},
+{
+icon: "../../images/dest/img/common/feature_buble2.png",
+text: ivFetureBubleText2
+},
+{
+icon: "../../images/dest/img/common/feature_buble3.png",
+text: ivFetureBubleText3
+},
+{
+icon: "../../images/dest/img/common/feature_buble1.png",
+text: ivFetureBubleText4
+},
+{
+icon: "../../images/dest/img/common/feature_buble2.png",
+text: ivFetureBubleText5
+},
+{
+icon: "../../images/dest/img/common/feature_buble3.png",
+text: ivFetureBubleText6
+}
+]
+} %}
+{% from "app/njk/components/ivideon_feature_buble.njk" import featureSection %}
+{{ featureSection(featureItems.data, featureItems.title) }}
+<!-- PROMO -->
+{% include "app/njk/sections/ivideon_salon/ivideon_salon_promo.njk" %}
+<!-- PARTNERS -->
+{% include "app/njk/sections/ivideon_salon/ivideon_salon_partners.njk" %}
+<!-- TASK -->
+{% include "app/njk/sections/ivideon_salon/ivideon_salon_task.njk" %}
+<!-- SLIDER -->
+{% include "app/njk/sections/ivideon_salon/ivideon_salon_zone_slider.njk" %}
+<!-- FEATURE WHY-->
+{% set featureItems = {
+title: ivWhyBlockTitle,
+data: [
+{
+icon: "../../images/dest/img/common/feature_why1.png",
+title: ivWhyBlockItemTitle1,
+text: ivWhyBlockItemText1
+},
+{
+icon: "../../images/dest/img/common/feature_why2.png",
+title: ivWhyBlockItemTitle2,
+text: ivWhyBlockItemText2
+},
+{
+icon: "../../images/dest/img/common/feature_why3.png",
+title: ivWhyBlockItemTitle3,
+text: ivWhyBlockItemText3
+},
+{
+icon: "../../images/dest/img/common/feature_why4.png",
+title: ivWhyBlockItemTitle4,
+text: ivWhyBlockItemText4
+},
+{
+icon: "../../images/dest/img/common/feature_why5.png",
+title: ivWhyBlockItemTitle5,
+text: ivWhyBlockItemText5
+},
+{
+icon: "../../images/dest/img/common/feature_why6.png",
+title: ivWhyBlockItemTitle6,
+text: ivWhyBlockItemText6
+}
+]
+} %}
+{% from "app/njk/components/ivideon_feature_why.njk" import featureWhySection %}
+{{ featureWhySection(featureItems.data, featureItems.title) }}
+{% endblock %}

@@ -1,0 +1,71 @@
+<section class="ivideon-salon-task">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-salon-task__title">{{ivSalonTaskTitle}}</h2>
+        <div class="iv-row iv-row__ivideon-salon-task">
+            {% set taskData = [
+            {
+            img: "../../images/dest/img/ivideon_salon/salon_task1.png",
+            title: ivSalonTaskItemTitle1,
+            textArr: [
+            ivSalonTaskItem1Text1,
+            ivSalonTaskItem1Text2,
+            ivSalonTaskItem1Text3
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_salon/salon_task2.png",
+            title: ivSalonTaskItemTitle2,
+            textArr: [
+            ivSalonTaskItem2Text1,
+            ivSalonTaskItem2Text2
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_salon/salon_task3.png",
+            title: ivSalonTaskItemTitle3,
+            textArr: [
+            ivSalonTaskItem3Text1,
+            ivSalonTaskItem3Text2
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_salon/salon_task4.png",
+            title: ivSalonTaskItemTitle4,
+            textArr: [
+            ivSalonTaskItem4Text1,
+            ivSalonTaskItem4Text2
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_salon/salon_task5.png",
+            title: ivSalonTaskItemTitle5,
+            textArr: [
+            ivSalonTaskItem5Text1,
+            ivSalonTaskItem5Text2,
+            ivSalonTaskItem5Text3,
+            ivSalonTaskItem5Text4,
+            ivSalonTaskItem5Text5,
+            ivSalonTaskItem5Text6
+            ]
+            }
+            ] %}
+            {% for item in taskData %}
+            <div class="ivideon-salon-task__col">
+                {% from "app/njk/components/ivideon_task_item.njk" import taskItem %}
+                {{ taskItem(item.img, item.title, item.textArr) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="ivideon-salon-promo2">
+        {% set promo1= {
+        title: ivSalonPromoTitle,
+        text: ivSalonPromoText,
+        btn: ivSalonPromoBtn,
+        img: "../../images/dest/img/common/promo_bg3.png",
+        type: 'gray'
+        } %}
+        {% from "app/njk/components/ivideon_promo.njk" import promoSection %}
+        {{ promoSection(promo1.title, promo1.text, promo1.btn, promo1.img, promo1.type) }}
+    </div>
+</section>

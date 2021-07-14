@@ -21,9 +21,6 @@
   max-width: 100%;
   flex-basis: 100%;
   margin-bottom: 12px;
-  &:last-child {
-    margin-bottom: 0;
-  }
   @media all and (min-width: $tablet-bp) {
     max-width: calc((100% - 12px) / 2);
     flex-basis: calc((100% - 12px) / 2);

@@ -1,0 +1,20 @@
+@import "../components/ivideon_storage_zone";
+.iv-retail-slider-wrapper {
+  padding: 64px 0 0 0;
+  @media all and (min-width: $tablet-bp) {
+    padding: 80px 0 0 0;
+  }
+  .slick-slide {
+    &:first-child {
+      .ivideon-zone__slide-text {
+        max-width: 260px;
+        @media all and (min-width: $tablet-bp) {
+          max-width: 544px;
+        }
+        @media all and (min-width: $desktop-bp) {
+          max-width: 1200px;
+        }
+      }
+    }
+  }
+}

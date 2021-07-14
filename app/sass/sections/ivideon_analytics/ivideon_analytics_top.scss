@@ -1,24 +1,28 @@
 // WRAPPER
 .ivideon-analytics-top {
+  background-color: $iv-ws-colors-solitude5;
+}
+.ivideon-analytics-top__inner {
   position: relative;
   display: flex;
   flex-direction: column;
   border-radius: 0px 0px 40px 40px;
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right top;
+  background-image: url("../images/dest/img/ivideon_analytics/analytics_top_bg-m.png");
+  background-size: auto 100%;
   background-color: $iv-ws-colors-text-light;
   min-height: 500px;
   overflow: hidden;
-  margin-bottom: 64px;
   @media all and (min-width: $tablet-bp) {
     min-height: 560px;
-    margin-bottom: 80px;
-    background-size: 400px;
+    background-image: url("../images/dest/img/ivideon_analytics/analytics_top_bg-t.png");
   }
   @media all and (min-width: $desktop-bp) {
     min-height: 720px;
     background-size: auto 100%;
     background-image: url("../images/dest/img/ivideon_analytics/analytics_top_bg.png");
+    background-position: right -300px bottom;
   }
   @media all and (min-width: 1200px) {
     background-position: right -200px bottom;

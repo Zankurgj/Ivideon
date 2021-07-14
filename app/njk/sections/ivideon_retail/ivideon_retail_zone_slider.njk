@@ -1,0 +1,63 @@
+<div class="iv-retail-slider-wrapper">
+    {% set zoneSlider = {
+    title: ivRetailZoneTitle,
+    data: [
+    {
+    title: ivRetailZoneSlideTitle1,
+    text: ivRetailZoneSlideText1,
+    img : {
+    mobile: "../../images/dest/img/ivideon_retail/retail_slider1-m.png",
+    tablet: "../../images/dest/img/ivideon_retail/retail_slider1-t.png",
+    desktop: "../../images/dest/img/ivideon_retail/retail_slider1-d.png"
+    }
+    },
+    {
+    title: ivRetailZoneSlideTitle2,
+    text: ivRetailZoneSlideText2,
+    img : {
+    mobile: "../../images/dest/img/ivideon_retail/retail_slider2-m.png",
+    tablet: "../../images/dest/img/ivideon_retail/retail_slider2-t.png",
+    desktop: "../../images/dest/img/ivideon_retail/retail_slider2-d.png"
+    }
+    },
+    {
+    title: ivRetailZoneSlideTitle3,
+    text: ivRetailZoneSlideText3,
+    img : {
+    mobile: "../../images/dest/img/ivideon_retail/retail_slider3-m.png",
+    tablet: "../../images/dest/img/ivideon_retail/retail_slider3-t.png",
+    desktop: "../../images/dest/img/ivideon_retail/retail_slider3-d.png"
+    }
+    },
+    {
+    title: ivRetailZoneSlideTitle4,
+    text: ivRetailZoneSlideText4,
+    img : {
+    mobile: "../../images/dest/img/ivideon_retail/retail_slider4-m.png",
+    tablet: "../../images/dest/img/ivideon_retail/retail_slider4-t.png",
+    desktop: "../../images/dest/img/ivideon_retail/retail_slider4-d.png"
+    }
+    },
+    {
+    title: ivRetailZoneSlideTitle5,
+    text: ivRetailZoneSlideText5,
+    img : {
+    mobile: "../../images/dest/img/ivideon_retail/retail_slider5-m.png",
+    tablet: "../../images/dest/img/ivideon_retail/retail_slider5-t.png",
+    desktop: "../../images/dest/img/ivideon_retail/retail_slider5-d.png"
+    }
+    },
+    {
+    title: ivRetailZoneSlideTitle6,
+    text: ivRetailZoneSlideText6,
+    img : {
+    mobile: "../../images/dest/img/ivideon_retail/retail_slider6-m.png",
+    tablet: "../../images/dest/img/ivideon_retail/retail_slider6-t.png",
+    desktop: "../../images/dest/img/ivideon_retail/retail_slider6-d.png"
+    }
+    }
+    ]
+    } %}
+    {% from "app/njk/components/ivideon_storage_zone.njk" import zoneSection %}
+    {{ zoneSection(zoneSlider.title, zoneSlider.data) }}
+</div>

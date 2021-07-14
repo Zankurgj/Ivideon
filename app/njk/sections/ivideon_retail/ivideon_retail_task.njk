@@ -1,0 +1,103 @@
+<section class="ivideon-retail-task">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-retail-task__title">{{ivRetailTaskTitle}}</h2>
+        <div class="iv-row iv-row__ivideon-retail-task">
+            {% set taskData = [
+            {
+            img: "../../images/dest/img/ivideon_retail/retail_task1.png",
+            title: ivRetailTaskItemTitle1,
+            textArr: [
+            ivRetailTaskItem1Text1,
+            ivRetailTaskItem1Text2,
+            ivRetailTaskItem1Text3,
+            ivRetailTaskItem1Text4,
+            ivRetailTaskItem1Text5,
+            ivRetailTaskItem1Text6
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_retail/retail_task2.png",
+            title: ivRetailTaskItemTitle2,
+            textArr: [
+            ivRetailTaskItem2Text1,
+            ivRetailTaskItem2Text2,
+            ivRetailTaskItem2Text3,
+            ivRetailTaskItem2Text4,
+            ivRetailTaskItem2Text5,
+            ivRetailTaskItem2Text6
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_retail/retail_task3.png",
+            title: ivRetailTaskItemTitle3,
+            textArr: [
+            ivRetailTaskItem3Text1,
+            ivRetailTaskItem3Text2,
+            ivRetailTaskItem3Text3
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_retail/retail_task4.png",
+            title: ivRetailTaskItemTitle4,
+            textArr: [
+            ivRetailTaskItem4Text1,
+            ivRetailTaskItem4Text2,
+            ivRetailTaskItem4Text3,
+            ivRetailTaskItem4Text4
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_retail/retail_task5.png",
+            title: ivRetailTaskItemTitle5,
+            textArr: [
+            ivRetailTaskItem5Text1,
+            ivRetailTaskItem5Text2
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_retail/retail_task6.png",
+            title: ivRetailTaskItemTitle6,
+            textArr: [
+            ivRetailTaskItem6Text1,
+            ivRetailTaskItem6Text2
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_retail/retail_task7.png",
+            title: ivRetailTaskItemTitle7,
+            textArr: [
+            ivRetailTaskItem7Text1,
+            ivRetailTaskItem7Text2,
+            ivRetailTaskItem7Text3
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_retail/retail_task8.png",
+            title: ivRetailTaskItemTitle8,
+            textArr: [
+            ivRetailTaskItem8Text1,
+            ivRetailTaskItem8Text2,
+            ivRetailTaskItem8Text3
+            ]
+            }
+            ] %}
+            {% for item in taskData %}
+            <div class="ivideon-retail-task__col">
+                {% from "app/njk/components/ivideon_task_item.njk" import taskItem %}
+                {{ taskItem(item.img, item.title, item.textArr) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="ivideon-storage-promo2">
+        {% set promo1= {
+        title: ivRetailPromoTitle2,
+        text: ivRetailPromoText2,
+        btn: ivRetailPromoBtn2,
+        img: "../../images/dest/img/common/promo_bg7.png",
+        type: 'gray'
+        } %}
+        {% from "app/njk/components/ivideon_promo.njk" import promoSection %}
+        {{ promoSection(promo1.title, promo1.text, promo1.btn, promo1.img, promo1.type) }}
+    </div>
+</section>

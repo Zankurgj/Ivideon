@@ -1,0 +1,65 @@
+<section class="ivideon-hotels-task">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-hotels-task__title">{{ivHotelsTaskTitle}}</h2>
+        <div class="iv-row iv-row__ivideon-hotels-task">
+            {% set taskData = [
+            {
+            img: "../../images/dest/img/ivideon_hotels/hotels_task1.png",
+            title: ivHotelsTaskItemTitle1,
+            textArr: [
+            ivHotelsTaskItem1Text1,
+            ivHotelsTaskItem1Text2,
+            ivHotelsTaskItem1Text3,
+            ivHotelsTaskItem1Text4,
+            ivHotelsTaskItem1Text5
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_hotels/hotels_task2.png",
+            title: ivHotelsTaskItemTitle2,
+            textArr: [
+            ivHotelsTaskItem2Text1,
+            ivHotelsTaskItem2Text2,
+            ivHotelsTaskItem2Text3,
+            ivHotelsTaskItem2Text4,
+            ivHotelsTaskItem2Text5,
+            ivHotelsTaskItem2Text6
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_hotels/hotels_task3.png",
+            title: ivHotelsTaskItemTitle3,
+            textArr: [
+            ivHotelsTaskItem3Text1,
+            ivHotelsTaskItem3Text2
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_hotels/hotels_task4.png",
+            title: ivHotelsTaskItemTitle3,
+            textArr: [
+            ivHotelsTaskItem4Text1,
+            ivHotelsTaskItem4Text2
+            ]
+            }
+            ] %}
+            {% for item in taskData %}
+            <div class="ivideon-hotels-task__col">
+                {% from "app/njk/components/ivideon_task_item.njk" import taskItem %}
+                {{ taskItem(item.img, item.title, item.textArr) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="ivideon-storage-promo2">
+        {% set promo1= {
+        title: ivHotelsPromoTitle2,
+        text: ivHotelsPromoText2,
+        btn: ivHotelsPromoBtn2,
+        img: "../../images/dest/img/common/promo_bg5.png",
+        type: 'gray'
+        } %}
+        {% from "app/njk/components/ivideon_promo.njk" import promoSection %}
+        {{ promoSection(promo1.title, promo1.text, promo1.btn, promo1.img, promo1.type) }}
+    </div>
+</section>

@@ -1,0 +1,36 @@
+<div class="iv-hotel-slider-wrapper">
+    {% set zoneSlider = {
+    title: ivHotelZoneTitle,
+    data: [
+    {
+    title: ivHotelZoneSlideTitle1,
+    text: ivHotelZoneSlideText1,
+    img : {
+    mobile: "../../images/dest/img/ivideon_hotels/hotel_slider1-m.png",
+    tablet: "../../images/dest/img/ivideon_hotels/hotel_slider1-t.png",
+    desktop: "../../images/dest/img/ivideon_hotels/hotel_slider1-d.png"
+    }
+    },
+    {
+    title: ivHotelZoneSlideTitle2,
+    text: ivHotelZoneSlideText2,
+    img : {
+    mobile: "../../images/dest/img/ivideon_hotels/hotel_slider2-m.png",
+    tablet: "../../images/dest/img/ivideon_hotels/hotel_slider2-t.png",
+    desktop: "../../images/dest/img/ivideon_hotels/hotel_slider2-d.png"
+    }
+    },
+    {
+    title: ivHotelZoneSlideTitle3,
+    text: ivHotelZoneSlideText3,
+    img : {
+    mobile: "../../images/dest/img/ivideon_hotels/hotel_slider3-m.png",
+    tablet: "../../images/dest/img/ivideon_hotels/hotel_slider3-t.png",
+    desktop: "../../images/dest/img/ivideon_hotels/hotel_slider3-d.png"
+    }
+    }
+    ]
+    } %}
+    {% from "app/njk/components/ivideon_storage_zone.njk" import zoneSection %}
+    {{ zoneSection(zoneSlider.title, zoneSlider.data) }}
+</div>

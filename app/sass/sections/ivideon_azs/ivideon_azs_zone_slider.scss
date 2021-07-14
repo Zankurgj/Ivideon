@@ -1,0 +1,7 @@
+@import "../components/ivideon_storage_zone";
+.iv-azs-slider-wrapper {
+  padding: 64px 0 0 0;
+  @media all and (min-width: $tablet-bp) {
+    padding: 80px 0 0 0;
+  }
+}

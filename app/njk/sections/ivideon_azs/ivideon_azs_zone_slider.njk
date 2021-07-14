@@ -1,0 +1,54 @@
+<div class="iv-azs-slider-wrapper">
+    {% set zoneSlider = {
+    title: ivAzsZoneTitle,
+    data: [
+    {
+    title: ivAzsZoneSlideTitle1,
+    text: ivAzsZoneSlideText1,
+    img : {
+    mobile: "../../images/dest/img/ivideon_azs/azs_slider1-m.png",
+    tablet: "../../images/dest/img/ivideon_azs/azs_slider1-t.png",
+    desktop: "../../images/dest/img/ivideon_azs/azs_slider1-d.png"
+    }
+    },
+    {
+    title: ivAzsZoneSlideTitle2,
+    text: ivAzsZoneSlideText2,
+    img : {
+    mobile: "../../images/dest/img/ivideon_azs/azs_slider2-m.png",
+    tablet: "../../images/dest/img/ivideon_azs/azs_slider2-t.png",
+    desktop: "../../images/dest/img/ivideon_azs/azs_slider2-d.png"
+    }
+    },
+    {
+    title: ivAzsZoneSlideTitle3,
+    text: ivAzsZoneSlideText3,
+    img : {
+    mobile: "../../images/dest/img/ivideon_azs/azs_slider3-m.png",
+    tablet: "../../images/dest/img/ivideon_azs/azs_slider3-t.png",
+    desktop: "../../images/dest/img/ivideon_azs/azs_slider3-d.png"
+    }
+    },
+    {
+    title: ivAzsZoneSlideTitle4,
+    text: ivAzsZoneSlideText4,
+    img : {
+    mobile: "../../images/dest/img/ivideon_azs/azs_slider4-m.png",
+    tablet: "../../images/dest/img/ivideon_azs/azs_slider4-t.png",
+    desktop: "../../images/dest/img/ivideon_azs/azs_slider4-d.png"
+    }
+    },
+    {
+    title: ivAzsZoneSlideTitle5,
+    text: ivAzsZoneSlideText5,
+    img : {
+    mobile: "../../images/dest/img/ivideon_azs/azs_slider5-m.png",
+    tablet: "../../images/dest/img/ivideon_azs/azs_slider5-t.png",
+    desktop: "../../images/dest/img/ivideon_azs/azs_slider5-d.png"
+    }
+    }
+    ]
+    } %}
+    {% from "app/njk/components/ivideon_storage_zone.njk" import zoneSection %}
+    {{ zoneSection(zoneSlider.title, zoneSlider.data) }}
+</div>

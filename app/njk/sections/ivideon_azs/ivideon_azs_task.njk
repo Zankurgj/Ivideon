@@ -1,0 +1,62 @@
+<section class="ivideon-azs-task">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-azs-task__title">{{ivAzsTaskTitle}}</h2>
+        <div class="iv-row iv-row__ivideon-azs-task">
+            {% set taskData = [
+            {
+            img: "../../images/dest/img/ivideon_azs/azs_task1.png",
+            title: ivAzsTaskItemTitle1,
+            textArr: [
+            ivAzsTaskItem1Text1,
+            ivAzsTaskItem1Text2,
+            ivAzsTaskItem1Text3,
+            ivAzsTaskItem1Text4
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_azs/azs_task2.png",
+            title: ivAzsTaskItemTitle2,
+            textArr: [
+            ivAzsTaskItem2Text1,
+            ivAzsTaskItem2Text2,
+            ivAzsTaskItem2Text3
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_azs/azs_task3.png",
+            title: ivAzsTaskItemTitle3,
+            textArr: [
+            ivAzsTaskItem3Text1,
+            ivAzsTaskItem3Text2
+            ]
+            },
+            {
+            img: "../../images/dest/img/ivideon_azs/azs_task4.png",
+            title: ivAzsTaskItemTitle3,
+            textArr: [
+            ivAzsTaskItem4Text1,
+            ivAzsTaskItem4Text2,
+            ivAzsTaskItem4Text3
+            ]
+            }
+            ] %}
+            {% for item in taskData %}
+            <div class="ivideon-azs-task__col">
+                {% from "app/njk/components/ivideon_task_item.njk" import taskItem %}
+                {{ taskItem(item.img, item.title, item.textArr) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="ivideon-storage-promo2">
+        {% set promo1= {
+        title: ivAzsPromoTitle2,
+        text: ivAzsPromoText2,
+        btn: ivAzsPromoBtn2,
+        img: "../../images/dest/img/common/promo_bg4.png",
+        type: 'gray'
+        } %}
+        {% from "app/njk/components/ivideon_promo.njk" import promoSection %}
+        {{ promoSection(promo1.title, promo1.text, promo1.btn, promo1.img, promo1.type) }}
+    </div>
+</section>

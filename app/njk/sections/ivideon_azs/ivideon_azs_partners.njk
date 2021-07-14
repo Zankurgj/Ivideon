@@ -1,0 +1,18 @@
+<section class="ivideon-azs-partners">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-azs-partners__title">{{ivAzsPartnersTitle}}</h2>
+        <div class="iv-row ivideon-azs-partners__iv-row">
+            {% set partnersItem = [
+            "../../images/dest/img/ivideon_azs/azs_partners1.png",
+            "../../images/dest/img/ivideon_azs/azs_partners2.png"
+            ]%}
+            {% for item in partnersItem %}
+            <div class="ivideon-azs-partners__col">
+                <div class="ivideon-azs-partners__item">
+                    <img src="{{item}}" alt="партнеры">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -4,8 +4,8 @@
     <p class="ivideon-tariffs__item-title">{{title}}</p>
     <div class="ivideon-tariffs__item-inner">
         {% if stub %}
-        <p class="ivideon-tariffs__item-stub-title">{{stubTitle}}</p>
-        <p class="ivideon-tariffs__item-stub-text">{{stubText}}</p>
+        <p class="ivideon-tariffs__item-stub-title">{{stubTitle | safe}}</p>
+        <p class="ivideon-tariffs__item-stub-text">{{stubText | safe}}</p>
         <a href="#" class="btn-colored ivideon-tariffs__item-btn-stub">
             {{btn}}
         </a>

@@ -1,0 +1,97 @@
+// WRAPPER
+.ivideon-number-top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 0px 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../images/dest/img/ivideon_number/number-top-bg-m.png");
+  min-height: 500px;
+  overflow: hidden;
+  margin-bottom: 64px;
+  @media all and (min-width: $tablet-bp) {
+    min-height: 560px;
+    margin-bottom: 80px;
+    background-image: url("../images/dest/img/ivideon_number/number-top-bg-t.png");
+  }
+  @media all and (min-width: $desktop-bp) {
+    min-height: 720px;
+    background-image: url("../images/dest/img/ivideon_number/number-top-bg-d.png");
+  }
+}
+.iv-container--ivideon-number-top {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ivideon-number-top__wrapper {
+  flex-grow: 1;
+  position: relative;
+  padding: 96px 0 0 0;
+  @media all and (min-width: $tablet-bp) {
+    padding: 120px 0 0 0;
+  }
+  @media all and (min-width: $desktop-bp) {
+    padding: 160px 0 0 0;
+  }
+}
+// SUBTITLE
+.ivideon-number-top__sybtitle {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: $iv-ws-colors-link-water;
+  @media all and (min-width: $tablet-bp) {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+// TITLE
+.ivideon-number-top__title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: $iv-ws-colors-text-light;
+  @media all and (min-width: $tablet-bp) {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+// TEXT
+.ivideon-number-top__text-wrapper {
+  position: relative;
+  z-index: 4;
+}
+.ivideon-number-top__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: $iv-ws-colors-text-light;
+  margin-bottom: 24px;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+// BTNS
+.ivideon-number-top__btn {
+  &:first-child {
+    margin-right: 16px;
+  }
+}

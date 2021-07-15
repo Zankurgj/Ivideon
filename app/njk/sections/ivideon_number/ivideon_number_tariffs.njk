@@ -1,0 +1,70 @@
+<section class="ivideon-number-tariffs">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-number-tariffs__title">{{ivNumberTariffsTitle}}</h2>
+    </div>
+    <div class="ivideon-number-tariffs__slider-wrapper">
+        <div class="ivideon-number-tariffs__wrapper ivideon-number-tariffs__slider js--tariff-slider">
+            {% from "app/njk/components/ivideon_tariff_item.njk" import tariffItem %}
+            {% set tariffsData = [
+            {
+            type: 'basic',
+            title: ivNumberTariff1Title,
+            cost: ivNumberTariff1Cost,
+            items: [
+            [ivNumberTariff1Item1],
+            [ivNumberTariff1Item2],
+            [ivNumberTariff1Item3],
+            [ivNumberTariff1Item4],
+            [ivNumberTariff1Item5],
+            [ivNumberTariff1Item6],
+            [ivNumberTariff1Item7],
+            [ivNumberTariff1Item8]
+            ],
+            btn: ivNumberTariff1Btn
+            },
+            {
+            type: 'standart',
+            title: ivNumberTariff2Title,
+            cost: ivNumberTariff2Cost,
+            items: [
+            [ivNumberTariff2Item1],
+            [ivNumberTariff2Item2],
+            [ivNumberTariff2Item3],
+            [ivNumberTariff2Item4],
+            [ivNumberTariff2Item5],
+            [ivNumberTariff2Item6],
+            [ivNumberTariff2Item7],
+            [ivNumberTariff2Item8],
+            [ivNumberTariff2Item9]
+            ],
+            btn: ivNumberTariff2Btn
+            },
+            {
+            type: 'premium',
+            title: ivNumberTariff3Title,
+            cost: ivNumberTariff3Cost,
+            items: [
+            [ivNumberTariff3Item1],
+            [ivNumberTariff3Item2],
+            [ivNumberTariff3Item3],
+            [ivNumberTariff3Item4],
+            [ivNumberTariff3Item5],
+            [ivNumberTariff3Item6],
+            [ivNumberTariff3Item7],
+            [ivNumberTariff3Item8]
+            ],
+            btn: ivNumberTariff3Btn
+            }
+            ]%}
+            {% for tariff in tariffsData %}
+            <div class="ivideon-number-tariffs__col">
+                {{ tariffItem(tariff.type, tariff.title, tariff.cost, tariff.items, tariff.btn, tariff.stub,
+                tariff.stubTitle, tariff.stubText) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="iv-container">
+        <p class="ivideon-number-tariffs__subtitle">{{ivNumberTariffsSubtitle}}</p>
+    </div>
+</section>

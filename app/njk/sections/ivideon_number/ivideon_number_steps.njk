@@ -1,0 +1,53 @@
+<section class="ivideon-number-steps">
+    <div class="iv-container ivideon-number-steps__iv-container">
+        <h2 class="iv-h2-base iv-h2-base--white ivideon-number-steps__title">{{ivNumberStepsTitle}}</h2>
+        <div class="iv-row">
+            {% set stepsItems = [
+            {
+            title: ivNumberStepsItemTitle1,
+            text: ivNumberStepsItemText1
+            },
+            {
+            title: ivNumberStepsItemTitle2,
+            text: ivNumberStepsItemText2
+            },
+            {
+            title: ivNumberStepsItemTitle3,
+            text: ivNumberStepsItemText3
+            },
+            {
+            title: ivNumberStepsItemTitle4,
+            text: ivNumberStepsItemText4
+            },
+            {
+            title: ivNumberStepsItemTitle5,
+            text: ivNumberStepsItemText5
+            },
+            {
+            title: ivNumberStepsItemTitle6,
+            text: ivNumberStepsItemText6
+            }
+            ] %}
+            {% for item in stepsItems %}
+            <div class="ivideon-number-steps__item-col">
+                <div class="ivideon-number-steps__item">
+                    <div class="ivideon-number-steps__item-block">
+                        <p class="ivideon-number-steps__item-title">{{item.title}}</p>
+                        <p class="ivideon-number-steps__item-text">{{item.text}}</p>
+                    </div>
+                    <span class="ivideon-number-steps__item-number">{{loop.index}}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% set promo1= {
+    title: ivNumberPromoTitle,
+    text: ivNumberPromoText,
+    btn: ivNumberPromoBtn,
+    img: "../../images/dest/img/common/promo_bg8.png",
+    type: 'dark'
+    } %}
+    {% from "app/njk/components/ivideon_promo.njk" import promoSection %}
+    {{ promoSection(promo1.title, promo1.text, promo1.btn, promo1.img, promo1.type) }}
+</section>

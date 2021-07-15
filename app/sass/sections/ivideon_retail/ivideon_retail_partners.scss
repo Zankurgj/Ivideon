@@ -1,4 +1,4 @@
-.ivideon-hotels-partners {
+.ivideon-retail-partners {
   padding: 64px 64px;
   @media all and (min-width: $tablet-bp) {
     padding: 80px 0;
@@ -7,14 +7,14 @@
     padding: 80px 0 120px 0;
   }
 }
-.ivideon-hotels-partners__title {
+.ivideon-retail-partners__title {
   margin-bottom: 40px;
   @media all and (min-width: $desktop-bp) {
     margin-bottom: 48px;
   }
 }
 
-.ivideon-hotels-partners__col {
+.ivideon-retail-partners__col {
   flex-basis: calc((100% - 12px) / 2);
   max-width: calc((100% - 12px) / 2);
   margin-bottom: 12px;
@@ -46,7 +46,7 @@
   }
 }
 
-.ivideon-hotels-partners__item {
+.ivideon-retail-partners__item {
   img {
     display: block;
     max-width: 100%;

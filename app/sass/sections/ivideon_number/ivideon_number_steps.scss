@@ -1,0 +1,95 @@
+@import "../../components/ivideon_promo";
+.ivideon-number-steps {
+  padding: 64px 0;
+  background: $iv-ws-colors-midnight;
+  border-radius: 20px;
+  @media all and (min-width: $tablet-bp) {
+    padding: 80px 0;
+  }
+}
+.ivideon-number-steps__iv-container {
+  margin-bottom: 40px;
+  @media all and (min-width: $tablet-bp) {
+    margin-bottom: 60px;
+  }
+}
+.ivideon-number-steps__title {
+  margin-bottom: 40px;
+  @media all and (min-width: $tablet-bp) {
+    margin-bottom: 48px;
+  }
+}
+// COL
+.ivideon-number-steps__item-col {
+  max-width: 100%;
+  flex-basis: 100%;
+  margin-bottom: 12px;
+  @media all and (min-width: $tablet-bp) {
+    max-width: calc((100% - 12px) / 2);
+    flex-basis: calc((100% - 12px) / 2);
+    margin-right: 12px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  @media all and (min-width: $desktop-bp) {
+    max-width: calc((100% - 20px * 2) / 3);
+    flex-basis: calc((100% - 20px * 2) / 3);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &:nth-child(2n) {
+      margin-right: 20px;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+// ITEM
+.ivideon-number-steps__item {
+  position: relative;
+  overflow: hidden;
+  padding: 32px 24px;
+  border: 1px solid $iv-ws-colors-rhino;
+  border-radius: 20px;
+  min-height: 168px;
+  height: 100%;
+  @media all and (min-width: $tablet-bp) {
+    min-height: 228px;
+    padding: 40px 24px;
+  }
+}
+.ivideon-number-steps__item-block {
+  position: relative;
+  z-index: 2;
+}
+.ivideon-number-steps__item-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $iv-ws-colors-text-light;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.ivideon-number-steps__item-text {
+  font-size: 13px;
+  line-height: 20px;
+  color: $iv-ws-colors-text-light;
+  @media all and (min-width: $tablet-bp) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+.ivideon-number-steps__item-number {
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+  font-weight: 600;
+  font-size: 200px;
+  line-height: 144px;
+  color: $iv-ws-colors-rhino;
+  z-index: 1;
+}

@@ -9,7 +9,7 @@
     </p>
     {% endif %}
     <p class="ivideon-feature__item-text">
-        {{text}}
+        {{text | safe}}
     </p>
     {% if link %}
     <a href="#" class="ivideon-feature__item-link">

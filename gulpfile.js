@@ -86,6 +86,7 @@ function scripts() {
     "app/js/ivideon_hotels.js",
     "app/js/ivideon_building.js",
     "app/js/ivideon_retail.js",
+    "app/js/ivideon_number.js",
   ])
     .pipe(named())
     .pipe(

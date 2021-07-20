@@ -14,6 +14,9 @@
 }
 // COL
 .ivideon-scud-calculation__col-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-basis: 100%;
   max-width: 100%;
   margin-bottom: 30px;
@@ -21,6 +24,7 @@
     margin-bottom: 40px;
   }
   @media all and (min-width: $desktop-bp) {
+    align-items: flex-start;
     flex-basis: 45%;
     max-width: 45%;
     padding-right: 20px;
@@ -41,7 +45,10 @@
 .ivideon-scud-calculation__title {
   margin-bottom: 30px;
   color: $iv-ws-colors-midnight;
-  text-align: left;
+  text-align: center;
+  @media all and (min-width: $desktop-bp) {
+    text-align: left;
+  }
 }
 
 // IMG

@@ -7,16 +7,18 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("../images/dest/img/ivideon-control/control-top-bg.jpg");
-  min-height: 500px;
+  background-image: url("../images/dest/img/ivideon-control/control-top-bg-m.png");
+  min-height: 480px;
   overflow: hidden;
   margin-bottom: 64px;
   @media all and (min-width: $tablet-bp) {
     min-height: 560px;
     margin-bottom: 80px;
+    background-image: url("../images/dest/img/ivideon-control/control-top-bg-t.png");
   }
   @media all and (min-width: $desktop-bp) {
     min-height: 720px;
+    background-image: url("../images/dest/img/ivideon-control/control-top-bg.jpg");
   }
 }
 .iv-container--ivideon-control-top {
@@ -30,10 +32,10 @@
   position: relative;
   padding: 96px 0 0 0;
   @media all and (min-width: $tablet-bp) {
-    padding: 160px 0 0 0;
+    padding: 120px 0 0 0;
   }
   @media all and (min-width: $desktop-bp) {
-    padding: 264px 0 0 0;
+    padding: 244px 0 0 0;
   }
 }
 // TITLE

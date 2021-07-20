@@ -7,6 +7,9 @@
 }
 // COL
 .ivideon-control-calculation__col-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-basis: 100%;
   max-width: 100%;
   margin-bottom: 30px;
@@ -17,6 +20,7 @@
     flex-basis: 40%;
     max-width: 40%;
     padding-right: 20px;
+    align-items: flex-start;
   }
 }
 .ivideon-control-calculation__col-img {
@@ -34,7 +38,10 @@
 .ivideon-control-calculation__title {
   margin-bottom: 16px;
   color: $iv-ws-colors-midnight;
-  text-align: left;
+  text-align: center;
+  @media all and (min-width: $desktop-bp) {
+    text-align: left;
+  }
 }
 // SUBTITLE
 .ivideon-control-calculation__subtitle {
@@ -43,12 +50,14 @@
   line-height: 24px;
   color: $iv-ws-colors-midnight;
   margin-bottom: 20px;
+  text-align: center;
   @media all and (min-width: $tablet-bp) {
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 30px;
   }
   @media all and (min-width: $desktop-bp) {
+    text-align: left;
     margin-bottom: 40px;
   }
 }
@@ -58,12 +67,14 @@
   line-height: 20px;
   color: $iv-ws-colors-midnight;
   margin-bottom: 20px;
+  text-align: center;
   @media all and (min-width: $tablet-bp) {
     font-size: 15px;
     line-height: 24px;
     margin-bottom: 30px;
   }
   @media all and (min-width: $desktop-bp) {
+    text-align-last: left;
     font-size: 18px;
     line-height: 32px;
     max-width: 520px;

@@ -1,0 +1,46 @@
+<section class="ivideon-control-qa">
+    <div class="iv-container">
+        <h2 class="iv-h2-base videon-control-qa__title">{{ivControlQATitle}}</h2>
+        <div class="ivideon-control-qa__wrapper">
+            <div class="iv-row">
+                {% set qaList = [
+                {
+                title: ivControlQAItemTitle1,
+                img: "../../images/dest/img/ivideon-control/qa_item1.svg",
+                list: [
+                ivControlQAItemlist1,
+                ivControlQAItemlist2,
+                ivControlQAItemlist3,
+                ivControlQAItemlist5
+                ]
+                },
+                {
+                title: ivControlQAItemTitle2,
+                img: "../../images/dest/img/ivideon-control/qa_item2.svg",
+                list: [
+                ivControlQAItemlist5,
+                ivControlQAItemlist6,
+                ivControlQAItemlist7,
+                ivControlQAItemlist8
+                ]
+                }
+                ] %}
+                {% for item in qaList %}
+                <div class="ivideon-control-qa__col">
+                    <div class="ivideon-control-qa__item ivideon-control-qa__item--{{loop.index}}"
+                        style="background-image: url('{{item.img}}');">
+                        <h4 class="ivideon-control-qa-item__title">{{item.title}}</h4>
+                        <ul class="ivideon-control-qa-item__list">
+                            {% for listItem in item.list %}
+                            <li>
+                                <p class="ivideon-control-qa-item__list-text">{{listItem}}</p>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

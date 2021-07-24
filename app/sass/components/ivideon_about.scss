@@ -42,12 +42,17 @@
 .ivideon-about__item {
   position: relative;
   display: flex;
-  align-items: flex-end;
   background: #e6f6fe;
   border-radius: 16px;
   overflow: hidden;
   padding: 32px 24px;
-  min-height: 388px;
+  min-height: 235px;
+  @media all and (min-width: $tablet-bp) {
+    min-height: 268px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    min-height: 272px;
+  }
 }
 .ivideon-about__item-inner {
   position: relative;
@@ -88,6 +93,17 @@
     font-size: 304px;
     line-height: 245px;
   }
+}
+.ivideon-about__item-text-svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.ivideon-about__item-number-svg {
+  font-family: $iv-ws-font-family-golos;
+  font-weight: 600;
+  font-size: 300px;
+  line-height: 300px;
 }
 .ivideon-about__item-img {
   position: absolute;

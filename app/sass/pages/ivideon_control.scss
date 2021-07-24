@@ -2,10 +2,11 @@
 @import "node_modules/slick-carousel/slick/slick.scss";
 @import "../sections/ivideon_control/ivideon_control_top";
 @import "../sections/ivideon_control/ivideon_control_calculation";
-@import "../components/ivideon_feature";
+@import "../sections/ivideon_control/ivideon_conrtol_feature";
+@import "../sections/ivideon_control/ivideon_conrtol_qa";
 @import "../sections/ivideon_control/ivideon_conrtol_examples";
 @import "../components/ivideon_about";
-@import "../sections/common/ivideon_promo2";
+@import "../sections/ivideon_control/ivideon_conrtol_promo";
 @import "../sections/ivideon_control/ivideon_control_tariffs";
 @import "../components/ivideon_tariff_item";
 @import "../components/ivideon_price.scss";

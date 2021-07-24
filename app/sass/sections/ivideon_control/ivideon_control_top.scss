@@ -5,9 +5,9 @@
   flex-direction: column;
   border-radius: 0px 0px 40px 40px;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: right bottom;
   background-image: url("../images/dest/img/ivideon-control/control-top-bg-m.png");
+  background-color: $iv-ws-colors-solitude;
   min-height: 480px;
   overflow: hidden;
   margin-bottom: 64px;
@@ -18,7 +18,7 @@
   }
   @media all and (min-width: $desktop-bp) {
     min-height: 720px;
-    background-image: url("../images/dest/img/ivideon-control/control-top-bg.jpg");
+    background-image: url("../images/dest/img/ivideon-control/control-top-bg-d.png");
   }
 }
 .iv-container--ivideon-control-top {
@@ -28,14 +28,16 @@
   width: 100%;
 }
 .ivideon-control-top__wrapper {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   position: relative;
-  padding: 96px 0 0 0;
+  padding: 96px 0 25px 0;
   @media all and (min-width: $tablet-bp) {
     padding: 120px 0 0 0;
   }
   @media all and (min-width: $desktop-bp) {
-    padding: 244px 0 0 0;
+    padding: 208px 0 0 0;
   }
 }
 // TITLE
@@ -44,7 +46,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  color: $iv-ws-colors-text-light;
+  color: $iv-ws-colors-midnight;
   @media all and (min-width: $tablet-bp) {
     margin-bottom: 40px;
     font-weight: bold;
@@ -58,13 +60,16 @@
 }
 // TEXT
 .ivideon-control-top__text-wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
   position: relative;
   z-index: 4;
 }
 .ivideon-control-top__text {
   font-size: 14px;
   line-height: 24px;
-  color: $iv-ws-colors-text-light;
+  color: $iv-ws-colors-midnight;
   margin-bottom: 24px;
   @media all and (min-width: $tablet-bp) {
     font-size: 16px;
@@ -77,8 +82,12 @@
   }
 }
 // BTNS
-.ivideon-control-top__btn {
-  &:first-child {
-    margin-right: 16px;
+.ivideon-control-top__btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  @media all and (min-width: $tablet-bp) {
+    justify-content: flex-start;
+    margin-top: 0;
   }
 }

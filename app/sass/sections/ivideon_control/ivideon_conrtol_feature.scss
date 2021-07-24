@@ -1,0 +1,15 @@
+@import "../components/ivideon_feature";
+.ivideon-feture-wrapper {
+  background: $iv-ws-colors-solitude5;
+  padding: 64px 0;
+  border-radius: 40px;
+  @media all and (min-width: $tablet-bp) {
+    padding: 80px 0 64px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    padding: 80px 0 104px;
+  }
+  .ivideon-feture {
+    margin: 0;
+  }
+}

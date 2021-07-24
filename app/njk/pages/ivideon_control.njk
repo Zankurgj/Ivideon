@@ -9,76 +9,50 @@
 {% include "app/njk/sections/ivideon_control/ivideon_control_top.njk" %}
 <!-- CALCULATION -->
 {% include "app/njk/sections/ivideon_control/ivideon_control_calculation.njk" %}
-<!-- FEATURE -->
-{% set featureItems = {
-title: ivControlFeatureTitle,
-data: [
-{
-icon: "../../images/dest/img/ivideon-control/videon-control-feature1.svg",
-title: ivControlFeatureItemTitle1,
-text: ivControlFeatureItemText1
-},
-{
-icon: "../../images/dest/img/ivideon-control/videon-control-feature2.svg",
-title: ivControlFeatureItemTitle2,
-text: ivControlFeatureItemText2
-},
-{
-icon: "../../images/dest/img/ivideon-control/videon-control-feature3.svg",
-title: ivControlFeatureItemTitle3,
-text: ivControlFeatureItemText3
-},
-{
-icon: "../../images/dest/img/ivideon-control/videon-control-feature4.svg",
-title: ivControlFeatureItemTitle4,
-text: ivControlFeatureItemText4
-}
-]
-} %}
-{% from "app/njk/components/ivideon_feature.njk" import featureSection %}
-{{ featureSection( featureItems.data, featureItems.title) }}
-<!-- EXAMPLES -->
-{% include "app/njk/sections/ivideon_control/ivideon_conrtol_examples.njk" %}
+<!-- FEATURE  -->
+{% include "app/njk/sections/ivideon_control/ivideon_conrtol_feature.njk" %}
+<!-- QA -->
+{% include "app/njk/sections/ivideon_control/ivideon_conrtol_qa.njk" %}
 <!-- ABOUT -->
 {% set aboutItems = {
 title: ivControlAboutTitle,
 data: [
 {
-img: "../../images/dest/img/ivideon-control/control-about1.png",
 title: ivControlAboutItemTitle1,
-text: ivControlAboutItemText1
+text: ivControlAboutItemText1,
+numberType: 'borderGradient'
 },
 {
-img: "../../images/dest/img/ivideon-control/control-about2.png",
 title: ivControlAboutItemTitle2,
-text: ivControlAboutItemText2
+text: ivControlAboutItemText2,
+numberType: 'borderGradient'
 },
 {
-img: "../../images/dest/img/ivideon-control/control-about3.png",
 title: ivControlAboutItemTitle3,
-text: ivControlAboutItemText3
+text: ivControlAboutItemText3,
+numberType: 'borderGradient'
 },
 {
-img: "../../images/dest/img/ivideon-control/control-about4.png",
 title: ivControlAboutItemTitle4,
-text: ivControlAboutItemText4
+text: ivControlAboutItemText4,
+numberType: 'borderGradient'
 },
 {
-img: "../../images/dest/img/ivideon-control/control-about5.png",
 title: ivControlAboutItemTitle5,
-text: ivControlAboutItemText5
+text: ivControlAboutItemText5,
+numberType: 'borderGradient'
 },
 {
-img: "../../images/dest/img/ivideon-control/control-about6.png",
 title: ivControlAboutItemTitle6,
-text: ivControlAboutItemText6
+text: ivControlAboutItemText6,
+numberType: 'borderGradient'
 }
 ]
 } %}
 {% from "app/njk/components/ivideon_about.njk" import aboutSection %}
 {{ aboutSection( aboutItems.data, aboutItems.title) }}
 <!-- PROMO -->
-{% include "app/njk/sections/common/ivideon_promo2.njk" %}
+{% include "app/njk/sections/ivideon_control/ivideon_conrtol_promo.njk" %}
 <!-- TARIFFS -->
 {% include "app/njk/sections/ivideon_control/ivideon_control_tariffs.njk" %}
 <!-- PRICE -->

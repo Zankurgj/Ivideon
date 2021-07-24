@@ -5,8 +5,8 @@
   flex-direction: column;
   border-radius: 0px 0px 40px 40px;
   background-repeat: no-repeat;
-  background-position: center right;
-  background-size: cover;
+  background-position: bottom right;
+  background-color: #eff1fd;
   background-image: url("../images/dest/img/ivideon-scud/scud-top-m.png");
   min-height: 480px;
   overflow: hidden;
@@ -18,8 +18,7 @@
   }
   @media all and (min-width: $desktop-bp) {
     min-height: 720px;
-    background-position: center;
-    background-image: url("../images/dest/img/ivideon-scud/scud-top.png");
+    background-image: url("../images/dest/img/ivideon-scud/scud-top-d.png");
   }
 }
 .iv-container--ivideon-scud-top {
@@ -29,9 +28,11 @@
   width: 100%;
 }
 .ivideon-scud-top__wrapper {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   position: relative;
-  padding: 96px 0 0 0;
+  padding: 96px 0 25px 0;
   @media all and (min-width: $tablet-bp) {
     padding: 120px 0 0 0;
   }
@@ -41,12 +42,14 @@
 }
 // TITLE
 .ivideon-scud-top__title {
+  max-width: 190px;
   margin-bottom: 24px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  color: $iv-ws-colors-text-light;
+  color: $iv-ws-colors-midnight;
   @media all and (min-width: $tablet-bp) {
+    max-width: 100%;
     margin-bottom: 40px;
     font-weight: bold;
     font-size: 40px;
@@ -59,13 +62,16 @@
 }
 // TEXT
 .ivideon-scud-top__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   position: relative;
   z-index: 4;
 }
 .ivideon-scud-top__text {
   font-size: 14px;
   line-height: 24px;
-  color: $iv-ws-colors-text-light;
+  color: $iv-ws-colors-midnight;
   margin-bottom: 24px;
   @media all and (min-width: $tablet-bp) {
     font-size: 16px;
@@ -78,6 +84,15 @@
   }
 }
 // BTNS
+.ivideon-scud-top__btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  @media all and (min-width: $tablet-bp) {
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+}
 .ivideon-scud-top__btn {
   &:first-child {
     margin-right: 16px;

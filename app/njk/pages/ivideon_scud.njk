@@ -14,41 +14,41 @@
 title: ivScudAboutTitle,
 data: [
 {
-img: "../../images/dest/img/ivideon-scud/scud-about1.png",
 title: ivScudAboutItemTitle1,
-text: ivScudAboutItemText1
+text: ivScudAboutItemText1,
+numberType: 'gradient'
 },
 {
-img: "../../images/dest/img/ivideon-scud/scud-about2.png",
 title: ivScudAboutItemTitle2,
-text: ivScudAboutItemText2
+text: ivScudAboutItemText2,
+numberType: 'gradient'
 },
 {
-img: "../../images/dest/img/ivideon-scud/scud-about3.png",
 title: ivScudAboutItemTitle3,
-text: ivScudAboutItemText3
+text: ivScudAboutItemText3,
+numberType: 'gradient'
 },
 {
-img: "../../images/dest/img/ivideon-scud/scud-about4.png",
 title: ivScudAboutItemTitle4,
-text: ivScudAboutItemText4
+text: ivScudAboutItemText4,
+numberType: 'gradient'
 },
 {
-img: "../../images/dest/img/ivideon-scud/scud-about5.png",
 title: ivScudAboutItemTitle5,
-text: ivScudAboutItemText5
+text: ivScudAboutItemText5,
+numberType: 'gradient'
 },
 {
-img: "../../images/dest/img/ivideon-scud/scud-about6.png",
 title: ivScudAboutItemTitle6,
-text: ivScudAboutItemText6
+text: ivScudAboutItemText6,
+numberType: 'gradient'
 }
 ]
 } %}
 {% from "app/njk/components/ivideon_about.njk" import aboutSection %}
 {{ aboutSection( aboutItems.data, aboutItems.title) }}
 <!-- PROMO -->
-{% include "app/njk/sections/common/ivideon_promo3.njk" %}
+{% include "app/njk/sections/ivideon_scud/ivideon_scud_promo.njk" %}
 <!-- TARIFFS -->
 {% include "app/njk/sections/ivideon_scud/ivideon_scud_tariffs.njk" %}
 <!-- PRICE -->

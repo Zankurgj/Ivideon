@@ -1,0 +1,75 @@
+// WRAPPER
+.ivideon-promo-counting-block {
+  background-color: $iv-ws-colors-aliceblue;
+}
+.ivideon-promo-counting-inner {
+  position: relative;
+  padding: 40px 24px 40px 24px;
+  height: 384px;
+  border-radius: 20px;
+  background-image: url("../images/dest/img/ivideon-counting/counting_promo-m.png"),
+    linear-gradient(133.94deg, #07f9b8 1.92%, #0395f0 64.16%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, 0 0;
+  @media all and (min-width: $tablet-bp) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 44px 50px;
+    height: auto;
+    background-image: url("../images/dest/img/ivideon-counting/counting_promo-t.png"),
+      linear-gradient(133.94deg, #07f9b8 1.92%, #0395f0 64.16%);
+  }
+  @media all and (min-width: $desktop-bp) {
+    align-items: flex-start;
+    padding: 48px 80px;
+    height: auto;
+    background-image: url("../images/dest/img/ivideon-counting/counting_promo-d.png"),
+      linear-gradient(133.94deg, #07f9b8 1.92%, #0395f0 64.16%);
+    background-position: right center, 0 0;
+    background-size: contain, auto;
+  }
+}
+// TITLE
+.ivideon-promo-counting__title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: $iv-ws-colors-text-light;
+  @media all and (min-width: $tablet-bp) {
+    margin-bottom: 24px;
+    text-align: right;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    text-align: left;
+  }
+}
+// TEXT
+.ivideon-promo-counting__text {
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 24px;
+  color: $iv-ws-colors-aliceblue;
+  @media all and (min-width: $tablet-bp) {
+    max-width: 514px;
+    text-align: right;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  @media all and (min-width: $desktop-bp) {
+    max-width: 715px;
+    text-align: left;
+  }
+}
+// BTN
+.ivideon-promo-counting__btn {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  @media all and (min-width: $tablet-bp) {
+    position: static;
+  }
+}

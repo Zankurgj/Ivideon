@@ -3,16 +3,30 @@
   display: flex;
   flex-direction: column;
   border-radius: 0px 0px 40px 40px;
-  background-color: $iv-ws-colors-black-russian;
+  background-color: $iv-ws-colors-dodger-blue3;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-image: url("../images/dest/img/ivideon-faces/faces_top-m.png");
   min-height: 600px;
   overflow: hidden;
   margin-bottom: 64px;
   @media all and (min-width: $tablet-bp) {
     min-height: 560px;
     margin-bottom: 80px;
+    background-position: bottom right;
+    background-image: url("../images/dest/img/ivideon-faces/faces_top-t.png");
   }
   @media all and (min-width: $desktop-bp) {
     min-height: 720px;
+    background-position: bottom right;
+    background-image: url("../images/dest/img/ivideon-faces/faces_top-d.png");
+    background-size: 700px;
+  }
+  @media all and (min-width: 1200px) {
+    background-size: 900px;
+  }
+  @media all and (min-width: $large-bp) {
+    background-size: auto;
   }
 }
 .iv-container--ivideon-faces-top {
@@ -60,6 +74,7 @@
   line-height: 24px;
   color: $iv-ws-colors-text-light;
   margin-bottom: 24px;
+  max-width: 335px;
   @media all and (min-width: $tablet-bp) {
     font-size: 16px;
     line-height: 24px;
@@ -73,121 +88,15 @@
   }
 }
 // BTNS
+.ivideon-faces-top__btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  @media all and (min-width: $tablet-bp) {
+    justify-content: flex-start;
+  }
+}
 .ivideon-faces-top__btn {
   &:first-child {
     margin-right: 16px;
-  }
-}
-// IMG
-.ivideon-faces-top__img-block {
-  position: absolute;
-  left: 50%;
-  bottom: 52px;
-  transform: translateX(-50%);
-  @media all and (min-width: $tablet-bp) {
-    transform: none;
-    left: auto;
-    bottom: 89px;
-    right: 0;
-  }
-  @media all and (min-width: $desktop-bp) {
-    bottom: 150px;
-  }
-  @media all and (min-width: 1600px) {
-    right: 240px;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 265px;
-    height: 264px;
-    background: linear-gradient(180deg, #0075ff 0%, rgba(0, 163, 255, 0) 100%);
-    filter: blur(60px);
-    z-index: 2;
-    @media all and (min-width: $tablet-bp) {
-      width: 578px;
-      height: 552px;
-      transform: none;
-      left: -192px;
-      top: -110px;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-image: url("../images/dest/img/ivideon-faces/videon-faces-top-grad-t.svg");
-    }
-    @media all and (min-width: $large-bp) {
-      width: 873px;
-      height: 703px;
-      left: -192px;
-      top: -170px;
-      background-image: url("../images/dest/img/ivideon-faces/videon-faces-top-grad-d.svg");
-    }
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 203px;
-    height: 183px;
-    background: linear-gradient(
-      143.15deg,
-      #6100ff 8.37%,
-      rgba(0, 255, 255, 0) 91.49%
-    );
-    filter: blur(100px);
-    z-index: 1;
-    @media all and (min-width: $tablet-bp) {
-      display: none;
-    }
-    // @media all and (min-width: $desktop-bp) {
-    //   width: 467px;
-    //   height: 467px;
-    //   background: linear-gradient(
-    //     143.15deg,
-    //     #6100ff 8.37%,
-    //     rgba(0, 255, 255, 0) 91.49%
-    //   );
-    //   filter: blur(200px);
-    // }
-  }
-}
-.ivideon-faces-top__img-main {
-  display: block;
-  position: relative;
-  width: 242px;
-  height: 213px;
-  z-index: 3;
-  @media all and (min-width: $tablet-bp) {
-    width: 362px;
-    height: 318px;
-  }
-  @media all and (min-width: $large-bp) {
-    width: 505px;
-    height: 444px;
-  }
-}
-.ivideon-faces-top__img-sub {
-  display: block;
-  position: absolute;
-  top: -40px;
-  left: -12px;
-  width: 189px;
-  height: 56px;
-  z-index: 4;
-  @media all and (min-width: $tablet-bp) {
-    width: 284px;
-    height: 94px;
-    top: -49px;
-    left: -42px;
-  }
-  @media all and (min-width: $large-bp) {
-    width: 285px;
-    height: 96px;
-    top: -63px;
-    left: 28px;
   }
 }

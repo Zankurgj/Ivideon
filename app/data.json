@@ -28,7 +28,6 @@
   "ivFacesPromoTitle": "Сколько стоит решение?",
   "ivFacesPromoText": "Проконсультироваться или заказать индивидуальное решение",
   "ivFacesPromoBtn": "Подключиться",
-
   "ivFacesPartnersTitle": "Кто уже использует",
   "ivFacesPartnersSubtitle": "Наши партнеры и клиенты",
 
@@ -81,6 +80,10 @@
   "ivCountingTopText": "Новое решение для высокоточного подсчёта посетителей от Ivideon",
   "ivCountingTopBtnTransparent": "Подключить",
   "ivCountingTopBtnWhite": "Стоимость",
+
+  "ivCountingPromoTitle": "Сколько стоит решение?",
+  "ivCountingPromoText": "Проконсультироваться или заказать индивидуальное решение",
+  "ivCountingPromoBtn": "Подключиться",
 
   "ivCountingFeatureTitle": "Что умеет Counter 3D",
   "ivCountingFeatureItemTitle1": "Быстро подключаться",

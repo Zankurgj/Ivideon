@@ -6,106 +6,32 @@
   border-radius: 0px 0px 40px 40px;
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-color: #c7ddfe;
-  background-image: url("../images/dest/img/ivideon_number/number-top-bg-m.png"),
-    linear-gradient(
-      91.93deg,
-      #e5e5e5 -7.26%,
-      #c6dbfb -5.64%,
-      #cddffe -1.56%,
-      #cbdefd 0.56%,
-      #cedffe 5.19%,
-      #cddefe 10.37%,
-      #cedffe 15.65%,
-      #d0e0ff 22.73%,
-      #cfe2ff 26.37%,
-      #d1e3ff 34.76%,
-      #cee1ff 38.18%,
-      #cce0ff 43.02%,
-      #c9deff 46.71%,
-      #c6dcfd 52.24%,
-      #c4dafc 56.44%,
-      #c3d9fc 59.38%,
-      #c1d8fb 63.32%,
-      #bed6fa 65.91%,
-      #bbd3f8 69.33%,
-      #bad3f7 74.05%,
-      #b6d0f5 78.4%,
-      #b2ccf2 83.99%,
-      #aec9f0 90.71%,
-      #aac5ed 95.61%
-    );
+  background-color: #eff1fd;
+  background-image: url("../images/dest/img/ivideon_number/number-top-bg-m.png");
   min-height: 427px;
   overflow: hidden;
   margin-bottom: 64px;
+  @media all and (min-width: 500px) {
+    background-size: 330px;
+  }
   @media all and (min-width: $tablet-bp) {
     min-height: 560px;
     margin-bottom: 80px;
-    background-image: url("../images/dest/img/ivideon_number/number-top-bg-t.png"),
-      linear-gradient(
-        91.93deg,
-        #e5e5e5 -7.26%,
-        #c6dbfb -5.64%,
-        #cddffe -1.56%,
-        #cbdefd 0.56%,
-        #cedffe 5.19%,
-        #cddefe 10.37%,
-        #cedffe 15.65%,
-        #d0e0ff 22.73%,
-        #cfe2ff 26.37%,
-        #d1e3ff 34.76%,
-        #cee1ff 38.18%,
-        #cce0ff 43.02%,
-        #c9deff 46.71%,
-        #c6dcfd 52.24%,
-        #c4dafc 56.44%,
-        #c3d9fc 59.38%,
-        #c1d8fb 63.32%,
-        #bed6fa 65.91%,
-        #bbd3f8 69.33%,
-        #bad3f7 74.05%,
-        #b6d0f5 78.4%,
-        #b2ccf2 83.99%,
-        #aec9f0 90.71%,
-        #aac5ed 95.61%
-      );
+    background-image: url("../images/dest/img/ivideon_number/number-top-bg-t.png");
+    background-size: auto;
   }
   @media all and (min-width: $desktop-bp) {
     min-height: 720px;
-    background-image: url("../images/dest/img/ivideon_number/number-top-bg-d.png"),
-      linear-gradient(
-        91.93deg,
-        #e5e5e5 -7.26%,
-        #c6dbfb -5.64%,
-        #cddffe -1.56%,
-        #cbdefd 0.56%,
-        #cedffe 5.19%,
-        #cddefe 10.37%,
-        #cedffe 15.65%,
-        #d0e0ff 22.73%,
-        #cfe2ff 26.37%,
-        #d1e3ff 34.76%,
-        #cee1ff 38.18%,
-        #cce0ff 43.02%,
-        #c9deff 46.71%,
-        #c6dcfd 52.24%,
-        #c4dafc 56.44%,
-        #c3d9fc 59.38%,
-        #c1d8fb 63.32%,
-        #bed6fa 65.91%,
-        #bbd3f8 69.33%,
-        #bad3f7 74.05%,
-        #b6d0f5 78.4%,
-        #b2ccf2 83.99%,
-        #aec9f0 90.71%,
-        #aac5ed 95.61%
-      );
-    background-size: 680px;
+    background-image: url("../images/dest/img/ivideon_number/number-top-bg-d.png");
+    background-size: 640px;
   }
   @media all and (min-width: 1200px) {
-    background-size: 840px;
+    background-size: 800px;
   }
   @media all and (min-width: $large-bp) {
+    background-size: 960px;
+  }
+  @media all and (min-width: 1720px) {
     background-size: auto;
   }
 }
@@ -133,7 +59,7 @@
   font-size: 18px;
   line-height: 20px;
   color: $iv-ws-colors-ship-cove;
-  @media all and (min-width: $tablet-bp) {
+  @media all and (min-width: $desktop-bp) {
     margin-bottom: 16px;
     font-size: 24px;
     line-height: 24px;
@@ -146,12 +72,12 @@
   font-size: 24px;
   line-height: 32px;
   color: $iv-ws-colors-midnight;
-  @media all and (min-width: $tablet-bp) {
-    margin-bottom: 40px;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 56px;
-  }
+  // @media all and (min-width: $tablet-bp) {
+  //   margin-bottom: 40px;
+  //   font-weight: bold;
+  //   font-size: 40px;
+  //   line-height: 56px;
+  // }
   @media all and (min-width: $desktop-bp) {
     font-size: 64px;
     line-height: 64px;
@@ -167,11 +93,11 @@
   line-height: 24px;
   color: $iv-ws-colors-midnight;
   margin-bottom: 24px;
-  @media all and (min-width: $tablet-bp) {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 40px;
-  }
+  // @media all and (min-width: $tablet-bp) {
+  //   font-size: 16px;
+  //   line-height: 24px;
+  //   margin-bottom: 40px;
+  // }
   @media all and (min-width: $desktop-bp) {
     font-size: 24px;
     line-height: 32px;
@@ -180,8 +106,4 @@
 // BTNS
 .ivideon-number-top__btn-wrapper {
   display: flex;
-  justify-content: flex-end;
-  @media all and (min-width: $tablet-bp) {
-    justify-content: flex-start;
-  }
 }

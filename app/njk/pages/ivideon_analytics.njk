@@ -11,28 +11,7 @@
 <!-- FEATURES2-->
 {% include "app/njk/sections/ivideon_analytics/ivideon_analytics_features2.njk" %}
 <!-- ABOUT -->
-{% set aboutItems = {
-title: ivAnalyticsAboutTitle,
-data: [
-{
-img: "../../images/dest/img/ivideon_analytics/analytics-about1.png",
-title: ivAnalyticsAboutItemTitle1,
-text: ivAnalyticsAboutItemText1
-},
-{
-img: "../../images/dest/img/ivideon_analytics/analytics-about2.png",
-title: ivAnalyticsAboutItemTitle2,
-text: ivAnalyticsAboutItemText2
-},
-{
-img: "../../images/dest/img/ivideon_analytics/analytics-about3.png",
-title: ivAnalyticsAboutItemTitle3,
-text: ivAnalyticsAboutItemText3
-}
-]
-} %}
-{% from "app/njk/components/ivideon_about.njk" import aboutSection %}
-{{ aboutSection( aboutItems.data, aboutItems.title) }}
+{% include "app/njk/sections/ivideon_analytics/ivideon_analytics_about.njk" %}
 <!-- TARIFFS -->
 {% include "app/njk/sections/ivideon_analytics/ivideon_analytics_tariffs.njk" %}
 {% endblock %}

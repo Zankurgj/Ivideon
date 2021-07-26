@@ -1,0 +1,51 @@
+@import "../../components/ivideon_about_item";
+.ivideon-about {
+  padding: 64px 0;
+  @media all and (min-width: $tablet-bp) {
+    padding: 80px 0 64px 0;
+  }
+  @media all and (min-width: $desktop-bp) {
+    padding: 80px 0;
+  }
+}
+// TITLE
+.ivideon-about__title {
+  margin-bottom: 40px;
+  @media all and (min-width: $large-bp) {
+    margin-bottom: 48px;
+  }
+}
+// COL
+.ivideon-about__col {
+  flex-basis: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  @media all and (min-width: $tablet-bp) {
+    flex-basis: calc((100% - 20px) / 2);
+    max-width: calc((100% - 20px) / 2);
+    margin-right: 20px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-child(3) {
+      flex-basis: 100%;
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
+  @media all and (min-width: $large-bp) {
+    flex-basis: calc((100% - 20px * 2) / 3);
+    max-width: calc((100% - 20px * 2) / 3);
+    &:nth-child(2n) {
+      margin-right: 20px;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-child(3) {
+      flex-basis: calc((100% - 20px * 2) / 3);
+      max-width: calc((100% - 20px * 2) / 3);
+      margin-right: 0;
+    }
+  }
+}

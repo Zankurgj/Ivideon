@@ -4,26 +4,32 @@
         <div class="iv-row">
             {% set stepsItems = [
             {
+            icon: "../../images/dest/img/ivideon_number/numbers_step1.png",
             title: ivNumberStepsItemTitle1,
             text: ivNumberStepsItemText1
             },
             {
+            icon: "../../images/dest/img/ivideon_number/numbers_step2.png",
             title: ivNumberStepsItemTitle2,
             text: ivNumberStepsItemText2
             },
             {
+            icon: "../../images/dest/img/ivideon_number/numbers_step3.png",
             title: ivNumberStepsItemTitle3,
             text: ivNumberStepsItemText3
             },
             {
+            icon: "../../images/dest/img/ivideon_number/numbers_step4.png",
             title: ivNumberStepsItemTitle4,
             text: ivNumberStepsItemText4
             },
             {
+            icon: "../../images/dest/img/ivideon_number/numbers_step5.png",
             title: ivNumberStepsItemTitle5,
             text: ivNumberStepsItemText5
             },
             {
+            icon: "../../images/dest/img/ivideon_number/numbers_step6.png",
             title: ivNumberStepsItemTitle6,
             text: ivNumberStepsItemText6
             }
@@ -31,23 +37,16 @@
             {% for item in stepsItems %}
             <div class="ivideon-number-steps__item-col">
                 <div class="ivideon-number-steps__item">
+                    <div class="ivideon-number-steps__item-img" style="background-image: url('{{item.icon}}');">
+                    </div>
                     <div class="ivideon-number-steps__item-block">
                         <p class="ivideon-number-steps__item-title">{{item.title}}</p>
                         <p class="ivideon-number-steps__item-text">{{item.text}}</p>
                     </div>
-                    <span class="ivideon-number-steps__item-number">{{loop.index}}</span>
                 </div>
             </div>
             {% endfor %}
         </div>
     </div>
-    {% set promo1= {
-    title: ivNumberPromoTitle,
-    text: ivNumberPromoText,
-    btn: ivNumberPromoBtn,
-    img: "../../images/dest/img/common/promo_bg8.png",
-    type: 'dark'
-    } %}
-    {% from "app/njk/components/ivideon_promo.njk" import promoSection %}
-    {{ promoSection(promo1.title, promo1.text, promo1.btn, promo1.img, promo1.type) }}
+    {% include "app/njk/sections/ivideon_number/videon-number_promo.njk" %}
 </section>

@@ -164,6 +164,10 @@
   "ivDetectorFeatureItemText4": "Отчеты по образованию очередей у каждой отдельной кассы и раскадровка по ним помогут разобраться в причинах снижения дневной выручки",
   "ivDetectorFeatureBtn": "Подключить",
 
+  "ivDetectorPromoTitle": "Сколько стоит решение?",
+  "ivDetectorPromoText": "Отправьте заявку на консультацию, и мы подберем необходимое оборудование и рассчитаем стоимость Детектора очередей под вашу задачу",
+  "ivDetectorPromoBtn": "Получить консультацию",
+
   "ivDetectorFeature2Title": "Возможности сервиса",
   "ivDetectorFeature2ItemTitle1": "Регистрация очередей",
   "ivDetectorFeature2ItemTitle2": "Подробная информация об очереди",
@@ -541,7 +545,7 @@
   "ivBridgeExamplesItemLink4": "Подробнее",
 
   "ivBridgePromoTitle": "Ivideon Bridge",
-  "ivBridgePromoText": "одключите ваши камеры и используйте современные сервисы Ivideon",
+  "ivBridgePromoText": "Подключите ваши камеры и используйте современные сервисы Ivideon",
   "ivBridgePromoBtn": "Купить",
 
   "ivAnalyticsPageTitle": "Analytics",

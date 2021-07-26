@@ -1,0 +1,33 @@
+{% set aboutItems = {
+title: ivBridgeAboutTitle,
+data: [
+{
+title: ivBridgeAboutItemTitle1,
+text: ivBridgeAboutItemText1,
+numberType: 'gradient'
+},
+{
+title: ivBridgeAboutItemTitle2,
+text: ivBridgeAboutItemText2,
+numberType: 'gradient'
+},
+{
+title: ivBridgeAboutItemTitle3,
+text: ivBridgeAboutItemText3,
+numberType: 'gradient'
+}
+]
+} %}
+<section class="ivideon-about">
+    <div class="iv-container">
+        <h2 class="iv-h2-base ivideon-about__title">{{aboutItems.title}}</h2>
+        <div class="iv-row">
+            {% for item in aboutItems.data %}
+            <div class="ivideon-about__col">
+                {% from "app/njk/components/ivideon_about_item.njk" import aboutItem %}
+                {{ aboutItem( item, loop.index ) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

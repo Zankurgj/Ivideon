@@ -9,28 +9,7 @@
 <!-- FEATURES-->
 {% include "app/njk/sections/ivideon_bridge/ivideon_bridge_features.njk" %}
 <!-- ABOUT -->
-{% set aboutItems = {
-title: ivBridgeAboutTitle,
-data: [
-{
-img: "../../images/dest/img/ivideon_bridge/bridge-about1.png",
-title: ivBridgeAboutItemTitle1,
-text: ivBridgeAboutItemText1
-},
-{
-img: "../../images/dest/img/ivideon_bridge/bridge-about2.png",
-title: ivBridgeAboutItemTitle2,
-text: ivBridgeAboutItemText2
-},
-{
-img: "../../images/dest/img/ivideon_bridge/bridge-about3.png",
-title: ivBridgeAboutItemTitle3,
-text: ivBridgeAboutItemText3
-}
-]
-} %}
-{% from "app/njk/components/ivideon_about.njk" import aboutSection %}
-{{ aboutSection( aboutItems.data, aboutItems.title) }}
+{% include "app/njk/sections/ivideon_bridge/ivideon_bridge_about.njk" %}
 <!-- PROMO -->
 {% include "app/njk/sections/ivideon_bridge/ivideon_bridge_promo.njk" %}
 <!-- PRICE -->

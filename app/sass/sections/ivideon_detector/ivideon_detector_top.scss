@@ -90,9 +90,9 @@
     background-color: #eeeef2;
   }
   @media all and (min-width: $desktop-bp) {
-    background-image: url("../images/dest/img/ivideon-detector/detector-top-bg-d.png"),
+    background-image: url("../images/dest/img/ivideon-detector/detector-top-bg-l.png"),
       linear-gradient(
-        180deg,
+        105deg,
         #eff0f4 24.65%,
         #eff0f4 24.98%,
         #eff0f4 25.35%,
@@ -126,7 +126,54 @@
         #e5e8ef 92.91%,
         #e5e8ef 94.96%
       );
+    background-position: right bottom;
+    background-size: 700px;
     min-height: 720px;
+  }
+  @media all and (min-width: 1200px) {
+    background-image: url("../images/dest/img/ivideon-detector/detector-top-bg-l.png"),
+      linear-gradient(
+        138deg,
+        #eff0f4 24.65%,
+        #eff0f4 24.98%,
+        #eff0f4 25.35%,
+        #eff0f4 26.03%,
+        #eff0f4 26.69%,
+        #eff0f4 27.6%,
+        #eff0f4 28.57%,
+        #f0f1f5 29.49%,
+        #eeeff3 30.42%,
+        #eeeff3 31.46%,
+        #edeef2 32.48%,
+        #edeef2 33.52%,
+        #eeeff3 34.58%,
+        #eeeff4 35.84%,
+        #eeeff3 37.15%,
+        #eeeff3 38.38%,
+        #edeef2 39.49%,
+        #edeef2 41.02%,
+        #edeef2 42.46%,
+        #edeef2 44.58%,
+        #ecedf2 46.89%,
+        #ebecf0 48.64%,
+        #e9ecf3 50.89%,
+        #ebecf1 54.26%,
+        #eaebf0 56.18%,
+        #eaebf0 58.78%,
+        #e7eaf3 61.55%,
+        #e5e8ef 65.61%,
+        #e5e8ef 69.57%,
+        #e3e7f0 73.22%,
+        #e5e8ef 92.91%,
+        #e5e8ef 94.96%
+      );
+    background-size: 820px;
+  }
+  @media all and (min-width: $large-bp) {
+    background-size: 920px;
+  }
+  @media all and (min-width: 1420px) {
+    background-size: auto;
   }
 }
 .iv-container--ivideon-detector-top {

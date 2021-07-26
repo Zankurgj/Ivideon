@@ -19,6 +19,19 @@
   @media all and (min-width: $desktop-bp) {
     min-height: 720px;
     background-image: url("../images/dest/img/ivideon-control/control-top-bg-d.png");
+    background-size: 550px;
+  }
+  @media all and (min-width: 1200px) {
+    background-size: 670px;
+  }
+  @media all and (min-width: 1400px) {
+    background-size: 730px;
+  }
+  @media all and (min-width: 1600px) {
+    background-size: 880px;
+  }
+  @media all and (min-width: 1800px) {
+    background-size: auto;
   }
 }
 .iv-container--ivideon-control-top {
